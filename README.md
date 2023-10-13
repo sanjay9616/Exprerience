@@ -21,3 +21,16 @@
 20. change loader
 21. Add the Regular stage and Procurement Stage in the stage tracker.
 22. Bug fixes, UI fixes, code improvements, revamp many pages, and other Implementations.
+23. Enhance CM* % popup & introduce auto quote to customers and add Google Analytics for tracking.
+24. Introduce Repeat RFQ item id workflow in EOC and add Google Analytics for tracking.
+25. Enhancements in RFQ & CPO punching workflow and introduce Enquiry Type & CPO Type.
+26. Introduce 6 new fields in item sheet and RFQ sheet for enabling spo automation.
+27. Access control on ARC Listing section for upload & listing.
+28. Enable 3 status (working, clarification and sent to supplier) for Repeat RFQs in RFQ Item Sheet > RFQ Status column.
+29. Add Page Limit on RFQ Sheet and CPO sheet for optimize the load time.
+30. Introduce 3 new columns in ARC Template UOM, ARC Type, and CPN description.
+31. UI validations and mailer enhancements.
+32. Implemented ARC Summary page with material design.
+33. Fill SA in the CPO item type column in the item sheet.
+34. ARC data upload time optimization.
+35. Line number visibility in punch po.
