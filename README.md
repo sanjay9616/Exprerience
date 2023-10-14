@@ -1,7 +1,7 @@
 # Moglix Experience
-2. Worked on 5 projects Maas, Credlix (Nuphi and Exim), EOC, and DIGIMRO.
-3. Updated Angular version from 7 to 12 and enabled strict mode.
-1. Implemented Invoice Breakup, Payment Breakup, Credit Notes, and Debit Notes with material design.
+1. Worked on 5 projects Maas, Credlix (Nuphi and Exim), EOC, and DIGIMRO.
+2. Updated Angular version from 7 to 12 and enabled strict mode.
+3. Implemented Invoice Breakup, Payment Breakup, Credit Notes, and Debit Notes with material design.
 4. Login and Signup for supplier and admin with material design.
 5. Summary tab with material design.
 6. Implemented sidebar with design.
