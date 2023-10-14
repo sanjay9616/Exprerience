@@ -1,36 +1,37 @@
 # Moglix Experience
+2. Worked on 5 projects Maas, Credlix (Nuphi and Exim), EOC, and DIGIMRO.
+3. Updated Angular version from 7 to 12 and enabled strict mode.
 1. Implemented Invoice Breakup, Payment Breakup, Credit Notes, and Debit Notes with material design.
-2. Updated Angular version from 7 to 12 and enabled strict mode.
-3. Login and Signup for supplier and admin with material design.
-4. Summary tab with material design.
-5. Implemented sidebar with design.
-6. Performa invoice for admin and supplier login with material design.
-7. Customer WPR Remarks with material design.
-8. Project Creation Tracker Percentage in Project detail with material design.
-9. Customer advances and PDCs with material design.
-10. Finance Reports in the project detail section.
-11. Overall attachments and attachments in more details section with design.
-12. Document Tab categorization and Tagging Implementation.
-13. Add multiple SPOC details in the header.
-14. Added filter on different pages.
-15. Remove unusual code and components on different pages.
-16. Add an overall project-level section in SPO.
-17. Provision to avoid duplicate CPO entry in project header in Project Header.
-18. Implementations in stage tracker.
-19. Invoice Calculations Implementation.
-20. change loader
-21. Add the Regular stage and Procurement Stage in the stage tracker.
-22. Bug fixes, UI fixes, code improvements, revamp many pages, and other Implementations.
-23. Enhance CM* % popup & introduce auto quote to customers and add Google Analytics for tracking.
-24. Introduce Repeat RFQ item id workflow in EOC and add Google Analytics for tracking.
-25. Enhancements in RFQ & CPO punching workflow and introduce Enquiry Type & CPO Type.
-26. Introduce 6 new fields in item sheet and RFQ sheet for enabling spo automation.
-27. Access control on ARC Listing section for upload & listing.
-28. Enable 3 status (working, clarification and sent to supplier) for Repeat RFQs in RFQ Item Sheet > RFQ Status column.
-29. Add Page Limit on RFQ Sheet and CPO sheet for optimize the load time.
-30. Introduce 3 new columns in ARC Template UOM, ARC Type, and CPN description.
-31. UI validations and mailer enhancements.
-32. Implemented ARC Summary page with material design.
-33. Fill SA in the CPO item type column in the item sheet.
-34. ARC data upload time optimization.
-35. Line number visibility in punch po.
+4. Login and Signup for supplier and admin with material design.
+5. Summary tab with material design.
+6. Implemented sidebar with design.
+7. Performa invoice for admin and supplier login with material design.
+8. Customer WPR Remarks with material design.
+9. Project Creation Tracker Percentage in Project detail with material design.
+10. Customer advances and PDCs with material design.
+11. Finance Reports in the project detail section.
+12. Overall attachments page and attachments page in more details section with design.
+13. Document Tab categorization and Tagging Implementation.
+14. Add multiple SPOC details in the header.
+15. Added filter on different pages.
+16. Remove unusual code and components on different pages.
+17. Add an overall project-level section in SPO.
+18. Provision to avoid duplicate CPO entry in project header in Project Header.
+19. Implementations in stage tracker.
+20. Invoice Calculations Implementation.
+21. change loader
+22. Add the Regular stage and Procurement Stage in the stage tracker.
+24. Enhance CM* % popup & introduce auto quote to customers and add Google Analytics for tracking.
+25. Introduce Repeat RFQ item id workflow in EOC and add Google Analytics for tracking.
+26. Enhancements in RFQ & CPO punching workflow and introduce Enquiry Type & CPO Type.
+27. Introduce 6 new fields in item sheet and RFQ sheet for enabling spo automation.
+28. Access control on ARC Listing section for upload & listing.
+29. Enable 3 status (working, clarification and sent to supplier) for Repeat RFQs in RFQ Item Sheet > RFQ Status column.
+30. Add Page Limit on RFQ Sheet and CPO sheet for optimize the load time.
+31. Introduce 3 new columns in ARC Template UOM, ARC Type, and CPN description.
+32. UI validations and mailer enhancements.
+33. Implemented ARC Summary page with material design.
+34. Fill SA in the CPO item type column in the item sheet.
+35. ARC data upload time optimization.
+36. Line number visibility in punch po.
+23. Bug fixes, UI fixes, code improvements, revamp many pages, and other Implementations.
