@@ -35,3 +35,4 @@
 35. ARC data upload time optimization.
 36. Line number visibility in punch po.
 23. Bug fixes, UI fixes, code improvements, revamp many pages, and other Implementations.
+24. Updated Angular version of RdShip from v12 to v15.
