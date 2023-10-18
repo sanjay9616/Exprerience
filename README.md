@@ -4,7 +4,7 @@
 3. Updated Angular version of RdShip from v12 to v15.
 4. Implemented Invoice Breakup, Payment Breakup, Credit Notes, and Debit Notes with material design.
 5. Login and Signup for supplier and admin with material design.
-6. Summary tab with material design.
+6. Implemented Summary page with material design.
 7. Implemented sidebar with design.
 8. Performa invoice for admin and supplier login with material design.
 9. Customer WPR Remarks with material design.
