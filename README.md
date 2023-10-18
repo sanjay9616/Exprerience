@@ -6,7 +6,7 @@
 5. Login and Signup for supplier and admin with material design.
 6. Implemented Summary page with material design.
 7. Implemented sidebar with design.
-8. Performa invoice for admin and supplier login with material design.
+8. Implemented Proforma invoice for admin and supplier login with material design.
 9. Customer WPR Remarks with material design.
 10. Project Creation Tracker Percentage in Project detail with material design.
 11. Customer advances and PDCs with material design.
@@ -19,8 +19,8 @@
 18. Add an overall project-level section in SPO.
 19. Provision to avoid duplicate CPO entry in project header in Project Header.
 20. Implementations in stage tracker.
-21. Invoice Calculations Implementation.
-22. change loader
+21. Implemented Invoice Calculations with design.
+22. Implemented Loader with design.
 23. Add the Regular stage and Procurement Stage in the stage tracker.
 24. Enhance CM* % popup & introduce auto quote to customers and add Google Analytics for tracking.
 25. Introduce Repeat RFQ item id workflow in EOC and add Google Analytics for tracking.
