@@ -2,14 +2,14 @@
 1. Worked on 5 projects Maas, Credlix (Nuphi and Exim), EOC, and DIGIMRO.
 2. Updated Angular version from 7 to 12 and enabled strict mode.
 3. Updated Angular version of RdShip from v12 to v15.
-4. Implemented Invoice Breakup, Payment Breakup, Credit Notes, and Debit Notes with material design.
-5. Login and Signup for supplier and admin with material design.
-6. Implemented Summary page with material design.
+4. Implemented Invoice Breakup, Payment Breakup, Credit Notes, and Debit Notes with Angular material design.
+5. Login and Signup for supplier and admin with Angular material design.
+6. Implemented Summary page with Angular material design.
 7. Implemented sidebar with design.
-8. Implemented Proforma invoice for admin and supplier login with material design.
-9. Customer WPR Remarks with material design.
-10. Project Creation Tracker Percentage in Project detail with material design.
-11. Customer advances and PDCs with material design.
+8. Implemented Proforma invoice for admin and supplier login with Angular material design.
+9. Customer WPR Remarks with Angular material design.
+10. Project Creation Tracker Percentage in Project detail with Angular material design.
+11. Customer advances and PDCs with Angular material design.
 12. Finance Reports in the project detail section.
 13. Overall attachments page and attachments page in more details section with design.
 14. Document Tab categorization and Tagging Implementation.
@@ -31,7 +31,7 @@
 30. Add Page Limit on RFQ Sheet and CPO sheet for optimize the load time.
 31. Introduce 3 new columns in ARC Template UOM, ARC Type, and CPN description.
 32. UI validations and mailer enhancements.
-33. Implemented ARC Summary page with material design.
+33. Implemented ARC Summary page with Angular material design.
 34. Fill SA in the CPO item type column in the item sheet.
 35. ARC data upload time optimization.
 36. Line number visibility in punch po.
