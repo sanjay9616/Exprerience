@@ -36,3 +36,15 @@
 35. ARC data upload time optimization.
 36. Line number visibility in punch po.
 23. Bug fixes, UI fixes, code improvements, revamp many pages, and other Implementations.
+24. Introduce Defaulter Supplier tagging in EOC.
+25. ARC implementation in multiple pages for Enquiry Type and CPO Item Type.
+26. Enhancements in Catalog Sheet.
+27. Show summary no. of ARC accounts in ARC Summary screen.
+28. Revamp RFQ & CPO Item Sheet.
+29. Pre-fill MSN related details in RFQ & CPO sheet.
+30. Provision to display Customer and Supplier Credit/Debit notes separately.
+31. Add Most Recent 10 Updates in ARC Listing > Log.
+32. Enhancement in defaulter supplier tagging task.
+33. Introduce Productivity Dashboard in global header in EOC.
+34. Enhance existing Quotation Format to include more data points.
+35. Implement Manager's View at resource level for enquiry pendency.
