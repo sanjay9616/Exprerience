@@ -48,3 +48,19 @@
 33. Introduce Productivity Dashboard in global header in EOC.
 34. Enhance existing Quotation Format to include more data points.
 35. Implement Manager's View at resource level for enquiry pendency.
+36. Logged in User Brand Mapping to child business unit.
+37. The task is to add a global KAM/Sourcer/CS Executive if the user has access to all teams in the productivity dashboard.
+38. Introduce Region as a filter left of Teams.
+39. Implemented HZL-related requirements.
+40. CPO Item Sheet Revamp.
+41. Stop CPO manual punching for net price ARC orders with price difference >10%.
+42. Introduce new CPO source & new CPO item type (Sample, Internal & STN).
+43. Implemented CRMM Automation Project.
+44. Allow category update in Enquiry Details Sheet.
+45. Introduce VMI/JIT tagging & edit CPO number.
+46. Introduce bulk upload as a feature in CPO details screen.
+47. Remove plants group field from CPN creation (product upload) workflow.
+48. Task is to add cancel, cancel and clone reasons at order and item level.
+49. Improve search by Quotation No. in Enquiry Details screen.
+50. Introduce 3% GST in Enquiry Details.
+51. Need report of productivity dashboard on date basis/weekly/MTD.
