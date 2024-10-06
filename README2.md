@@ -2,7 +2,7 @@
 
 **Worked on 5 projects [EOC (Excel on Cloud)](#eoc-excel-on-cloud), [DIGIMRO](#DIGIMRO), [Credlix (Nuphi and Exim)](#credlix-nuphi-and-exim), and [MaaS](#MaaS).**
 
-1. # EOC (Excel on Cloud)
+# EOC (Excel on Cloud)
 
 Work done on EOC (Excel on Cloud) is described below with JIRA ID.
 
