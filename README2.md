@@ -8,7 +8,7 @@ Work done on EOC (Excel on Cloud) is described below with JIRA ID.
 
 Please feel free to ask for any doubts or clarification regarding specific tasks or descriptions.
 
-## Task 1: EOC-2802 Pick Supplier Credit Term from Exception List in RFQ & CPO Item Sheet
+## Task 1: (EOC-2802) Pick Supplier Credit Term from Exception List in RFQ & CPO Item Sheet
 
 **Current Behavior:** When a supplier is mapped in the RFQ or CPO Item Sheet, the supplier credit term is fetched via API from SC.
 
