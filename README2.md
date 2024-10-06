@@ -1,8 +1,8 @@
 # Moglix Experience
 
-**Worked on 5 projects MaaS, Credlix (Nuphi and Exim), EOC, and DIGIMRO.**
+**Worked on 5 projects [EOC (Excel on Cloud)](#eoc-excel-on-cloud), [DIGIMRO](#DIGIMRO),[Credlix (Nuphi and Exim)](#credlix-nuphi-and-exim), and [MaaS](#MaaS).**
 
-# 1. EOC (Excel on Cloud)
+# EOC (Excel on Cloud)
 
 Work done on EOC (Excel on Cloud) is described below with JIRA ID.
 
@@ -38,17 +38,6 @@ Ensure the system date is correct when users update records; implement backend d
 
 **Impact:** Enhances data accuracy and prevents issues related to incorrect dates, improving user experience and system reliability.
 
-
-
-
-
-
-
-
-
-**[⬆ Back to EOC (Excel on Cloud)](#1-eoc-excel-on-cloud)**
-
-
-# 2. Credlix (Nuphi and Exim)
-# 3. DIGIMRO
-# 4. MaaS
+# DIGIMRO
+# Credlix (Nuphi and Exim)
+# MaaS
