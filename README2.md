@@ -8,35 +8,13 @@ Work done on EOC (Excel on Cloud) is described below with JIRA ID.
 
 Please feel free to ask for any doubts or clarification regarding specific tasks or descriptions.
 
-### 1. EOC-3753: Adoption of Vendor Discovery at Line Item GA
+## Task 1: EOC-2802 Pick Supplier Credit Term from Exception List in RFQ & CPO Item Sheet
 
-**Task:** Implement GA tracking for Search CTA on RFQ and CPO pages (user ID, date, click), GA for "Send for RFQ" CTA, and tag ERFQ data to indicate whether it was sent through item-level or bulk CTA.
+**Current Behavior:** When a supplier is mapped in the RFQ or CPO Item Sheet, the supplier credit term is fetched via API from SC.
 
-**Impact:** Enhanced tracking and analytics for user interactions and ERFQ actions, improving data insights and decision-making.
+**Going Forward:** SCM will maintain a separate exception list for supplier ID-plant ID combinations. When a supplier ID is selected on EOC, the system will check the exception list for a credit term and pre-fill it in EOC; otherwise, the default supplier credit term will be used.
 
-### 2. EOC-3705: Add Brand Authorization Tagging to the Pending CPO CM* Approval Screen.
-
-**Task:** Add Brand Authorization Tagging to the Pending CPO CM* Approval Screen and include it in email requests raised.
-
-**Impact:** Ensures consistent tracking of brand authorizations and improves communication in approval processes.
-
-### 3. EOC-3656Enterprise Liquidation Process: Introduction of CPO Item Type 'Liquidation'
-
-**As-Is Liquidation Process**
-
-Region-wise liquidation teams (e.g., Team North Team 3) manage liquidation by creating scrap dealer/buyer plants with CLs and punching RFQs for scrap buyers and dummy suppliers. The original buy price (TP) and new selling price (SP) are defined, with RFQ approval from the City Head. Upon approval, a CPO is created as “RFQ” CPO-type, and inventory is auto-allocated, displayed as RFQ orders in PowerBI.
-
-**Proposed Liquidation Process**
-
-Region-wise liquidation teams create a new CPO type “Liquidation” for scrap buyers without a supplier. CPO approval is required from the City Head, with Jasmeet and Sandeep CC’d for values over Rs. 20,000. Inventory is auto-allocated post-approval, and PowerBI displays it as a liquidation order. Warehouse users can select “Liquidation” for closed, unreleased POs only, with additional fields like TP and delivery mode available during drafting. Users must input mandatory details before submitting for CM* approval based on the defined DOA criteria, with status visible on the listing page and CPO details sheet.
-
-**Impact:** The proposed process improves efficiency and accuracy in liquidation management, reduces manual errors, and enhances tracking and reporting capabilities.
-
-### 4. EOC-3720 Date Issue in EOC UI
-
-Ensure the system date is correct when users update records; implement backend date sharing and validation for the "Need to Work" field, with timestamps displayed in the EOC UI for future reference.
-
-**Impact:** Enhances data accuracy and prevents issues related to incorrect dates, improving user experience and system reliability.
+**Impact:** Automates credit term selection, improving accuracy and reducing manual input in the RFQ and CPO process.
 
 # DIGIMRO
 # Credlix (Nuphi and Exim)
