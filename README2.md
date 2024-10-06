@@ -4,26 +4,23 @@
 
 # 1. EOC (Excel on Cloud)
 
-| S No. | TASK                                                                                     | JIRA ID                                                             |
-| ----- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| 1     | [Adoption of Vendor Discovery at Line Item GA](#EOC-3753)                                | <a href="https://moglix.atlassian.net/browse/EOC-3753">EOC-3753</a> |
-| 2     | [Add Brand Authorization Tagging to the Pending CPO CM* Approval Screen.](#EOC-3705)     | <a href="https://moglix.atlassian.net/browse/EOC-3705">EOC-3705</a> |
-| 2     | [Enterprise Liquidation Process: Introduction of CPO Item Type 'Liquidation'](#EOC-3656) | <a href="https://moglix.atlassian.net/browse/EOC-3656">EOC-3656</a> |
-| 2     | [Date Issue in EOC UI](#EOC-3720)                                                        | <a href="https://moglix.atlassian.net/browse/EOC-3720">EOC-3720</a> |
+Work done on EOC (Excel on Cloud) is described below with JIRA ID.
 
-### <span id="EOC-3753"></span> Adoption of Vendor Discovery at Line Item GA
+Please feel free to ask for any doubts or clarification regarding specific tasks or descriptions.
+
+### 1. EOC-3753: Adoption of Vendor Discovery at Line Item GA
 
 **Task:** Implement GA tracking for Search CTA on RFQ and CPO pages (user ID, date, click), GA for "Send for RFQ" CTA, and tag ERFQ data to indicate whether it was sent through item-level or bulk CTA.
 
 **Impact:** Enhanced tracking and analytics for user interactions and ERFQ actions, improving data insights and decision-making.
 
-### <span id="EOC-3705"></span> Add Brand Authorization Tagging to the Pending CPO CM* Approval Screen.
+### 2. EOC-3705: Add Brand Authorization Tagging to the Pending CPO CM* Approval Screen.
 
 **Task:** Add Brand Authorization Tagging to the Pending CPO CM* Approval Screen and include it in email requests raised.
 
 **Impact:** Ensures consistent tracking of brand authorizations and improves communication in approval processes.
 
-### <span id="EOC-3656"></span> Enterprise Liquidation Process: Introduction of CPO Item Type 'Liquidation'
+### 3. EOC-3656Enterprise Liquidation Process: Introduction of CPO Item Type 'Liquidation'
 
 **As-Is Liquidation Process**
 
@@ -35,7 +32,7 @@ Region-wise liquidation teams create a new CPO type “Liquidation” for scrap 
 
 **Impact:** The proposed process improves efficiency and accuracy in liquidation management, reduces manual errors, and enhances tracking and reporting capabilities.
 
-### <span id="EOC-3720"></span> Date Issue in EOC UI
+### 4. EOC-3720 Date Issue in EOC UI
 
 Ensure the system date is correct when users update records; implement backend date sharing and validation for the "Need to Work" field, with timestamps displayed in the EOC UI for future reference.
 
