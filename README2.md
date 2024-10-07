@@ -10,29 +10,45 @@ Please feel free to ask for any doubts or clarification regarding specific tasks
 
 ## Task 1: (EOC-2802) Pick Supplier Credit Term from Exception List in RFQ & CPO Item Sheet
 
-**Current Behavior:** When a supplier is mapped in the RFQ or CPO Item Sheet, the supplier credit term is fetched via API from SC.
+**Current Behavior:**
 
-**Going Forward:** SCM will maintain a separate exception list for supplier ID-plant ID combinations. When a supplier ID is selected on EOC, the system will check the exception list for a credit term and pre-fill it in EOC; otherwise, the default supplier credit term will be used.
+When a supplier is mapped in the RFQ or CPO Item Sheet, the supplier credit term is fetched via API from SC.
 
-**Impact:** Automates credit term selection, improving accuracy and reducing manual input in the RFQ and CPO process.
+**Going Forward:**
+
+SCM will maintain an exception list for supplier ID-plant ID combinations. Upon selecting a supplier ID in EOC, the system will check this exception list for a pre-defined credit term and automatically populate it. If no exception is found, the default supplier credit term will be used.
+
+**Impact:**
+
+Automates the credit term selection process, improving accuracy and reducing manual data entry during the RFQ and CPO processes, leading to time savings and fewer errors.
 
 ## Task 2: (EOC-2837) Introduce Defaulter Supplier Tagging in EOC
 
-The task is to implement defaulter supplier tagging in the EOC UI and Excel downloads across the RFQ sheet, CPO item sheet, CM approval screen (web and responsive), and CM approval mailer. When a supplier name or ID is entered in the UI, a suggestion dropdown will appear with defaulter suppliers marked with red tagging and an info icon. On hovering over the icon, metrics such as Net Outstanding Debit Balance, Returns by Value %, and GSTR Default Invoices will be displayed. The defaulter tagging will be persistent until the RFQ reaches the "PO won" stage, after which all details will turn grey. Download sheets will include columns indicating whether the supplier is a defaulter, along with the defaulter metrics.
+**Task:**
 
-**Impact:** Enhances visibility of defaulter suppliers, improving decision-making during RFQ and CPO processes and ensuring accurate historical tracking in approval flows.
+Implement defaulter supplier tagging across the EOC UI and Excel downloads for the RFQ sheet, CPO item sheet, CM approval screens (web and responsive), and CM approval mailer. When a supplier name or ID is entered, a dropdown will display defaulter suppliers marked in red, along with an info icon. Hovering over the icon will reveal metrics such as Net Outstanding Debit Balance, Returns by Value %, and GSTR Default Invoices. The defaulter tagging will remain visible until the RFQ reaches the "PO won" stage, after which the details will turn grey. Download sheets will include columns indicating defaulter status and associated metrics.
 
-## Task 3: (EOC-2839) ARC Changes from Ruchi & Sandeep
+**Impact:**
 
-- Introduce a new weekly report for SP > ARC Price:
+Increases visibility of defaulter suppliers, improving decision-making in RFQ and CPO processes and ensuring proper historical tracking in approval workflows, reducing financial risks.
+
+## Task 3: (EOC-2839) Weekly Report & Mailer Enhancements for SP > ARC Price
+
+- New Weekly Report for SP > ARC Price:
     - Subject: 10 POs punched at SP > ARC Price, ARC price in system to be updated?
-    - Mail Body: Inform users that CPOs have been received at a higher price than ARC price and request checking the details for possible updates. Attach the report.
-    - Receivers: City Heads and KAMs
-    - Frequency: Weekly on Wednesday.
-- Modify weekly mailers by removing City Heads from the subject line and adding sourcing POC email along with customer POC (KAM).
-- For internal weekly mailers, combine SP > ARC Price and SP < ARC Price line items. Modify the subject line to: [Alert] 61 POs breached ARC Price, price difference worth INR 10,000.
+    - Mail Body: Notify users that POs have been received at a higher price than the ARC price, requesting them to review and update ARC prices if necessary Attach the relevant report.
+    - Receivers: City Heads and KAMs.
+    - Frequency: Weekly every Wednesday.
+- Weekly Mailer Modifications:
+    - Remove City Heads from the subject line.
+    - Add sourcing POC email alongside the customer POC (KAM) in the email.
+- Internal Mailers:
+    - Combine SP > ARC Price and SP < ARC Price line items in internal mailers.
+    - Modify subject line to: "[Alert] 61 POs breached ARC Price, price difference worth INR 10,000."
 
-**Impact:** Improves ARC data accuracy, enhances visibility through reports and filters, and automates communication of price discrepancies, improving operational efficiency and decision-making.
+**Impact:**
+
+Enhances accuracy and visibility of ARC data, streamlines price discrepancy reporting, and automates communication, improving operational efficiency and decision-making.
 
 ## Task 4: (EOC-2780) ARC Phase 3 in EOC
 
@@ -383,7 +399,9 @@ The task involves adding new CPO item types and inventory options to the CPO det
 
 ## Task 23: (EOC-3099) CRMM Automation Project Phase 1
 
-**Description:** The task is to automate the CRMM project with the following scope of work:
+**Description:**
+
+The task is to automate the CRMM project with the following scope of work:
 
 **Scope of Work:**
 
@@ -1504,6 +1522,351 @@ The current header page of the CPO punch process is experiencing slow performanc
 - Significant Time Savings: A 51.87% improvement in DOMContentLoaded time and a 56.46% reduction in load time helps users interact with the page much faster.
 - Optimized Network Usage: A 40.9% reduction in the number of network requests lowers server load, resulting in smoother and more efficient operations.
 - Improved User Experience: Faster load times and reduced delays enhance the overall user experience on the CPO punch header page.
+
+## Task 62: (EOC-3623) E-RFQ Enhancement - Vendor Suggestion for Item at RFQ and CPO Item
+
+**Description:**
+
+The task is to introduce vendor suggestions for items on the CPO Details Sheet and Enquiry Details Sheet. This feature will allow users to get vendor suggestions for each item in the RFQ and CPO process, making vendor selection more efficient and accurate.
+
+**Workflow for CPO**
+
+- Vendor Suggestion CTA:
+    - When the user selects the "suggest supplier" field while creating a CPO, a CTA (Call-to-Action) will appear on the right side of the field.
+    - Upon clicking the CTA, a popup or page will display suggested vendors along with the material description at the top.
+- Details Visible in the Popup:
+    - Supplier ID
+    - Supplier Name
+    - Contact Name
+    - Email
+    - Phone Number
+    - Business City
+    - Business State
+    - Action (Selection Button)
+- Select Supplier:
+    - The user can select the supplier, and the corresponding details will be automatically filled in on the CPO Details Sheet.
+
+**Workflow for RFQ**
+
+- Vendor Suggestion CTA:
+    - When the user selects the "Supplier Name" field during the RFQ process, a CTA will appear on the right side of the field.
+- Details Visible in the Popup:
+    - Supplier ID
+    - Supplier Name
+    - Contact Name
+    - Email
+    - Phone Number
+    - Business City
+    - Business State
+    - Action (Selection Button)
+- Select Supplier:
+    - The user can either:
+        - Select a single supplier: The details will be automatically filled in the Enquiry Details Sheet.
+        - Select multiple suppliers using checkboxes: The user can click "Send for RFQ" and will be redirected to the E-RFQ screen, where the selected suppliers will already be populated. The user can then add or delete suppliers as needed.
+
+**Impact:**
+
+- Enhanced Efficiency: Streamlines the process of selecting vendors by providing real-time suggestions and eliminating manual searches.
+- Improved Accuracy: Ensures that relevant vendors are suggested based on the item's details, reducing the chances of selecting an unsuitable vendor.
+- Time Savings: Reduces the time spent manually entering vendor details for each item, improving the overall workflow for RFQ and CPO processes.
+- User Experience: Offers a seamless and intuitive interface, making vendor selection simpler and more accessible for users.
+
+## Task 63: (EOC-3622) Direct CPO - Partial Release Functionality
+
+**Description:**
+
+The existing Direct CPO functionality allows users to release the entire CPO in one go. However, there are scenarios where supplier discovery for some items is completed while others require more time. To address this, we need to enable partial release of CPO items, allowing users to release selected items as they become ready.
+
+**Problem Statement:**
+
+Currently, the entire CPO must be released in one action, which can delay the timely release of SPOs for items that are ready. This can impact supplier response time.
+
+**Proposed Solution:**
+
+Allow users to release CPO items partially as needed. The user will be able to select multiple items for partial release, ensuring that items ready for supplier discovery are released on time, while other items can be updated later.
+
+**Workflow:**
+
+- Partial Release Action:
+    - Users can select multiple line items using checkboxes and click the submit button for partial release.
+    - A toast message will appear showing the number of line items submitted versus the total line items in the PO.
+    - Items that have already been released will be visible in frozen form (unless supplier assignment is canceled/removed in SalesOps).
+- Update and Release Remaining Items:
+    - Users can later "update and mark release" for the remaining items as supplier discovery is completed.
+- DOA (Delegation of Authority) Handling:
+    - The DOA will work as-is, similar to the RFQ process.
+    - CM%* will be recalculated each time additional partial items are released. The updated CM*% will be visible to the approver on the UI.
+
+**New PO Status:**
+
+- Introduce a new PO type for partial release: "Partial Release."
+- @Sovit Kumar and @Amit Singh, please evaluate the impact of introducing this new status.
+
+**CM*% Status Visibility:**
+
+The following use cases for CM*% approval status need to be considered when handling multiple items in different approval statuses:
+
+- Three Different CM% Approval Statuses:*
+    - If all three statuses (CM Approval Pending, CM Approval Rejected, and CM* Approved**) are present, display CM Approval Pending*.
+- Two Different CM% Approval Statuses:*
+    - If at least one item is CM Approval Rejected* and one item is CM Approved*, display CM Approval Rejected*.
+    - If at least one item is CM Approval Pending* and one item is CM Approved*, display CM Approval Pending*.
+
+**Impact:**
+
+- Improved Efficiency: Users can release CPO items as they are ready, ensuring timely supplier response and reducing bottlenecks in the procurement process.
+- Flexible Release Workflow: By allowing partial releases, this update provides flexibility in the CPO process, aligning better with supplier discovery timelines.
+- Clear CM% Visibility:* Enhanced status visibility ensures that users can easily track approval progress, reducing confusion and delays.
+
+## Task 64: (EOC-3649) Need to Add Date Range on ARC Report
+
+**Description:**
+
+Add a fixed date range feature to the ARC Report, based on the current logic. This will allow users to filter the report data within a specified date range for better analysis and reporting.
+
+**Impact:**
+
+- Improved Usability: Users can easily analyze data within specific timeframes, enhancing decision-making processes.
+- Enhanced Reporting Accuracy: By allowing targeted date filtering, the report will reflect more relevant and precise data, leading to better insights.
+- Increased Efficiency: Reduces the time spent on manual adjustments and searching for data across multiple reports, streamlining the overall reporting workflow.
+
+
+## Task 65: (EOC-3614) Authorized Brand Distributor Visibility on EOC While Selecting Supplier
+
+**Description:**
+
+Currently, orders can be placed with suppliers who are not authorized distributors, which affects product quality and leads to material returns. To address this issue, when a supplier is selected on EOC, the system will provide visibility on whether the supplier is a Trader, Manufacturer, Authorized Dealer, Service Provider, or Exporter based on the brand and Supplier ID stored in Supplier Central.
+
+    - If the selected supplier is not an Authorized Dealer or Manufacturer, a warning message will display: “Selected supplier is not an Authorized Dealer/Manufacturer.”
+    - This information will be displayed alongside the default supplier information on the RFQ and CPO sheets, and will also be included in the approval screen, with unauthorized suppliers highlighted in red.
+    - The system will check the brand/Brand ID from the MSN mapped to the item in combination with the Supplier ID to provide this information.
+    - If the MSN is not available or mapped, the system will use the brand available along with the CPN.
+
+**Use Cases:**
+
+- RFQ Use Cases: Checks based on the brand and MSN availability to determine the supplier type.
+- CPO Use Cases: Similar checks as RFQ use cases to ensure supplier authenticity.
+
+**Impact:**
+
+- Enhanced Supplier Quality: Ensures that only authorized suppliers are considered, reducing the risk of material returns and quality issues.
+- Informed Decision-Making: Sourcers will have visibility into supplier authorization status, enabling better decision-making during supplier selection.
+- Streamlined Approval Process: The warning message and visibility in the approval screen will help prevent unauthorized supplier orders from being approved, improving overall compliance.
+- Improved User Experience: Clear visibility and warnings enhance user confidence in selecting the right suppliers, leading to a smoother procurement process.
+
+## Task 66: (EOC-3676) Role Creation for Vendor Discovery
+
+**Description:**
+
+- To ensure controlled access to the Vendor Discovery feature, a new role will be created for EOC specifically for Vendor Discovery. This role will restrict usage based on access control settings.
+- Create Role: Establish a role titled "EOC - Vendor Discovery" to manage access for users.
+Module Separation: Implement a separate module for Single Search and Bulk Search functionalities within the Vendor Discovery feature.
+
+**Impact:**
+
+- Enhanced Security: By restricting access to Vendor Discovery, sensitive supplier information is safeguarded, minimizing the risk of unauthorized usage.
+- Controlled User Access: Only authorized users can access Vendor Discovery functionalities, improving accountability and compliance.
+- Streamlined Processes: Clear role definitions will help users navigate the application more efficiently, focusing only on relevant functionalities according to their access rights.
+
+## Task 67: (EOC-3679) Need to Remove CDD2 Validation Check on Updating Manual ETA
+
+**Why?**
+
+The ETA column must be updated for each line item to ensure that the auto ETA triggers for customers.
+
+**What?**
+
+Remove the CDD2 validation check when updating the Manual ETA field.
+
+**Actions:**
+
+- Attach: Provide any relevant files or documentation.
+- Create Subtask: Create a subtask for tracking this change.
+- Link Issue: Link this request to the relevant issue for reference.
+- Create: Initiate the change request.
+- Show Git Development Panel: Ensure visibility of the Git development panel for code tracking and collaboration.
+
+## Task 68: (EOC-3681) EOC UI Unused Code Refactoring and Restructuring
+
+**Description:**
+
+The EOC application has been built using the ICAT codebase since its inception, leading to the accumulation of numerous files within the same structure. To enhance maintainability and performance, a restructuring of the current architecture is necessary.
+
+**Acceptance Criteria:**
+
+- Remove unused code from each module and component to declutter the codebase.
+- Review and organize configuration files to ensure a clean and logical structure.
+- Assess the current architecture and implement modifications to improve readability and scalability.
+
+**Impact:**
+
+- Improved Maintainability: By removing unused code and restructuring the organization of files and folders, the codebase becomes easier to navigate and maintain, reducing technical debt.
+- Enhanced Performance: A cleaner codebase can lead to better application performance by minimizing the footprint of unused components.
+- Scalability: A well-organized architecture facilitates future development efforts, making it easier to add new features or modules without confusion.
+- Faster Development Cycle: Developers will be able to work more efficiently in a well-structured environment, reducing onboarding time for new team members and speeding up the overall development process.
+
+## Task 69: (EOC-3684) Access Management - Vendor Discovery
+
+**Description:**
+
+Users with a business designation of City Head (CH) and above should have unrestricted access to the Vendor Discovery feature, regardless of their specific role. Other users can gain access to this feature by requesting a role, which will be granted based on approval.
+
+**Implications:**
+
+- Streamlined Access: Ensures that senior management can utilize the Vendor Discovery feature without barriers, facilitating timely decision-making.
+- Controlled Permissions: Other users will have access based on role approval, enhancing security and ensuring that only authorized personnel use the feature.
+- Improved Workflow: This access management structure promotes efficient use of the Vendor Discovery tool while maintaining oversight and control.
+
+## Task 70: (EOC-3684) Stop User from Entering String on Update "List Price"
+
+**Description:**
+
+In the arcListPrice field, which is currently accepted as a String from the front end, implement a numeric validation check. This will prevent users from entering non-numeric values when updating the "list price" and will automatically convert any string input into a numeric format.
+
+**Impact:**
+
+- Data Integrity: Ensures that only valid numeric values are entered, reducing the risk of errors in calculations and data processing.
+- Improved User Experience: By enforcing numeric input, users will receive immediate feedback, preventing confusion and improving the efficiency of data entry.
+- Consistency Across Tasks: Standardizing the input format will enhance the overall reliability of related tasks and functionalities that depend on accurate pricing information.
+- Reduced Processing Errors: Minimizes the potential for backend processing issues that could arise from incorrect data types being used in calculations or database entries.
+
+## Task 71: (EOC-3634) PO Punching OCR Actual Impact Report
+
+**Description:**
+
+This report provides insights into the effectiveness of the OCR functionality implemented for PO punching. As part of the report, the data was moved to a separate task (refer to Jira EOC-3578: PO Punching OCR).
+
+**Daily Report Requirements:**
+
+- PO Number-wise Breakdown:
+    - Number of fields automated through OCR (header and line item separated).
+    - Number of automated fields requiring manual intervention (header and line item separated).
+    - If the checkbox is unselected, consider it as not automated (header and line item separated).
+
+**Impact:**
+
+- Increased Efficiency: Streamlined the PO punching process, reducing manual data entry time.
+- Enhanced Accuracy: Improved data accuracy by minimizing human errors during data entry.
+- Better Decision-Making: Provides actionable insights into the OCR's performance for further optimization.
+
+## Task 72: (EOC-3691) Enhancement: Stop Multiple Click on Save Button
+
+**Description:**
+
+Currently, users can click the Save button multiple times, leading to multiple update requests on the Item Sheet and Enquiry Sheet. This enhancement aims to implement a mechanism that waits for the response of the first request before allowing the user to click the Save button again.
+
+**Impact:**
+
+- Reduced Errors: Prevents accidental multiple submissions, reducing the likelihood of conflicting updates and errors.
+- Improved User Experience: Enhances the overall user experience by providing clear feedback on the save action and preventing frustration from unexpected behavior.
+- Optimized Performance: Decreases the load on the backend by limiting the number of concurrent update requests, leading to more efficient processing.
+
+## Task 73: (EOC-3720) Date Issue: Updating "Need to Work" for Catalog Team
+
+**Description:**
+
+When users are updating the "Need to Work" field for the Catalog team, a timestamp should be shared from the backend. Additionally, validation must be implemented during the saving process to ensure the accuracy and consistency of the date entered.
+
+**Impact:**
+
+- Data Integrity: Ensures that the date information is accurate and consistent, improving the reliability of the updates made by users.
+- Improved Tracking: Allows for better tracking of changes in the "Need to Work" field, facilitating more effective project management and accountability.
+- Enhanced User Experience: Provides users with clear feedback and validation, reducing the likelihood of errors during data entry.
+
+## Task 74: (EOC-3656) Enterprise Liquidation Process: Introduction of CPO Item Type “Liquidation”
+
+**As-Is Liquidation Process:**
+
+- Region-wise liquidation teams created (e.g., Team North).
+- Scrap dealers/buyers registered as plants with CL ≥ 1.
+- Liquidation team punches RFQ for scrap buyer plant with a dummy supplier.
+- RFQ approval obtained from the City Head.
+- Post-approval, CPO is punched as “RFQ” CPO type without supplier mapping.
+- Inventory auto-allocated for liquidation; reflected as RFQ orders in PowerBI.
+
+**Proposed Liquidation Process:**
+
+- Introduces a new CPO item type, “Liquidation,” for the liquidation team.
+- Approval workflow remains; CPO is punched without mapping a supplier.
+- Changes in selection criteria for users (only closed/unreleased PO).
+- Additional fields for TP and delivery mode added during drafting.
+- CPO approval status visible in listing and detail pages.
+- Delivery modes specified: customer pickup or Moglix delivery.
+
+**Points to Note:**
+
+- CM*% approval visible with statuses (Approved, Rejected, Pending).
+- Approval flow defined based on CPO value thresholds.
+
+**Impact:**
+
+- Streamlined Workflow: Reduces manual steps in the liquidation process, enhancing efficiency.
+- Improved Tracking: Clear visibility of approval statuses and better monitoring of liquidation orders.
+- Reduced Errors: Decreases the chance of non-compliance by ensuring proper handling of liquidation orders.
+- Increased Transparency: Facilitates better communication and documentation in the approval process.
+
+## Task 75: (EOC-3705) Brand Authorization Tagging on Pending CPO CM* Approval Screen
+
+**Description:**
+
+Brand Authorization Tagging needs to be added to the Pending CPO CM* Approval Screen. Additionally, this tagging should be included in the email requests raised for approvals.
+
+**Impact:**
+
+- Improved Compliance: Ensures that only authorized brands are approved, reducing the chances of unauthorized suppliers.
+- Better Visibility: Provides clear brand authorization information to approvers, leading to informed decision-making.
+- Streamlined Process: Incorporates tagging into email communications, enhancing the approval workflow and reducing errors.
+
+## Task 76: (EOC-3753) Adoption of Vendor Discovery at Line Item (CPO and RFQ Page)
+
+**Description:**
+
+- Implement search functionality on RFQ and CPO pages.
+- Track user interactions (GA) for Search CTA with user ID, date, and click details.
+- Implement GA on Send for RFQ CTA.
+- Data tagging for ERFQ, distinguishing between item-level CTA and bulk CTA actions (development required).
+
+**Impact:**
+
+- Improved Tracking: GA event tracking enables better insight into user interactions for both CPO and RFQ pages.
+- Enhanced Efficiency: Item and bulk-level tagging allows for better data segmentation and analysis, optimizing the vendor discovery process.
+- Actionable Insights: Provides granular data to improve user experience and vendor interaction workflows.
+
+## Task 77: (EOC-3752) Adoption Vendor Discovery
+
+**Description:**
+
+- Track the count of users having access to Single Search and Bulk Search features.
+- Single Search: Apply GA on Search CTA to track date-wise unique clicks along with user email IDs.
+- Bulk Search: Track file uploads along with User ID and date.
+
+**Impact:**
+
+- Enhanced Monitoring: Provides visibility into how many users are utilizing single and bulk search functionalities.
+- Detailed Insights: GA tracking for both single and bulk searches helps identify usage patterns, improving decision-making for feature optimization.
+- User Behavior Analysis: Allows better understanding of search behavior, facilitating potential enhancements for the vendor discovery process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
