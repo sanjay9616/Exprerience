@@ -1,10 +1,10 @@
 # Moglix Experience
 
 Worked on 5 projects
-    - [EOC (Excel on Cloud)](#eoc-excel-on-cloud)
-    - [DIGIMRO](#DIGIMRO)
-    - [Credlix (Nuphi and Exim)](#credlix-nuphi-and-exim)
-    - [MaaS](#MaaS)
+- [EOC (Excel on Cloud)](#eoc-excel-on-cloud)
+- [DIGIMRO](#DIGIMRO)
+- [Credlix (Nuphi and Exim)](#credlix-nuphi-and-exim)
+- [MaaS](#MaaS)
 
 # EOC (Excel on Cloud)
 
