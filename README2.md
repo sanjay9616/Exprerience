@@ -381,7 +381,1079 @@ The task involves adding new CPO item types and inventory options to the CPO det
 
 **Impact:** Enhances flexibility and automation by introducing new CPO item types and inventory management options, streamlining processes for internal, sample, and stock transfer orders, and ensuring accurate categorization of CPO sources.
 
-## Task 23: (EOC-3145) Introduce New CPO Source & New CPO Item Type
+## Task 23: (EOC-3099) CRMM Automation Project Phase 1
+
+**Description:** The task is to automate the CRMM project with the following scope of work:
+
+**Scope of Work:**
+
+1. CPO Details Screen Validations:
+    - CPO items with CPO Item Type = CRMM will only be allowed to be punched if the plant is in the approved list (within the expiry date).
+    - A list of Core and Non-Core categories will be maintained by the catalog portal. RM+Pipes and packaging will be treated as Non-Core.
+    - For Non-Core categories, allow CRMM CPO item IDs to be punched for approved plants with CM% approval at SalesOps during supplier assignment.
+    - For Core categories, CRMM CPO item IDs can be punched with Mukund's approval until the plant's CRMM expiry date. This applies to the enterprise vertical only.
+
+2. Approval Workflow:
+    - On punching a CPO line item for the first time with CPO Item Type = CRMM and from a core category, approval will go to Mukund. If approved, this will be saved until the CRMM expiry date.
+    - The CPO will be saved as a draft and will be visible in the PO listing screen with a status of Pending Approval. It will not be visible in the CPO details sheet until approved.
+    - Once Mukund approves for any CRMM approved plant for the first time, future approvals for the same plant's core category will not be required at the transaction level.
+
+3. UI Validation for Non-Approved CRMM Plants:
+    - If a user selects CRMM as the CPO item type for a non-approved plant, show a UI validation error: "This plant is not an approved CRMM plant, so punching of orders with type CRMM is not allowed!"
+
+4. Handling Internal Plants:
+    - For internal plants, the RFQ item ID will remain optional, and any CPO item type can be punched.
+
+5. RFQ Item ID Handling for CRMM Plants:
+    - RFQ item ID will be optional for all CPO items punched for CRMM approved plant IDs.
+
+6. Mandatory L1 & L2 Categories at Manual Punching Stage:
+    - The L1 & L2 categories columns will be mandatory and pre-filled using the existing analytics API, except for Bulk PO. If no suggestion is available, users will manually select from a dropdown.
+
+7. Prioritization of Mapped RFQ Item IDs:
+- If an RFQ item ID is mapped to a CPO item ID, the L1 & L2 categories will be prioritized.
+
+**Impact:**
+- Core Category Margin Improvement: This automation improves margins for core categories, particularly for non-CRMM orders.
+    - MRO Net GM%: ~2.82% per month
+    - MRO Sales: 98 Lacs/month
+    - MRO GMV: 3Cr per month for core categories, with no expected increase in this number.
+
+## Task 24: (EOC-3225) CRMM Automation - CRMM Customer Level Renewal Workflow
+
+**Description:**
+
+The task focuses on automating the CRMM customer renewal workflow by tagging Core/Non-Core L1 categories in the CPO details and triggering renewal reminder mailers for CRMM expiry dates at the customer level.
+
+**Scope of Work:**
+
+1. Tagging Categories:
+    - Add Core/Non-Core L1 Category next to L2 in both the CPO details sheet and the download sheet.
+
+2. Mailer Triggers:
+    - Primary Mail Trigger:
+        - Trigger a mail to city heads 7 days before the CRMM expiry date for a plant.
+        - Recipients: City heads and regional heads, with the following exceptions:
+        - For North and South: Mail to `rupesh.kharbanda@moglix.com`.
+        - For East and West: Mail to `anik.basu@moglix.com`.
+        - Ahmedabad and Pune: Mail to `ashu.garg@moglix.com`.
+        - Exclude `ashu.garg@moglix.com` and kumar.rohit@moglix.com as recipients.
+        - CC: `ruchi.garg@moglix.com` and respective CRMM plant city heads.
+    - Regional Head Approval:
+        - Mail the Regional Head based on plant-region mapping (for multiple heads, any one can approve).
+        - Mail to be triggered 7 days before the expiry, with a reminder on the expiry date.
+        - Only the Regional Head can approve.
+    - Reminder Mail Trigger:
+        - A reminder will be sent at 6 AM on the day of expiry if no action has been taken (approval or rejection).
+
+3. Userflow for Mailer:
+    - If a company has multiple plants and a CRMM expiry is approaching for one plant, the mail will include a summary of all CRMM plant expiry dates for the customer.
+    - Extend validity only for plants expiring within the next 90 days, with all plants receiving the same expiry date (3 months from the first expiring plant if approved).
+
+4. Approval/Rejection:
+    - Users can Accept/Reject through a CTA in the mail. Upon approval, the CRMM validity dates will be automatically updated in the account service for the specified plant IDs.
+
+5. Mail Content:
+    - Subject Line (Initial Mail): [Review and Extend] CRMM business for <customer name> <company ID>
+    - Subject Line (Reminder Mail): [Expiring Today] Approve CRMM business for <customer name> <company ID>
+    - The mail body remains unchanged between the original and reminder mail.
+
+**Design:** The design will follow the Core Category approval EDM with the City Head Email ID added below the plant name.
+
+**Data Source:** The mailer data will be fetched from analytics, and Tanya has already shared the details.
+
+**Impact:** Streamlines the CRMM renewal process, automates reminders, and ensures timely approval for expiring plants, reducing manual intervention and improving efficiency.
+
+## Task 25: (EOC-3152) Allow Category Update in Enquiry Details Sheet
+
+**Description:** The task involves enabling updates to the L1 and L2 categories in the Enquiry Details Sheet when no category suggestions are provided by the Analytics API, even if the enquiry type and customer POC are blank.
+
+**Scope of Work:**
+
+- Allow users to manually update L1 and L2 categories in the Enquiry Details Sheet when no suggestions are available from the Analytics API.
+- This functionality will apply even if the enquiry type and customer POC fields are blank.
+
+**Impact:** Enables flexibility for users to manually assign categories, improving data accuracy and ensuring categories are updated even in the absence of automated suggestions.
+
+## Task 26: (EOC-3192) Introduce VMI/JIT Tagging & Edit CPO Number
+
+**Description:**
+
+The task involves adding VMI/JIT tagging in various CPO-related workflows and introducing an editable CPO number option for email confirmation cases.
+
+**Scope of Work:**
+
+1. VMI/JIT Tagging:
+    - CPO Punching (Header Tab):
+        - Introduce an Inventory Type field with two values: VMI and JIT.
+        - If VMI is selected, an additional dropdown will appear to select the VMI Owner: Moglix, Supplier, Customer.
+        - If VMI with Customer ownership is selected, further options to select Customer Plant ID and VMI 60, 180 dropdown will appear.
+        - In the CPO Details section, a new column titled Inventory Type will be added with values: VMI - Moglix, VMI - Supplier, VMI - Customer, or JIT.
+        - Pass the selected values to SalesOps for further consumption.
+        - If the plant ID is internal, JIT will be disabled, and VMI will be the default selection.
+2. Editable CPO Number (Email Confirmation):
+   - In Punch PO > Header, add a checkbox titled Email Confirmation next to the CPO Number field.
+   - If the Email Confirmation checkbox is selected, the CPO Number field becomes optional (it may or may not be available).
+   - For previously created POs where Email Confirmation was enabled, allow users to edit the CPO number and add attachments.
+3. UI Design:
+- Implement design changes to the Punch PO, Edit PO, Cancel PO, and Cancel & Clone PO screens, as per Flow 8.
+4. Download Sheet & CPO Details Updates:
+    - Introduce a new column titled Inventory Type with possible values: VMI - Customer and JIT.
+    - Position the new column between RFQ Item ID and Allocated Inventory.
+
+**Impact:**
+
+Improves inventory management by allowing VMI/JIT tagging and ownership selection, while enabling greater flexibility in handling email confirmation cases by allowing edits to CPO numbers and adding attachments. This reduces manual errors and enhances the PO workflow.
+
+## Task 27: (EOC-3147) Introduce Bulk Upload as a Feature in CPO Details Screen
+
+**Description:**
+
+The task involves enhancing the existing bulk OMT remarks template by adding new columns and renaming the template to CPO Bulk Upload Template.
+
+**Scope of Work:**
+
+1. New Columns for Bulk Upload:
+    - Supplier ID
+    - Final TP/Unit
+    - Lead Time
+    - Plant ID
+    - CPO No.
+    - Item ID (mandatory for non-HZL)
+    - Line No. (mandatory for HZL; Item ID optional)
+    - CPN (mandatory for HZL)
+    - Pickup Warehouse
+    - Delivery Type
+    - OMT Status
+    - OMT Bucket
+    - OMT Remark
+    - Supplier Follow-up Date (mm/dd/yyyy)
+    - Note: Based on the Supplier ID, fill in Supplier Name and Supplier Credit Terms.
+
+2. Template Validations:
+    - For Team Kohinoor, upload data by checking the combination of CPO No + Plant ID + Line Number and update line items in the CPO details.
+    - For other customers, update details in the CPO details sheet based on Item ID.
+    - If any data is present against a line number and new data is uploaded in the template, it will override the existing data, ensuring the Supplier ID is active.
+    - Ignore any blank fields in the template during upload.
+3. User Guidance:
+    - Attach the file that the HZL CS executive receives from the customer, which will serve as a guide for filling data in the new template.
+
+**Impact:**
+
+Streamlining the bulk upload process improves efficiency in managing CPO details, reduces manual entry errors, and enhances data accuracy by standardizing the upload format.
+
+## Task 28: (EOC-3173) Remove Plants Group Field from CPN Creation (Product Upload) Workflow
+
+**Description:**
+
+The task involves removing the Plants Group column from the CPN creation template and backend due to redundancy and user confusion.
+
+**Scope of Work:**
+
+1. Remove Column:
+    - Eliminate the Plants Group column from the CPN creation template.
+    - Ensure the column is also removed from the backend.
+2. Validation During Upload:
+    - Implement validation to ensure that the Plants Group column does not exist in the upload process.
+    - If the column is included, generate an error report stating: "Incorrect template used - remove Plants Group column."
+
+**Impact:**
+
+This change simplifies the CPN creation process, reduces user confusion, and ensures a more streamlined workflow by eliminating unnecessary fields.
+
+## Task 29: (EOC-3187) Add Cancel and Clone Reasons at Order and Item Level
+
+**Description:**
+
+The task is to introduce cancel and cancel-and-clone reasons at both the order and item levels.
+
+**Scope of Work:**
+
+1. User Workflow Enhancements:
+    - When clicking Cancel or Clone PO from the PO listing, a modal will open for confirmation with Yes and No CTAs.
+    - Enhance this modal to include a dropdown for cancel and clone reasons with checkboxes for multi-select, including the following options:
+        - Change in SP/Unit
+        - Change in HSN
+        - Change in Quantity
+        - Manual Error during Punching
+        - Others (with remarks field)
+2. Consistency Across Features:
+    - The same dropdown with reasons will appear for both Cancel and Clone PO actions and for Cancel and Clone Line Item actions.
+3. Backend Storage:
+    - Save the selected reasons in the backend at the CPO item ID level.
+4. CPO Details Screen:
+    - In the revamped CPO Details screen, under the Cancel and Cloned tab, display the cloned reasons in the listing and include them in the download dump under a new column titled "Cloned Reason."
+
+**Impact:**
+
+This enhancement allows for better tracking of reasons behind cancellations and clones, improving accountability and data accuracy while providing valuable insights into order management processes.
+
+## Task 30: (EOC-3175) Improve Search by Quotation No. in Enquiry Details Screen
+
+**Description:**
+
+The task involves improving the handling and search functionality for the Quotation Number in the Enquiry Details screen.
+
+**Scope of Work:**
+
+- Quotation Number Storage:
+    - Save the Quotation Number without any prefix (i.e., no alphabets) and display this format in the Enquiry Details screen and the download sheet.
+- Global Search Enhancement:
+    - Introduce a global search feature for Quotation Number in a floating search bar.
+- Column Filter Functionality:
+    - Allow users to search using the column filter of the Quotation Number column by entering numbers only. For example, entering 240013180 should return results for enquiries matching that item.
+- Data Migration:
+    - Ensure that quotations with numbers from January 2023 onwards are searchable across downloads, searches, and listings.
+
+**Impact:**
+
+This enhancement improves the usability and efficiency of the Enquiry Details screen by providing a clearer and more effective search functionality, facilitating easier access to relevant quotations.
+
+## Task 31: (EOC-3173) Remove Plants Group Field from CPN Creation (Product Upload) Workflow
+
+**Description:**
+
+The task is to eliminate the Plants Group column from the CPN creation template and backend due to its redundancy and the confusion it causes for users.
+
+**Scope of Work:**
+
+- Remove Column:
+    - Eliminate the Plants Group column from the CPN creation template.
+    - Ensure that this column is also removed from the backend.
+- Validation During Upload:
+    - Implement validation to ensure the Plants Group column does not appear in the upload process.
+    - If the column is included, generate an error report stating: "Incorrect template used - remove Plants Group column."
+
+**Impact:**
+
+This change simplifies the CPN creation process, reduces user confusion, and ensures a more streamlined workflow by eliminating unnecessary fields.
+
+## Task 32: (EOC-3074) Need Report of Productivity Dashboard on Date Basis/Weekly/MTD
+
+**Description:**
+
+The task is to create a report for the productivity dashboard using the specified column format in the attached template.
+
+**Scope of Work:**
+
+- Report Format:
+    - Use the attached Productivity Dashboard Report template for structuring the report.
+- Frequency of Reports:
+    - Monthly Report:
+        - Generate the report on the 1st of every month with data from the previous month and send it to the product team (Arpita and Ruchi).
+    - Simulation Report:
+        - Before the productivity dashboard goes live, run a simulation on production data to generate productivity metrics for the week of 28th Dec - format.
+- Download Functionality:
+    - Introduce a Download CTA inside the Productivity Widget for the available reporting frequency.
+
+**Impact:**
+
+This task enhances the reporting capabilities of the productivity dashboard, ensuring timely and structured communication of productivity metrics to relevant stakeholders.
+
+## Task 33: (EOC-3293) Allow New Line Item Addition in Open PO for HMCL
+
+**Description:**
+
+The task involves enabling the addition of new line items to Open POs specifically for HMCL plants, with considerations for validity dates and uniqueness of CPNs.
+
+**Scope of Work:**
+
+- User Workflow:
+    - In the CPO Listing, when a user clicks on the three dots (⋮) and selects Edit PO, an option to add a new line item should be presented.
+    - Users should be allowed to add new line items only while the validity date is active.
+    - After the expiry date, the CPO will automatically close, preventing any new line item additions.
+- Validation for New Line Items:
+    - Ensure that the CPN being added is new and not already present in the Open PO. Only unique CPN line items should exist.
+- Limitation:
+    - This feature is applicable only for the Edit PO functionality.
+
+**Impact:**
+
+This enhancement allows for flexibility in managing Open POs for HMCL plants, ensuring that users can add necessary line items while maintaining data integrity through CPN uniqueness.
+
+## Task 34: (EOC-3269) Introduce Reports Section in Navigation in EOC
+
+**Description:**
+
+The task is to add a Reports section to the navigation menu in EOC to enhance access to various reporting features.
+
+**Scope of Work:**
+
+- Navigation Structure:
+    - Position the Reports section between Others and Account Service in the L1 navigation.
+    - L1: Reports
+        - L2:
+        - Enquiry Pendency - Phase 1
+        - CPO Pendency
+        - ARC Accounts Performance - Phase 1
+        - CB & ES Mapping List
+        - TAT Measurement
+- User Workflow:
+    - Enquiry Pendency Report:
+        - Visible only to managers (where account service manager flag = true).
+        - Clicking this report will open a new screen displaying a list of email IDs of employees.
+        - Refer to Jira EOC-3089 for detailed functionality of this screen.
+    - CPO Pendency Report:
+        - Also visible only to managers (where account service manager flag = true).
+    - ARC Accounts Performance:
+        - Three tabs will be available upon clicking the ARC Accounts Performance section.
+        - Default data will display for the last 3 months, last 6 months, last 9 months, and last 12 months.
+    - CB & ES Mapping List:
+        - Show the current mapping of CB & ES with an option to download based on dates.
+        - Preview of 10 records will be visible upfront.
+
+**Impact:**
+
+Introducing the Reports section improves navigation and accessibility to critical reports, enabling managers to make informed decisions based on real-time data and enhancing overall operational efficiency.
+
+## Task 35: (EOC-3295) PO Punched on Email Confirmation: PO Number Update and PO Copy Upload
+
+Description:
+
+The task is to tag POs received through email and allow users to update the PO number and upload the PO copy once received from the customer.
+
+**Scope of Work:**
+
+- User Interface Enhancements:
+    - When users attempt to punch a PO, a checkbox labeled “No PO PDF, only email confirmation received” will appear under the header tab.
+    - Once the checkbox is selected, the CPO number will auto-fill with the current date and time stamp, formatted as “Email confirmation DD/MM/YYYY HH.” Users can modify this number if needed.
+- Backend Tagging:
+    - EOC will store a separate tag for POs punched based on email confirmation in the backend, ensuring tracking for reporting purposes, even if a CPO number is received.
+- CPO Number Update:
+    - After punching the CPO, users can update the CPO number and upload the PO copy received from the customer until the status is Delivered with POD.
+    Upon updating in EOC, the CPO number will be shared with SalesOps, who will then send the details to EMS to update the invoice.
+- Constraints on PO Number Update:
+    - The system will not allow the update of the PO number for invoices where a Credit Note (CN) has been created.
+    - If a CN is created for the full quantity, updating the PO number and uploading the PO copy will not be allowed in EOC.
+    - If the total CNs are for a partial quantity, users can update the PO number and upload the PO copy, but invoices for CNs will not have the PO number generated. The remaining invoices pending will still include the PO number.
+- Soft Alerts:
+    - If users attempt to update the CPO number and PO PDF after the status is Delivered with POD, a soft alert will be shown: “We are saving CPO number and PO PDF, but this information will not be passed to the Customer Invoice.”
+
+**Impact:**
+
+This enhancement allows for greater flexibility in managing POs received via email, streamlining the process of updating PO details and ensuring accurate invoicing while maintaining necessary checks and validations.
+
+## Task 36: (EOC-3312) PAAS CPO-SPO Creation Automation
+
+**Description:**
+
+The task is to automate the creation process from CPO to SPO for non-integrated customers in the PAAS business, enhancing efficiency and reducing manual intervention.
+
+**Why?**
+
+Currently, in the PAAS business, when a user receives a CPO from customers, the corresponding SPO details are also available. However, the existing system requires manual and sequential processing, which is time-consuming.
+
+**What?**
+
+To address this issue, we aim to implement end-to-end automation from CPO to SPO for non-integrated customers.
+  - Phase 1: Automation will extend to supplier assignment. After that, users can check and send the SPO.
+  - Phase 2: Based on feedback, SPO will be released automatically.
+
+**User Workflow:**
+
+- Tagging and Validation:
+    - Add "PAAS" in CPO item type to identify PAAS transactions, restricting tagging based on customer, plant, validity date, and authorized users.
+    - In case of manual punching, show a UI validation error if the user selects a PAAS transaction but is not authorized or if the customer is not a customer
+- Upload Functionality:
+    - Introduce a CTA under CPO labeled “Bulk Punching,” which will lead to “CPO-SPO Creation.”
+    - A new screen will allow users to upload details of CPO & SPO along with PO copies based on PO number.
+    - Listing fields will include:
+        - File Name
+        - Date
+        - Status
+        - Result
+- Dynamic Status Indicators:
+    - Statuses to be shown include:
+        - Success
+        - Failed
+        - In-Progress
+        - Partial Success
+- Preprocessing Workflow:
+    - Upon submission, EOC will preprocess the file to check for mandatory fields for CPO and SPO creation based on existing validations.
+    - If preprocessing fails for any line item, the status will change to Failed.
+    - If all items pass preprocessing, the status will change to Success or Partial Success if supplier assignment fails for any item.
+- Points to Note:
+    - All existing validations and functionalities will remain operational.
+    - The system must handle multiple suppliers for a single item.
+    - Manual Punch CPO will function as is, with the addition of the PAAS transaction type.
+
+**Impact:**
+
+The PAAS CPO-SPO creation automation increases efficiency and reduces processing time by eliminating manual tasks, minimizes errors, enhances customer satisfaction, improves tracking and reporting, allows for scalability, ensures compliance, and optimizes resource allocation.
+
+## Task 37: (EOC-3337) LD Applicability at Line Needs to be Added for PAAS Customers While Punching
+
+**Description:**
+
+The task is to introduce the "LD Applicable (Y/N)" field for PAAS customers during the punching process, based on tagging in account service and validity dates.
+
+**Scope of Work:**
+
+- Field Introduction:
+    - For non-integrated PAAS customers, display the "LD Applicable (Y/N)" field during the punching process, ensuring it reflects the tagging in account service and the validity date.
+- Field Validation:
+    - Implement validation to ensure that only "Y" (Yes) or "N" (No) can be entered in the "LD Applicable" field.
+- Screen Applicability:
+    - This change will be applicable to all relevant screens involved in punching and editing processes.
+
+**Impact:**
+
+This enhancement allows users to easily determine the applicability of LD for PAAS customers, improving accuracy in order processing and ensuring compliance with business rules.
+
+## Task 38: (EOC-3351) CM* Approval Visibility Impacted Due to Access of Teams to Approvers
+
+**Description:**
+
+The task addresses the visibility issues related to CM* approval requests due to approvers not being aware of newly created teams.
+
+**Problem Statement:**
+
+- When a new team is established, approvers as per the Delegation of Authority (DOA) for CM* are often unaware of these new teams. Consequently, may teams leading to situations where approval requests for CM* are raised and remain pending without the approver's knowledge.
+- This lack of visibility results in delays, manual coordination efforts, and potential escalations.
+
+**Proposed Solution:**
+
+- Enhance the Pending CM Approval screen* to display a complete list of pending requests associated with each username upfront.
+- This visibility allows approvers to see all pending approvals immediately without the need to filter by team.
+- If necessary, approvers can still use a team filter to narrow down the list to specific teams, although the complete list will be visible by default.
+
+**Impact:**
+
+This solution improves the visibility of CM* approval requests, facilitates timely approvals, and reduces manual coordination efforts, thereby enhancing overall efficiency in the approval process.
+
+## Task 39: (EOC-3354) PaaS PR Details
+
+**Description:**
+
+Currently, in the PaaS customer environment, the entire enquiry/PR process is managed by Moglix on the customer's ERP system. There is no systemic mechanism to track all such PRs, leading the team to manually download and manage Excel sheets. To provide complete actionable visibility in one place, it is necessary to incorporate PR tracking in EOC.
+
+**Requirements:**
+
+- PaaS Header:
+    - Add a “PaaS” header at the top of the relevant pages, visible only to users with the role access “PaaS PR Punching.”
+- Sub-Headers under the PaaS Header:
+    - PR Summary
+    - PR Details
+    - PR Dashboard
+- PR Summary Page:
+    - Upon clicking PR Summary, users will navigate to the PR Summary page (design referenced as PaaS Summary).
+    - A “Download Template” button will be available on the top right (ignore any specific text mentioned in the design).
+    - After filling out the required fields in the downloaded template, users can click on “Upload Template.”
+- Download Template Format:
+    - Refer to the sheet “Download Upload Template,” which includes a list of validations for fields (see PR Dashboard Discussion.xlsx).
+    - Upon uploading, the line items reflecting the uploaded file will appear (latest items first).
+- Status Indicators:
+    - The status of the file will initially be “Upload in Progress.”
+    - If all validations pass, the status will change to “Successfully Uploaded,” and an output file will be generated.
+    - If any validations fail, the status will change to “Validation Failed,” accompanied by a failure output file.
+- Output Files:
+    - For “Successfully Uploaded” Status:
+        - The output file will include PR ID and PR Item ID created against uploaded items.
+    - For “Validation Failed” Status:
+        - The output file will include the reasons for failure for respective line items.
+- Search and Filter Functionality:
+    - Search on “PR Summary”:
+        - Search functionality will work based on the file name.
+    - Filters on “PR Summary”:
+        - Filters will include status options (“Upload in Progress,” “Successfully Uploaded,” “Validation Failed”) and date of creation/upload.
+- PR Details View:
+    - Once the file is “Successfully Uploaded,” items will start reflecting in the PR Details view.
+    - Search and Filters on PR Details Sheet:
+        - Floating Search: PR ID, PR Item ID, CPN
+        - Filters with multiple selection options: Customer Name, Broad Stage, PR Item Creation Date, PR Type, PR Aging Bucket, Sourcer 1, Sourcer 2.
+- Field Management:
+    - First 10 columns (up to short text) will remain frozen.
+    - Make/Brand, L1 & L2 Category will be fetched from the analytics API. If no input is received, users can update these details from a valid list already used by EOC.
+- Download PR Dump:
+    - Add a “Download PR Dump” CTA similar to the “CPO Dump Download.”
+- Role-Based Management:
+    - Role-based deletion/closure of line items will be allowed. Users can select checkboxes and use the “Close Item” CTA to delete items.
+    - Users will only see their own PRs, while managers will have a view of all users’ PRs.
+
+**Impact:**
+
+Incorporating the PR tracking system into EOC provides a centralized and systematic approach to manage PaaS customer PRs, improving visibility, reducing manual errors, and enhancing overall workflow efficiency.
+
+## Task 40: (EOC-3261) Make EOC Web-Responsive for Login
+
+**Description:**
+
+The task is to ensure that the EOC platform is web-responsive, enabling users to access the CM approval screen and account service from mobile devices.
+
+**Scope of Work:**
+
+- Responsive Design Implementation:
+    - Update the EOC web interface to be fully responsive across various screen sizes, focusing on mobile usability.
+    - Ensure that the layout, buttons, and input fields adapt seamlessly to different mobile resolutions.
+- Testing Across Devices:
+    - Conduct thorough testing on multiple mobile devices and browsers to ensure functionality and usability.
+    - Verify that all features, particularly the CM approval screen and account service, are accessible and user-friendly on mobile.
+- User Experience Enhancements:
+    - Optimize touch interactions for mobile users, ensuring that buttons are adequately sized and easily accessible.
+    - Improve navigation elements to be mobile-friendly, providing a smooth user experience.
+
+**Impact:**
+
+Making the EOC platform web-responsive enhances accessibility for users on mobile devices, improving their ability to manage CM approvals and access account services on the go, ultimately leading to increased efficiency and user satisfaction.
+
+## Task 41: (EOC-3421) Bulk Packaging Invoicing PO Copy Upload Functionality Enhancement
+
+**Description:**
+
+The task involves enhancing the PO copy upload functionality in the bulk packaging invoicing workflow to improve validation and automation processes.
+
+**Scope of Work:**
+
+- Upload Restrictions:
+    - Implement restrictions on PO copy uploads to ensure that automation is not initiated until validation is successful.
+    - If validation fails for any line item, the PO copy upload CTA will not be visible for validated line items.
+- Automation Initiation:
+    - Once the PO copy is successfully uploaded, automation processes will be initiated.
+- UI Changes:
+    - Hide the CTA for “Bulk PO Order Mapping,” as this customer use case is now redundant.
+    - Move the “Upload PO Copy” CTA to the top above the actions section, ensuring that the action “Upload PO Copy to Proceed” is clearly visible.
+- Single Customer Data Upload:
+    - Ensure that only single customer data uploads are allowed.
+    - If bulk POs are uploaded for both customers (Zepto with Group ID 12784 and Kiranakart with Group ID 10956), provide users with the option to upload separate files for each customer.
+- Handling Multiple Customer Data:
+    - In case multiple customer data is uploaded that includes both Zepto and Kiranakart, users will need to upload a PO copy against the respective PO numbers.
+- Visibility of Uploaded Items:
+    - If the PO copy has not yet been uploaded, the latest uploaded items will still be visible in the Bulk PO Creation screen, allowing users to upload the necessary PO copies.
+- Design Reference:
+    - Flow 14: Please refer to the attached flow diagram for visual guidance on the UI enhancements and functionality.
+
+**Impact:**
+
+This enhancement improves the efficiency and accuracy of the bulk packaging invoicing process by ensuring that only valid PO copies are uploaded, thereby streamlining automation and reducing errors in the workflow.
+
+## Task 42: (EOC-3456) Catalog Screen Enhancement
+
+**Description:**
+
+The task involves several enhancements to the Catalog Screen to improve usability, reduce mapping time, and provide better visibility of important information.
+
+**Enhancements:**
+
+- Brand Filter Addition:
+    - Feature: Add a Brand Filter at the top of the page, next to the “Need to Work” section.
+    - Impact: This will reduce junk MSN by 5% of the overall mapping count (approximately 22K/month) and decrease mapping turnaround time (TAT) by 45 minutes to 1 hour.
+- Add “Is ARC” Column:
+    - Feature: Introduce an "Is ARC" column in the catalog view next to the CPN column. The team must check this status for all “SA” orders before mapping.
+    - Impact: This enhancement will save approximately 1 minute per resource for each SA order line item, with an estimated SA line item count of 9,000 per month.
+- Rewiring Logic of Catalog Status Filter:
+    - Feature: Modify the Catalog Status Filter so that selecting any value will display only records where MSN is not assigned.
+    - New Filter: Add an “MSN Assigned” filter before the Catalog Status filter, with a default setting of No to focus on items where MSN is not assigned.
+    - Impact: This adjustment will save approximately 15 seconds of load time each time the filter is applied, with around 25-30 instances per day per user. For a total of 4 users, the overall saving equates to 12.5 hours per month.
+- Audit Feature:
+    - Feature: Display an Audit Button in the catalog view for the "Remarks from Business" column, similar to the visibility on the CPO item sheet. This feature allows quicker access to audit logs without needing to navigate to the item sheet.
+    - Impact: Users will be able to quickly see the sourcer name associated with the MSN shared, improving accountability and tracking.
+
+**Overall Impact:**
+
+These enhancements will streamline the catalog management process, reduce time spent on mapping and searching for information, and improve the overall efficiency of the team handling catalog entries. By implementing these features, the organization can expect a significant boost in productivity and a reduction in manual errors.
+
+## Task 43: (EOC-3461) PaaS PR Dashboard
+
+**Description:**
+
+The PR Pendency Dashboard will provide a comprehensive view of PR pendencies across various stages for PaaS customers.
+
+- Definition of PR Pendency: The following broad statuses will be considered as PR pendency:
+    - PR Received
+    - RFQ Sent to Supplier
+    - Supplier Follow-up Done
+    - Quote Received – Partial
+    - Quote Received – Complete
+    - TR - Sent for Approval
+    - TR - Under Clarification
+    - TR – Approved
+    - Comparison Sheet
+    - Negotiation / Auction
+    - NFA / Term Sheet
+
+**Dashboard Features:**
+
+- User Views:
+    - Manager View: Allows selection of multiple sourcers.
+    - Sourcer View: Displays individual sourcer as default.
+- Filters:
+    - Sourcers/Buyers: Managers can select multiple sourcers; individual sourcers are set by default.
+    - Customers: Filter based on customers in pendency.
+    - Categories: Filter based on categories in pendency.
+    - Duration: Filter based on the PR received date.
+    - Buttons: Apply and Reset buttons will be available beside the filters.
+- Data Display:
+    - The total count of “All PR Pending” and “Total Sourcers” will be displayed below the filters.
+    - The pendency graph and its data will adjust based on the selected filters.
+- Pendency View:
+- The left section under “All PR Pending” will show PR pendency against each sourcer arranged in descending order. Clicking on any PR pendency count will navigate the user to the PR sheet with filtered data.
+- Graphs and Visualizations:
+    - Graph 1: PR against customers displayed in a bar chart, showing customer-wise PR pendency. Customers with zero pendency will not be displayed. over a reveals counts; double-clicking navigates to the PR sheet.
+    - Graph 2: PR pendency by type displayed in a pie chart. Hovering reveals counts; double-clicking navigates to the PR sheet with filtered data.
+    - Graph 3: PR Deadline Crossed cases in a bar chart, showing counts and allowing navigation to the PR sheet for specific filters based on overdue status.
+    - Graph 4: PR pendency breakdown by aging buckets displayed in a pie chart, with navigation available on double-clicking.
+    - Graph 5: PR pendency by broad stage with counts and average aging shown in a horizontal bar chart, enabling navigation to the PR sheet.
+    - Graph 6: PR pendency categories count displayed as hollow pies, allowing navigation to the PR sheet on clicking.
+    - Graph 7: L1 and L2 categories with respective PR pendency counts, allowing navigation to the PR sheet on clicking.
+    - Graph 8: Brand-wise PR pendency count, providing navigation to the PR sheet with necessary filters.
+- Implementation:
+    - Ensure the dashboard is user-friendly and provides actionable insights.
+    - Make sure that each element is interconnected, allowing users to easily navigate from visual representations to detailed data.
+
+**Impact:**
+
+The PaaS PR Dashboard will enhance visibility into the PR pendency process, allowing users to track, manage, and act on PR requests efficiently. It reduces manual effort, improves accountability, and helps identify bottlenecks in the PR workflow, ultimately leading to better decision-making and operational efficiency.
+
+## Task 44: (EOC-3409) ARC Report Enhancement
+
+**Description:**
+
+The task involves updating the ARC report based on inputs received from Ruchi to enhance the visibility and usability of the report.
+
+**Changes Required:**
+
+- Report Overview:
+    - The new report will incorporate ARC type and count from the summary section.
+- Renaming Fields:
+    - Change the label "GM %" to "Sales GM %" to better reflect the content.
+- Hide Unnecessary Data:
+    - Total GMV and CM1% will be hidden in the report to streamline the information presented.
+- Expired Tab Adjustments:
+    - The validity from and to fields in the Expired Tab will be fetched from the EOC summary, ensuring that users see the correct validity dates.
+- Download Feature:
+    - Implement a Download Feature for both the ARC and Expired tabs, allowing users to export data as needed.
+- Tab Management:
+    - Discard the 2nd tab from the report to simplify the overall structure.
+
+**Impact:**
+
+These enhancements will improve the clarity and functionality of the ARC report, providing users with essential data while eliminating unnecessary information, thereby facilitating better decision-making and reporting efficiency.
+
+## Task 45: (EOC-3483) CPO Item Type "PAAS" Visibility Control
+
+**Description:**
+
+The task is to ensure that the CPO item type "PAAS" is not visible to users who do not have the necessary role access to perform PAAS transactions.
+
+**Requirements:**
+
+- Role-Based Access Control:
+    - Users must have the role “PAAS CPO Punching” to view and interact with the CPO item type "PAAS."
+- Visibility Logic:
+    - Implement logic to hide the "PAAS" item type from users without the required role access. If a user attempts to access the CPO creation screen without the appropriate permissions, the option for "PAAS" should not be displayed.
+- Reference Information:
+    - Refer to Jira EOC-3312: PAAS CPO-SPO Creation Automation for details on the implementation requirements.
+- Role Definition:
+    - Collaborate with @Rishabh Verma to define the role name “PAAS CPO Punching” and its purpose clearly, ensuring that users understand the access rights and functionalities associated with this role.
+
+**Impact:**
+
+This enhancement will enhance security and user experience by ensuring that only authorized users can view and interact with the PAAS CPO item type, thereby preventing unauthorized access and potential errors in order processing.
+
+## Task 46: (EOC-3487) Released SA Enhancement
+
+**Description:**
+
+This task involves enhancing the functionality of Released SA (Service Agreement) in response to the dynamic needs of Brake India regarding Open POs/SA received from customers.
+
+**Problem Statement**
+
+Brake India frequently updates its Open POs/SA, necessitating the following functionalities:
+  - Addition of Line Items: Customers may want to add new items to their existing SAs.
+  - Adjustment of Quantity: Customers may need to increase or decrease the quantities specified in the SA.
+
+**EOC Scope of Work**
+
+- Addition of Items:
+    - Implement functionality that allows users to add items to released SAs. This feature should enable seamless updates to existing agreements.
+- Updating Quantity:
+    - Enable users to update the quantities in the released SA based on customer requests.
+    - For cases where the quantity is being reduced, ensure that the maximum reduction is allowed only for pending quantities, specifically for those where delivery schedule has not yet been created.
+
+**Impact:**
+
+These enhancements will improve flexibility and responsiveness to customer needs, ensuring that Brake India can effectively manage and update their service agreements in real time, ultimately leading to improved customer satisfaction and operational efficiency.
+
+## Task 47: (EOC-3502) Enquiry Pendency - Productivity Dashboard for Managers
+
+**Description:**
+
+This task involves updating the Enquiry Pendency section in the Productivity Dashboard for Managers to improve visibility, segregation, and flow monitoring based on Sourcer POC and Customer POC status.
+
+**Change 1: Pendency Segregation by Status**
+
+- Current Issue:
+    - Currently, pendency statuses are counted under both Sourcer POC and Customer POC, leading to inflated numbers.
+- Requirement:
+    - Modify the total pendency count and percentage based on specific statuses, ensuring that a single item is only counted in either Sourcer POC or Customer POC, not both.
+    - Customer POC Pendency: Include the following statuses:
+        - CM Approved
+        - Clarification
+        - Quotation Received From Supplier
+    - Sourcer POC Pendency: Include the following statuses:
+        - Created
+        - eRFQ Response Received-Read
+        - eRFQ Response Received-Unread
+        - Sent to Supplier
+        - Working
+    - Pendency Count Formula:
+        - Sourcer POC Pendency = Created + eRFQ Response Received (Read/Unread) + Sent to Supplier + Working.
+        - % Pendency = Total Pendency / Grand Total.
+
+**Change 2: Status Representation**
+
+- Requirement: The status mentioned on the UI should clearly indicate whether it belongs to Sourcing POC or Customer POC.
+    - Design Changes:
+        - Add hover text:
+            - For Customer POC: “Status belongs to Customer POC Pendency.”
+            - For Sourcer POC: “Status belongs to Sourcer POC Pendency.”
+
+**Change 3: Grand Total Highlighting**
+
+- Requirement: Based on the Grand Total of pendencies, highlight the Grand Total, Total Pendency, and % Pendency in different colors based on the thresholds below:
+    - Green: Grand Total > 350 (High Flow)
+    - Yellow: Grand Total between >250 and <=350 (Medium Flow)
+    - Red: Grand Total < 250 (Low Flow)
+
+**Change 4: Sorting Functionality**
+
+- Requirement: Enable sorting functionality on all headers in the Productivity Dashboard to allow users to sort by the data they find most relevant.
+
+**Impact:**
+
+These changes will improve the accuracy of pendency tracking, provide clear representation of whether the pendency is related to a Sourcer or Customer POC, and give managers a better understanding of workflow status through the use of color-coded flows. Additionally, the sorting feature will enhance usability, enabling managers to quickly access the most critical data points.
+
+## Task 48: (EOC-3510) Introduction of "Direct CPO" CPO Item Type
+
+**Problem Statement:**
+
+In the current system, CPO types (e.g., RFQ, ARC, CRMM) are restrictive and require an RFQ Item ID, even when customers send CPOs directly without prior quotes. This leads to unnecessary RFQ punching and inflates the RFQ conversion metric.
+
+**Solution:**
+
+Introduce a new CPO Item Type called “Direct CPO”, which allows processing CPOs without an RFQ Item ID.
+
+**Key Features of the "Direct CPO" Type:**
+
+- No RFQ ID Required:
+    - When a CPO is received from a customer directly, there will be no need to provide an RFQ ID or RFQ Item ID.
+- Order Creation and Approval:
+    - After creating and approving the draft, the Direct CPO will remain in an unreleased state.
+    - When users attempt to mark the Direct CPO as released, they will see an input screen to capture necessary sourcing details for SPO punching (Supplier ID, - Payment Terms, Delivery Type, etc.).
+    - Once all required inputs are provided and marked "Released," the system will:
+        - Check if CM*% approval is needed.
+        - If no approval is required, the system will auto-approve and release the CPO.
+        - If approval is required, an email will be sent to the approver, with a status update to *“CM% Pending Approval”**.
+- CM% Approval Process:*
+    - The CM% approval* process will follow the existing RFQ DOA, using the Order ID instead of the RFQ ID.
+    - Users can update supplier details and re-trigger DOA if needed.
+- Additional Features:
+    - New CPO Item Type: Prevent multiple item-type selection when a Direct CPO is received.
+    - Status Tracking: The CPO sheet will include a new CM Approval Status column (values: Approved, Rejected, Pending from Approver, Auto Approved).
+    - Downloadable Reports: All new columns (e.g., CM Approval status, Approver/Rejector) will be included in the download dump.
+- UI Changes:
+    - A new screen will be created to handle CM approvals for Direct CPOs, repurposing the existing RFQ approval screen to include CPO tagging.
+
+**Key Considerations:**
+
+- Open vs. Closed PO:
+    - Open POs cannot be classified as Direct CPO. This type is only valid for Closed POs.
+- Cancellation Rules:
+    - Cancellation of PO/item is allowed until MRN DONE.
+    - If the updated CPO CM*% is >=0 after removing a cancelled item, cancellation will be allowed.
+    - Restrict cancellation if CM*% becomes negative.
+- Excluded Functionalities:
+    - Direct CPO functionality will not be valid for Service Agreements (SAs) and Repeat PO functionality.
+- System Integration:
+        - SalesOps: Check and plan for potential impact.
+        - Power BI/Analytics: Ensure proper tagging for reporting.
+**Risks:**
+
+- Cancellation of Items:
+    - Risk of cancellation in cases where a high-margin CPO-item is cancelled after CM*% approval at the CPO level.
+- Supplier Identification:
+    - Users must find suppliers for all items before sending SPOs, otherwise the process cannot be completed.
+
+**Impact:**
+
+This enhancement reduces manual effort, improves data accuracy by eliminating unnecessary RFQ entries, and introduces flexibility for processing direct customer orders
+
+## Task 49: (EOC-3528) UAT Feedbacks - PR Dashboard
+
+**Description:**
+
+The task is to implement feedback from UAT (User Acceptance Testing) for the PR Dashboard to improve functionality and data accuracy.
+
+**Changes Required:**
+
+- Round Off Average PR Aging Days:
+    - Implement rounding of the Average PR Aging Days to the nearest whole number to enhance clarity and precision in reporting.
+- Add PR Type Filter:
+    - Introduce a PR Type Filter to the PR Dashboard to allow users to filter the data based on the specific types of PRs (e.g., RFQ, Direct, etc.).
+
+**Impact:**
+
+These enhancements will improve user experience by providing more accurate and easily interpretable data, as well as enabling better filtering options to refine PR visibility in the dashboard.
+
+## Task 50: (EOC-3537) PR Enhancement - Add PR Type Filter
+
+**Description:**
+
+This task involves enhancing the PR Dashboard by adding a PR Type Filter and incorporating the PR Number in the search functionality.
+
+**Scope of Work:**
+
+- Add PR Type Filter:
+    - Implement a new PR Type Filter in the PR Dashboard, allowing users to filter results based on the type of PR (e.g., RFQ, Direct, etc.).
+    - The filter should be positioned along with other filters like Customer, Sourcer, and Category.
+- Add PR Number in Search:
+    - Enhance the search functionality to allow users to search by PR Number.
+    - This will enable quick access to specific PRs based on their unique identifier.
+
+**Impact:**
+
+These enhancements will improve usability by providing users with more refined filtering and faster access to specific PRs, streamlining the workflow and improving overall efficiency.
+
+## Task 51: (EOC-3549) Remove Hard-Coded Roles and Move to Module Access Level
+
+**Description:**
+
+This task involves refactoring both the frontend and backend to remove hard-coded roles such as Kam2, Sourcer2, PR Manager, PaaS, etc., and shifting the role management to a more flexible Module Access Level.
+
+**Scope of Work:**
+
+- Remove Hard-Coded Roles:
+    - Identify and remove all hard-coded roles in the system (both frontend and backend).
+    - Example roles to be removed: Kam2, Sourcer2, PR Manager, PaaS.
+- Shift to Module Access Level:
+    - Move role-based access control to the Module Level, ensuring that access is determined based on module-specific permissions rather than hard-coded roles.
+    - Define and manage roles at the module level in a more dynamic and configurable way.
+- Designation-Based Access:
+    - Roles such as Kam2 and Sourcer2 should be handled based on designation levels and tied to the specific modules they need access to.
+    - Example: A Sourcer might have access to specific sourcing modules rather than being assigned a static role like Sourcer2.
+- Module Access Example:
+    - PR Manager: Instead of hard-coding a role for PR Manager, assign module access to users based on their designation or responsibilities (e.g., PR Module Access).
+    - PaaS: Move the access control for PaaS transactions to module-level access, ensuring only designated users have permission to manage PaaS-specific functions.
+
+**Impact:**
+
+- Improved Flexibility: This change will allow greater flexibility in assigning roles and access rights, making it easier to adjust permissions as organizational roles evolve.
+- Centralized Role Management: By shifting to module access levels, role management becomes more centralized and scalable, reducing the need for hard-coded permissions throughout the codebase.
+- Enhanced Security: Dynamic role management at the module level ensures that access is restricted based on specific responsibilities, reducing the risk of unauthorized access.
+- Maintainability: Moving away from hard-coded roles will simplify code maintenance and allow for more adaptable role-based access control in the future.
+
+## Task 52: (EOC-3514) Allow CDD2 Update Exceptionally
+
+**Description:**
+
+Enable users to update CDD2 beyond 1 year, up to 2 years, with role-based access.
+
+**Scope of Work:**
+
+- CDD2 Update Extension:
+    - Allow CDD2 updates up to 2 years, beyond the current 1-year limit.
+- Role-Based Access:
+    - Create a "CDD2 Update Beyond 1 Year" role to control access.
+    - Only users with this role can update CDD2 between 1-2 years.
+
+**Impact:**
+
+Provides flexibility for exceptional cases while maintaining controlled access through role-based permissions.
+
+## Task 53: (EOC-3516) Addition of Long Text for Bulk CPO/SPO Creation
+
+**Description:**
+
+In some SAP orders, long text is received and shared with SalesOps to include in the supplier PO. For non-integrated PAAS CPO punching, an optional "Additional Description" field needs to be added during Bulk CPO creation.
+
+**Scope of Work:**
+
+- Add Additional Description Field:
+    - Introduce an optional "Additional Description" field during Bulk CPO creation.
+    - This field will be reflected in the EOC CPO details sheet.
+    - The information will also be passed to SalesOps for further processing.
+
+**Impact:**
+
+- Clarity & Instructions: The detailed description ensures that suppliers understand requirements precisely, providing legal clarity and specific instructions.
+- Efficiency: Clear descriptions help avoid misunderstandings, minimizing delays and errors in fulfilling orders.
+
+## Task 54: (EOC-3550) API Taking Time to Load - SA Updating Process is Slow
+
+**Issue:**
+
+- The getProductGroup API is taking more than 10 seconds to load. When multiple MSNs are involved, the delay multiplies, causing the updateSa API to be called later, resulting in a slow overall SA updating process.
+    - Example: If there are 3 MSNs, the getProductGroup API takes 10 seconds per MSN, resulting in a total of 30 seconds before the updateSa API is triggered.
+
+**Steps to Resolve:**
+
+- Optimize getProductGroup API:
+    - Investigate and optimize the getProductGroup API to reduce the response time.
+    - Consider introducing batch processing if multiple MSNs are requested simultaneously to avoid repeated API calls.
+- Asynchronous Processing:
+    - Explore asynchronous handling for multiple MSN requests to reduce the overall delay in processing.
+    - Allow the updateSa API to be called once all required data is loaded in parallel.
+
+**Impact:**
+
+Optimizing the getProductGroup API and processing multiple MSNs asynchronously will significantly reduce the time taken for the SA updating process, improving the overall performance and user experience.
+
+## Task 55: (EOC-3486) Storage Location and Line Item Number for Brakes India
+
+
+**Problem Statement:**
+
+    - Line-item numbers need to be mentioned on the invoice based on the Purchase Order (PO) received.
+    - Plant-wise store locations need to be indicated on the invoice based on the PO received.
+
+**Solution:**
+
+1. Line-Item Number on Invoice:
+    - EOC Scope of Work:
+        - Line-item numbers must be reflected on the invoice.
+        - For Service Agreements (SA), a Sr. No. field will be added (already available during Delivery Schedule or PO punching).
+        - The Sr. No. assigned during SA creation will remain unchanged and will auto-reflect while creating Delivery Schedules (DS).
+        - Sr. No. will be passed to SalesOps/EMS for invoicing.
+        - Mandatory for Brakes India: Ensure the Sr. No. is made mandatory during the SA creation.
+2. Store Location on Invoice:
+    - Plant-wise Store Locations:
+        - Store location needs to be mentioned on the invoice for each plant. Plant-wise store location data will be provided by the user/business and stored in the Account service.
+    - New Header Field:
+        - Add a new field for "Store Location" at the header level, applicable to both SA and other PO punchings.
+        - The Search functionality should work for both Store ID and Description (similar to how supplier suggestions work).
+        - Make this field mandatory where applicable, allowing users to select from a list of store locations.
+        - The store location will be passed to SalesOps/EMS for invoicing.
+
+**Impact:**
+
+- Faster Gate Entry: By including line-item numbers and store locations on the invoice, the gate entry process will be expedited.
+- Faster Invoice Mapping: Improved invoice mapping at Brakes India's end, leading to quicker processing and fewer delays.
+
+## Task 56: (EOC-3544) Customer ETA Enhancement on EOC
+
+**Description:**
+
+This task aims to enhance the Customer ETA functionality by allowing manual updates and refining the logic used to determine the estimated time of arrival (ETA) for deliveries.
+
+**Current Logic:**
+
+    - The ETA is initially based on CDD1 (Customer Due Date 1).
+    - When CDD2 is updated, it takes precedence over CDD1.
+    - If CDD2 is surpassed, the ETA remains as CDD2 unless manually updated on EOC.
+    - Emails are triggered to the buyer, notifying them of items expected within the next 15 days.
+
+**Requirement:**
+
+- Phase 1:
+    - Manual ETA Update:
+        - Introduce a field for manual ETA updates.
+        - If manually updated, this ETA will reflect in the existing Customer ETA field and take priority over the analytics logic ETA.
+    - CDD2 Reason:
+        - Add additional reasons to a dropdown for CDD2 updates:
+            - On Hold by Customer
+            - Lead Time Item - Short CDD
+            - Backdated Order
+            - PO Specs Change (GST/HSN/Price Issues)
+            - Modification in Default Customer CDD
+            - CX Aligned Consolidation of Deliveries to Customer Location
+            - SPO Raising Constraint - Pickup Date > CDD1
+            - CRMM Order Delay
+            - Plant Blocked due to AR
+            - Customer Schedule Awaited/Delayed
+- Phase 2:
+    - Add additional columns for bulk updates:
+        - CDD2
+        - CDD2 Breach Reason
+        - Manual ETA
+        - Reason for Delay
+- Phase 3:
+    - Make the Reason for Delay mandatory when ETA exceeds the Final CDD.
+- Phase 4 (Future Consideration):
+    - Address challenges currently impacting ETA automation:
+        - STN Linkages
+        - Consolidation of Deliveries
+        - Moglix Express
+        - Supplier Deliveries In Transit Time
+        - Changing Pickup Dates
+        - Partial Deliveries
+
+**Impact:**
+
+The enhancements will improve the accuracy and reliability of ETA information, provide users with the flexibility to manually update ETAs, and ensure clear communication with customers regarding delivery timelines. This will lead to better planning and coordination for deliveries, ultimately enhancing customer satisfaction.
+
+## Task 57: (EOC-3578) PO Punching OCR
+
+**Description:**
+
+To reduce manual effort and minimize errors in punching CPOs, we will introduce OCR (Optical Character Recognition) technology. The system will read the uploaded PO copy and autofill fields based on the document contents.
+
+**Implementation Details:**
+
+- Checkbox for OCR Usage:
+    - Introduce a checkbox next to the PO copy upload field (default selected).
+    - Users can deselect the checkbox if they do not wish to use OCR.
+- Auto-Population of Fields:
+    - If the OCR is used, relevant fields will be auto-populated from the uploaded document.
+    - Users can deselect the checkbox to clear all auto-populated fields.
+- Highlighting Logic:
+    - Auto-populated fields from the document using OCR will be highlighted in Yellow.
+    - If the user modifies an auto-populated field, the color will change to Green.
+        - Yellow: Indicates fields filled without manual intervention.
+        - Green: Indicates fields filled with manual intervention.
+- OCR Application:
+    - OCR will be applicable on both header and line item screens.
+- File Interaction:
+    - Users can view, minimize, and maximize the uploaded file.
+    - Users can copy fields from the visible PDF on the screen and paste them into the required fields.
+    - An option to view the uploaded PDF in a separate tab will also be available.
+- Daily Reporting:
+    - Generate daily reports that include:
+        - PO Number
+        - Number of fields automated
+        - Number of automated fields requiring manual intervention
+    - If the checkbox is unselected, it will be considered as not automated.
+- Initiative Duration:
+    - This initiative will run for 1 month. After assessing the impact, a decision will be made on the next steps.
+
+**Impact:**
+
+    - Estimated Volume: Approximately 20,000 line items per month.
+    - Time Savings: Each item currently takes about 2 minutes to process, but with OCR, this can be reduced to 1 minute, leading to an estimated savings of 250-300 hours per month.
+
+Implementing OCR for PO punching will streamline the process, enhance efficiency, and reduce the likelihood of errors, ultimately leading to improved operational performance.
+
+## Task 58: (EOC-3579) PO Punching OCR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
