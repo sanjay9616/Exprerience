@@ -136,14 +136,14 @@ The task is to introduce a Productivity Dashboard in the global header of EOC, w
 
 **Workflow:**
 
-    - Executive View:
-        - A blue productivity widget will appear in the header, showing the current day's productivity count, increasing as tasks are completed.
-        - Displays Your Productivity Count / Avg Productivity Count based on benchmarks.
-        - Clicking the widget opens a right-side popup where users can select filters (Today, Yesterday, WTD, MTD).
-        - Data points are personalized based on the user's role (CS, Sourcer, KAM). Refer to the provided sheet for specific data points.
-    - Manager View:
-        - Default text: "Your Team’s Productivity" with the ability to open a popup showing team performance (Today, Yesterday, WTD, MTD).
-        - By default, the lowest-performing employee is selected, and managers can select other employees from a dropdown.
+- Executive View:
+    - A blue productivity widget will appear in the header, showing the current day's productivity count, increasing as tasks are completed.
+    - Displays Your Productivity Count / Avg Productivity Count based on benchmarks.
+    - Clicking the widget opens a right-side popup where users can select filters (Today, Yesterday, WTD, MTD).
+    - Data points are personalized based on the user's role (CS, Sourcer, KAM). Refer to the provided sheet for specific data points.
+- Manager View:
+    - Default text: "Your Team’s Productivity" with the ability to open a popup showing team performance (Today, Yesterday, WTD, MTD).
+    - By default, the lowest-performing employee is selected, and managers can select other employees from a dropdown.
 
 **Impact:** Improves productivity tracking and provides real-time insights for both individual users and managers, leading to enhanced performance monitoring and team management.
 
@@ -1642,10 +1642,10 @@ Add a fixed date range feature to the ARC Report, based on the current logic. Th
 
 Currently, orders can be placed with suppliers who are not authorized distributors, which affects product quality and leads to material returns. To address this issue, when a supplier is selected on EOC, the system will provide visibility on whether the supplier is a Trader, Manufacturer, Authorized Dealer, Service Provider, or Exporter based on the brand and Supplier ID stored in Supplier Central.
 
-    - If the selected supplier is not an Authorized Dealer or Manufacturer, a warning message will display: “Selected supplier is not an Authorized Dealer/Manufacturer.”
-    - This information will be displayed alongside the default supplier information on the RFQ and CPO sheets, and will also be included in the approval screen, with unauthorized suppliers highlighted in red.
-    - The system will check the brand/Brand ID from the MSN mapped to the item in combination with the Supplier ID to provide this information.
-    - If the MSN is not available or mapped, the system will use the brand available along with the CPN.
+- If the selected supplier is not an Authorized Dealer or Manufacturer, a warning message will display: “Selected supplier is not an Authorized Dealer/Manufacturer.”
+- This information will be displayed alongside the default supplier information on the RFQ and CPO sheets, and will also be included in the approval screen, with unauthorized suppliers highlighted in red.
+- The system will check the brand/Brand ID from the MSN mapped to the item in combination with the Supplier ID to provide this information.
+- If the MSN is not available or mapped, the system will use the brand available along with the CPN.
 
 **Use Cases:**
 
