@@ -1422,7 +1422,97 @@ To reduce manual effort and minimize errors in punching CPOs, we will introduce 
 
 Implementing OCR for PO punching will streamline the process, enhance efficiency, and reduce the likelihood of errors, ultimately leading to improved operational performance.
 
-## Task 58: (EOC-3579) PO Punching OCR
+## Task 58: (EOC-3579) Vendor Discovery Migration
+
+**Description:**
+The current Vendor Discovery platform is built for generating reports. To improve user experience, we need to ensure that users are not required to switch between platforms. As part of this initiative, we will migrate the Vendor Discovery functionality to the EOC platform.
+
+**Requirements:**
+- Design: The design should follow the EOC interface and structure.
+- HTML: Shared and ready for integration.
+- Functionality: The functionality should remain identical to the current system, including responses sent to users via email.
+
+**Impact:**
+- Improved User Experience: Users will no longer need to switch between platforms, resulting in a more seamless workflow.
+- Consolidated Platform: Integrating Vendor Discovery into EOC will create a single, unified platform for vendor-related operations.
+- Increased Efficiency: Migrating this functionality will streamline reporting and notifications, saving users time and reducing the complexity of managing multiple platforms.
+- All features and workflows, such as user interactions and notifications, should work seamlessly after migration without altering the user experience.
+
+## Task 59: (EOC-3594) Manager View - Color Coding Gap
+
+**Description:**
+
+A tooltip needs to be added to represent the following color coding when a user hovers over the colors:
+- Green Color: Represents a Grand Total > 11 per day, indicating High RFQ Flow.
+- Yellow Color: Represents a Grand Total in the range of >8 and <=11 per day, indicating Medium RFQ Flow.
+- Red Color: Represents a Grand Total <= 8 per day, indicating Low RFQ Flow.
+- This tooltip will provide quick context for users when reviewing RFQ flow metrics.
+
+## Task 60: (EOC-3602) PAAS PR Sheet Enhancement
+
+**Description:**
+
+- Requirement 1:
+    - Allow users to upload Moglix Plant along with Customer ID, and enable users to view the Plant Name on the UI. The existing Customer Plant ID will remain - unchanged.
+    - The newly added Moglix Plant ID and Plant Name should also be reflected in the downloaded file.
+    - Migration: Required for past data as well.
+
+- Requirement 2:
+    - Add a Global Filter for "RFQ No." to the sheet.
+- Requirement 3:
+    - Add new columns before the "Remarks" column:
+    - CPO No.
+    - CPO Date
+    - Payment Terms
+    - Validation for payment terms should be added as per the system's rules.
+- Requirement 4:
+    - Display the Valuation in Cr. when hovering over the charts. Use Total Value (Excl. Tax) to calculate the total valuation by summing up.
+    - Apply this to the following graphs:
+    - PR Deadline Crossed
+    - PR Stages
+    - PR against Customer
+- Requirement 5:
+    - Remove the following columns:
+    - TR Date (MM/DD/YYYY)
+    - RFQ Date (MM/DD/YYYY)
+
+**Impact:**
+
+- Increased Efficiency: Enhances usability by allowing easy uploads of Moglix plant data, simplifying data entry and visualization.
+- Improved Data Accessibility: The addition of "RFQ No." as a global filter and new columns like "CPO No." and "Payment Terms" improves searchability and detailed reporting.
+- Better Insights: Displaying valuation in Cr. on charts allows for quick analysis of total value, aiding decision-making.
+- Cleaner Interface: Removal of unnecessary columns reduces clutter, making the interface more user-friendly.
+
+## Task 61: (EOC-3657) CPO Punch Header Page Optimization
+
+**Description:**
+
+The current header page of the CPO punch process is experiencing slow performance due to multiple API calls to the Account Service. The task is to optimize this page by reducing and merging API calls, which will lead to improved performance and faster load times.
+
+**Action Plan:**
+
+| Metric           | Before           | After            | Impact                                                                   |
+| ---------------- | ---------------- | ---------------- | ------------------------------------------------------------------------ |
+| Total Requests   | 36 / 75 requests | 28 / 64 requests | 14.67% decrease in total requests (from 75 to 64), improving load times. |
+| DOMContentLoaded | 561 ms           | 270 ms           | 51.87% improvement in DOMContentLoaded time (from 561 ms to 270 ms).     |
+| Finish Time      | 6.07 s           | 5.26 s           | 13.34% improvement in Finish time (from 6.07 s to 5.26 s).               |
+| Redirection      | 22 requests      | 13 requests      | 40.9% reduction in the number of redirection requests.                   |
+
+**Impact:**
+
+- Performance Boost: Reducing the total number of requests and merging API calls results in faster page load times and better responsiveness.
+- Significant Time Savings: A 51.87% improvement in DOMContentLoaded time and a 56.46% reduction in load time helps users interact with the page much faster.
+- Optimized Network Usage: A 40.9% reduction in the number of network requests lowers server load, resulting in smoother and more efficient operations.
+- Improved User Experience: Faster load times and reduced delays enhance the overall user experience on the CPO punch header page.
+
+
+
+
+
+
+
+
+
 
 
 
