@@ -3,8 +3,8 @@
 Contributed to multiple high-impact projects, showcasing expertise and utilized a broad range of technologies, including Angular, Angular Material, RxJS, NgRx, ReactJS, NextJS, Material-UI, and Tailwind CSS for web development. Additionally, I worked with JavaScript, TypeScript, Python, HTML, CSS, MySQL, and DBMS for languages and databases. My expertise extends to data structures and algorithms, with familiarity in ExpressJS and MongoDB, while effectively maintaining version control with Git. I contributed to multiple high-impact projects, showcasing my proficiency in Angular, RxJS, and TypeScript.
 
 - [EOC (Excel on Cloud)](#eoc-excel-on-cloud): is an internal application developed at Moglix to streamline the management of Purchase and Sale orders. The application features a custom Excel-like interface that allows users to efficiently track items throughout the entire lifecycle of orders and products. Specifically designed for the internal buyer team, EOC simplifies the creation of Purchase Orders, enhancing the overall efficiency of the purchasing process.
-- [DIGIMRO](#DIGIMRO): DigiMRO is India's leading distributor of multi-category and multi-brand low-voltage electronic security products, offering a vast range of global brands and unparalleled industry expertise in B2B distribution of CCTV, access control, fire, power, audio/video, and network systems, while serving as an indispensable partner for suppliers and customers through its extensive reach, expertise, and logistics capabilities that enhance competitiveness and maintain critical supply chains.
 - [Credlix (Nuphi and Exim)](#credlix-nuphi-and-exim): Credlix, a digital supply chain finance platform from Moglix, provides quick, collateral-free working capital solutions for enterprises, suppliers, and exporters in India and Southeast Asia, leveraging Moglix's expertise in end-to-end supply chain transformation for over 700 enterprises and 16,000 SMEs exporting to 53 countries, and offers services such as early payment, vendor finance, channel finance, invoice discounting, and purchase order finance to ensure continuous movement in domestic supply chains and export financing.
+- [DIGIMRO](#DIGIMRO): DigiMRO is India's leading distributor of multi-category and multi-brand low-voltage electronic security products, offering a vast range of global brands and unparalleled industry expertise in B2B distribution of CCTV, access control, fire, power, audio/video, and network systems, while serving as an indispensable partner for suppliers and customers through its extensive reach, expertise, and logistics capabilities that enhance competitiveness and maintain critical supply chains.
 - [MaaS](#MaaS): The project streamlines the management of bulk orders, facilitating seamless tracking and updating of financial transactions and customer interactions throughout the order lifecycle.
 
 # EOC (Excel on Cloud)
@@ -1853,6 +1853,229 @@ Brand Authorization Tagging needs to be added to the Pending CPO CM* Approval Sc
 
 
 
-# DIGIMRO
 # Credlix (Nuphi and Exim)
+
+## Implementation of Login and Signup Flow for Domestic and Exporter
+
+**Description:**
+
+I developed the login and signup flow for both domestic users and exporters in the Credlix platform using Angular Material design. The implementation focused on a seamless user experience, ensuring that the UI was intuitive and responsive. This involved designing and integrating form components with validation, authentication services, and conditional routing based on user roles.
+
+**Impact:**
+
+- Improved User Experience: The use of Angular Material provided a modern and accessible UI, enhancing the overall look and feel of the platform.
+- Streamlined Onboarding: A clear and efficient signup process reduced the time users spent registering, contributing to higher conversion rates for new users.
+- Role-Based Functionality: The separation of flows for domestic and exporter users allowed for a more tailored experience, catering to the specific needs of each user type.
+
+## Implementation of Proforma Invoice Calculation
+
+**Description:**
+
+I developed the proforma invoice calculation functionality, automating the generation of invoices based on user inputs, including product details, pricing, taxes, and discounts. This implementation ensures accuracy in invoice generation and reduces manual intervention, enabling a smoother process for users to preview and manage their proforma invoices.
+
+**Impact:**
+
+Increased Efficiency: Automated calculations minimized manual errors, speeding up the invoice generation process.
+Improved Accuracy: The system ensured precise calculations, leading to better compliance and customer trust.
+Enhanced User Satisfaction: Users experienced a more streamlined approach to creating and managing invoices, improving overall satisfaction with the platform.
+
+## Angular Version 7 to 12 with Strict Mode Enabled
+
+**Description:**
+
+The upgrade from Angular 7 to Angular 12 involved a series of systematic steps to modernize the application and incorporate the latest Angular features and best practices. This process ensured that the application remained up-to-date, maintainable, and efficient. The decision to enable strict mode further reinforced type safety and code robustness, aligning with Angular's recommendations for optimal development practices.
+
+**Key Steps Involved:**
+
+- Version Migration:
+    - Upgrade Angular CLI: Updated Angular CLI from version 7 to version 12 by using incremental updates (version-by-version) to avoid breaking changes. This ensured a smooth transition and compatibility across versions.
+    - Refactor for Deprecated Features: Addressed deprecated APIs and features as per Angular's migration guidelines. This included updating libraries, RxJS imports, and HTTP client syntax changes, ensuring all modules were compliant with Angular 12 standards.
+    - Third-Party Library Updates: Updated third-party dependencies and Angular Material to the latest versions to ensure compatibility with Angular 12.
+- Enabled Strict Mode:
+    - Enabling strict mode involved setting the strict flag to true in the tsconfig.json file. This introduced stricter type checks, including:
+        - Strict Type Checking: More precise inference of types, helping to catch potential runtime errors at compile time.
+        - Null Safety: Detection of null and undefined values at an early stage, preventing null reference errors in production.
+        - No Implicit Any: Enforcing explicit typing for all variables and functions, ensuring the code is strongly typed.
+        - Strict Template Checking: Strengthened template binding checks to align with the component’s types, ensuring that templates are correctly bound to component logic.
+- Tree-Shakable Modules: Angular 12 improved tree-shaking capabilities, which meant unused code was automatically removed from the production build, reducing the bundle size.
+- Optimized Build Process:
+    - Faster Builds: Angular 12 introduced faster compilation with Ivy, which significantly improved development build times and reduced bundle sizes.
+    - Improved Localization: The i18n (internationalization) capabilities were enhanced, making the app more adaptable to multiple languages, which was useful for scaling to international markets.
+- TypeScript Upgrade: Upgraded the TypeScript version to 4.8.4, which unlocked new language features, better type inference, and faster builds.
+
+**Impact:**
+
+- Performance Boost: The Ivy engine in Angular 12 improved compilation times and memory consumption, making the app faster to develop, build, and run.
+- Code Consistency and Safety: Strict mode introduced stronger type-checking throughout the application, which reduced bugs, increased maintainability, and made refactoring easier.
+- Enhanced Developer Experience: By catching more errors during compile time and optimizing the build processes, the development cycle became smoother and more reliable.
+- Smaller Bundle Size: Tree-shaking and optimizations in Angular 12 reduced the overall bundle size, enhancing the application's load times and improving the user experience.
+- Scalability: The update future-proofed the codebase, making it easier to adopt future Angular updates and scale the application with new features and optimizations.
+
+
+# DIGIMRO
+
+## Angular Version 7 to 12 with Strict Mode Enabled
+
+**Description:**
+
+Post-login, customers are segmented into two groups: ADI and BRISK. Based on the customer type, different brands, products, and categories are displayed. For ADI customers, a specific list of brands is shown, while BRISK customers see a different set of brands. This brand mapping extends to the top brands banner, ensuring a tailored experience for both customer types.
+
+**ADI Customer Brands:**
+
+- Algatec
+- Audiotrak
+- Bosch
+- Electro-Voice
+- Honeywell
+- Morley
+- Protek
+- Ravel
+- Rosslare
+- Texecom
+- Timewatch
+- Veracity
+- Vesda
+- Wbox
+- Optex
+- Securico
+- Smart I
+- System Sensor
+- Assa Abloy
+- Eaton
+- Fargo
+- GST
+- Hanwha Techwin
+- NUUO
+- Western Digital
+- Agni
+- Apollo
+- Cybernetics
+- Alba Urmet
+- Hid
+- Idcube
+- Idemia
+- Matrix
+- Time Watch
+- Yale
+- ALGATEC
+- IDEMIA
+- CYBERNATICS
+- FARGO
+- HID
+- HONEYWELL
+- IDCUBE
+- ROSSLARE
+- SMART I
+- TIME WATCH
+- AUDIOTRAK
+- BOSCH
+- BOSCH EV
+- HIKVISION
+- PROTEK
+- WBOX
+- WESTERN DIGITAL
+- AGNI
+- APOLLO
+- ASES
+- EATON
+- MORLEY
+- RAVEL
+- SYSTEM SENSOR
+- VESDA
+- REALITY
+- IOTA
+- OPTEX
+- SECURICO
+- TEXECOM
+- EONSECURE
+- EONAV
+
+**Impact:**
+
+- Personalized User Experience: Displaying brands based on the customer type ensures that ADI and BRISK customers only see relevant products, increasing the likelihood of engagement and conversions.
+- Enhanced Customer Satisfaction: By showing tailored brands and products post-login, customers feel a more customized shopping experience, leading to higher satisfaction and retention.
+- Improved Efficiency: Streamlining the product catalog based on customer type reduces irrelevant content, helping users quickly find the products they are most interested in.
+- Consistent Branding: The same approach applied to the top brands banner ensures consistency in brand visibility, creating a cohesive experience across the platform.
+
+## Update to DigiMRO Contact Us Page for ADI and BRISK Customer Support
+
+**Workflow Overview:**
+
+- Brand Selection:
+    - Customers can search from a static list of brands (as defined in the brand BU.csv file).
+    - Based on the selected brand, either ADI or BRISK contact details will be displayed.
+- Support Details:
+    - If an ADI brand is selected, show the existing ADI contact details (Flow 1).
+    - If a BRISK brand is selected, show the following BRISK contact details.
+    - BRISK Customer Support Details
+- Centralized Contact Information:
+    - Phone No: +91 20 25464825
+    - Calling Time: (Same text as for ADI)
+    - Email: salespune@briskelectronics.com
+    - Subtext: (Same as ADI)
+
+**Brisk Office Locations & Contact Info:**
+
+- Pune
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Private Limited · 414, 4th Floor, Building No 1, Siddharth Tower, Kothrud, Pune, Maharashtra 411038, India
+    - Address: 319/320, Siddharth Tower, Bldg. No.1, G A Kulkarni Path, Kothrud, Pune – 411038. INDIA.
+    - Contact Number: +91 20 66203233
+    - Email: salespune@briskelectronics.com
+- Ahmedabad
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Pvt. Ltd. · Plot no 512 1 near Ramol police chowki, Phase IV, Vatva GIDC, Ahmedabad, Gujarat 382445, India
+    - Address: 304, Gala Argos, Kalgi Cross Road, Ellisbridge, Ahmedabad – 380006. INDIA.
+    - Contact Number: +91 79 35114713, 48902419
+    - Email: brisk.amdavad@gmail.com
+- Nagpur
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Pvt. Ltd. · Block No.S-4, Plot No. D-1, Midc, Hingna, Nagpur, Nildoh ct, Maharashtra 440016, India
+    - Address: Plot No.98, MIDC Hingna, Near Wadi Hingna T Point, Opp. Modigold, Nagpur – 440028. INDIA.
+    - Contact Number: +91 8380074026
+    - Email: salesnagpur@briskelectronics.com
+- Mumbai
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics · BRISK ELECTRONICS, Tiwari Compound, 29 8, SV Rd, Krishna Colony, Dahisar East, Mumbai, Maharashtra 400068, India
+    - Address: Plot No.391, 409 Diamond Plaza, Dr. Dadasaheb Bhadakamkar Marg, Girgaon, Mumbai – 400004. INDIA.
+    - Contact Number: +91 22 62375837
+    - Email: salesmumbai@briskelectronics.com
+- Kolhapur
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Pvt. Ltd. · Plot No.9, Isolation Hospital Rd, Nehru Nagar, Samrat Colony, Datta Colony, Kolhapur, Maharashtra 416012, India
+    - Address: D-23, Kolhapur Udyam Co-opretive Society Ltd, 1328/34, Y.P.Powar Nagar, Kolhapur – 416006. INDIA.
+    - Contact Number: +91 231 2692450
+    - Email: saleskolhapur@briskelectronics.com
+
+**Implementation Steps:**
+
+- Update Contact Us Page Layout:
+    - Add a search input for customers to select their brand from the static list provided.
+- Brand-based Conditional Rendering:
+    - Use brand selection to conditionally display either the ADI contact flow or the BRISK contact details listed above.
+- Consistency in Design:
+    - Ensure both ADI and BRISK support details maintain a consistent format and style for better user experience.
+
+**Impact**
+
+- Enhanced User Experience:
+    - By allowing customers to select brands and display relevant contact information, the update provides a tailored experience. This makes it easier for customers to find the support they need, reducing frustration and increasing satisfaction.
+- Increased Engagement:
+    - With a clear and accessible way to contact support, customers are more likely to reach out when they have questions or issues. This proactive communication can lead to higher engagement rates with the support team.
+- Improved Customer Satisfaction:
+    - Providing specific contact details based on customer type (ADI vs. BRISK) ensures that customers receive the most relevant information. This personalized approach can enhance overall customer satisfaction and loyalty.
+- Streamlined Support Processes:
+    - Centralizing contact information based on brand selection helps streamline support processes. Support teams can better prepare for inquiries by anticipating the types of issues or questions that may arise based on the brand selected.
+- Brand-Specific Knowledge:
+    - The update allows support staff to focus on brand-specific knowledge and expertise, improving the quality of assistance provided to customers. This can lead to faster resolution times and better overall support experiences.
+- Operational Efficiency:
+    - By categorizing support requests by brand, the support team can more effectively allocate resources and manage workloads, leading to improved efficiency and response times.
+- Reduced Response Time:
+    - With clear contact details and streamlined communication channels, customers can expect faster responses to their inquiries, which can lead to increased trust and confidence in the brand.
+- Better Data Collection:
+    - The implementation of a brand selection feature allows for better data collection on customer inquiries, enabling the company to identify trends and areas for improvement in products and services.
+- Increased Conversion Rates:
+    - A well-structured contact page can help drive conversions by instilling confidence in potential customers who may be seeking support before making a purchase decision. Knowing they can easily access assistance may encourage them to proceed with their purchases
+
+
 # MaaS
