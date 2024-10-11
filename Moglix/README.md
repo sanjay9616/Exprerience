@@ -9,7 +9,6 @@ I’m highly skilled in working with RESTful Web Services and integrating RESTfu
 
 By maintaining a focus on clean code and version control, I’ve consistently contributed to streamlined project delivery and enhanced user experiences. My passion for innovation and attention to detail have been instrumental in driving successful outcomes in every project I’ve been a part of.
 
-- [Credlix (Nuphi and Exim)](#credlix-nuphi-and-exim): Credlix, a digital supply chain finance platform from Moglix, provides quick, collateral-free working capital solutions for enterprises, suppliers, and exporters in India and Southeast Asia, leveraging Moglix's expertise in end-to-end supply chain transformation for over 700 enterprises and 16,000 SMEs exporting to 53 countries, and offers services such as early payment, vendor finance, channel finance, invoice discounting, and purchase order finance to ensure continuous movement in domestic supply chains and export financing.
 - [DIGIMRO](#DIGIMRO): DigiMRO is India's leading distributor of multi-category and multi-brand low-voltage electronic security products, offering a vast range of global brands and unparalleled industry expertise in B2B distribution of CCTV, access control, fire, power, audio/video, and network systems, while serving as an indispensable partner for suppliers and customers through its extensive reach, expertise, and logistics capabilities that enhance competitiveness and maintain critical supply chains.
 - [MaaS](#MaaS): The project streamlines the management of bulk orders, facilitating seamless tracking and updating of financial transactions and customer interactions throughout the order lifecycle.
 
@@ -21,20 +20,80 @@ EOC is an internal application developed at Moglix to streamline the management 
 
 ### Configurations - Before Angular Update
 
-| Requirement | Version            |
-| ----------- | ------------------ |
-| Node.js     | 16.14.2 or later   |
-| Angular CLI | 13.0.3             |
-| npm         | 8.5.0 or later     |
-| TypeScript  | 4.4.2              |
-| Browser     | Any modern browser |
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 13.0.3           |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.4.2            |
 
 ### Configurations - After Angular Update
 
-| Requirement | Version            |
-| ----------- | ------------------ |
-| Node.js     | 16.14.2 or later   |
-| Angular CLI | 14.2.13            |
-| npm         | 8.5.0 or later     |
-| TypeScript  | 4.8.4              |
-| Browser     | Any modern browser |
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 14.2.13          |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.8.4            |
+
+<h1>CREDLIX - Nuphi and Exim <a href="">View More Details & My Contribution <i class="ri-external-link-line"></i></a></h1>
+
+**Introducing Credlix:** A revolutionary digital supply chain finance platform by Moglix that is transforming the way businesses access working capital. Designed to provide fast, collateral-free financing solutions, Credlix caters to enterprises, suppliers, and exporters across India and Southeast Asia.
+
+With a proven track record of supporting over 700 enterprises and 16,000 SMEs exporting to 53 countries, Credlix harnesses Moglix's deep expertise in supply chain transformation. The platform offers a range of innovative services, including early payment, vendor finance, channel finance, invoice discounting, and purchase order finance, ensuring seamless movement in domestic supply chains and export financing.
+
+Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhance its capabilities and broaden its service offerings, making it a one-stop solution for all your financing needs.
+
+### Configurations of Nuphi - Before Angular Update
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 9.1.7            |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 3.8.3            |
+
+### Configurations of Nuphi - After Angular Update
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 12.2.13          |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.3.5            |
+
+### Configurations of Exim - Before Angular Update
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 7.3.10           |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 3.2.2            |
+
+<h1>DIGIMRO <a href="">View More Details & My Contribution <i class="ri-external-link-line"></i></a></h1>
+
+**Introducing DigiMRO:** DigiMRO stands out as India’s premier distributor of multi-category and multi-brand low-voltage electronic security products. With a vast array of globally recognized brands, DigiMRO excels in B2B distribution, specializing in CCTV, access control, fire safety, power systems, audio/video solutions, and network systems. The company is committed to being an essential partner for both suppliers and customers, leveraging its extensive industry expertise, comprehensive reach, and robust logistics capabilities. This unique combination enhances competitiveness and ensures the reliability of critical supply chains.
+
+### Configurations
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| React       | 18.2.74          |
+| Next        | 14.1.4           |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.9.3            |
+
+<h1>MAAS <a href="">View More Details & My Contribution <i class="ri-external-link-line"></i></a></h1>
+
+**Introducing MAAS:** The knowledge repository is designed to centralize project attachments, progress reports, and financial data in one accessible location. This project optimizes the management of bulk orders, enabling smooth tracking and updating of financial transactions and customer interactions throughout the entire order lifecycle. With efficient categorization and tagging mechanisms in place, users can easily search and filter through project documents, enhancing the user experience. This repository not only improves accessibility to vital information but also fosters collaboration and informed decision-making across teams. Ultimately, it serves as a crucial resource for knowledge sharing and project management, contributing significantly to operational efficiency.supply chains.
+
+### Configurations
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 12.2.13          |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.3.5            |
