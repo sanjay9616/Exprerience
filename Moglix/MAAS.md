@@ -30,6 +30,10 @@
 
 # Contributers
 
+<a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
+    <img src="https://img.shields.io/badge/NgRx-BA2BD2.svg?style=for-the-badge&logo=NgRx&logoColor=white" alt="angularjs" />
+</a>
+
 **[⬆ Back to Top](#table-of-contents)**
 
 # Project Flow
