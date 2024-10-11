@@ -31,11 +31,8 @@
 # Contributers
 
 <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
-    <img src="https://img.shields.io/badge/NgRx-BA2BD2.svg?style=for-the-badge&logo=NgRx&logoColor=white" alt="angularjs" />
+    <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" />
 </a>
-
-![sanjay](https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679)
-
 
 **[⬆ Back to Top](#table-of-contents)**
 
