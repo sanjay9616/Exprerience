@@ -30,9 +30,13 @@
 
 # Contributers
 
-<a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
+<a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar" style="display: flex; flex-direction: column; text-decoration: none; height: 150px; width: 150px;">
     <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" />
+    <b style="margin-top: 5px; margin: auto">Sanjay Kumar</b>
 </a>
+<br>
+
+
 
 **[⬆ Back to Top](#table-of-contents)**
 
