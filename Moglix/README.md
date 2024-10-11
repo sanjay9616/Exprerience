@@ -1,6 +1,6 @@
 # Moglix Experience
 
-I have played a key role in several high-impact projects at Moglix, utilizing my expertise in Angular, Angular Material, RxJS, and NgRx to build scalable, high-performance web applications. With hands-on experience in ReactJS and NextJS, I have successfully crafted dynamic, user-friendly interfaces. My solid background in JavaScript, TypeScript, and data structures has allowed me to tackle complex problems with efficient solutions.
+I have played a key role in several high-impact projects like **EOC**, **DIGIMRO**, **MAAS**, and **CREDLIX** at **MOGLIX**, utilizing my expertise in Angular, Angular Material, RxJS, and NgRx to build scalable, high-performance web applications. With hands-on experience in ReactJS and NextJS, I have successfully crafted dynamic, user-friendly interfaces. My solid background in JavaScript, TypeScript, and data structures has allowed me to tackle complex problems with efficient solutions.
 
 I’m highly skilled in working with RESTful Web Services and integrating RESTful APIs to ensure smooth communication between front-end and back-end systems. Throughout my work, I’ve leveraged cutting-edge technologies and tools, such as Observables and RxJS, Angular Reactive Forms, Bootstrap, Angular CLI, Dependency Injection, Lazy Loading, Routing, Directives, Pipes, VS Code, GitHub, and Linux.
 
@@ -8,7 +8,7 @@ By maintaining a focus on clean code and version control, I’ve consistently co
 
 <h1>EOC - Excel on Cloud <a href="">View More Details & Contribution</a></h1>
 
-EOC is an internal application developed at Moglix to streamline the management of Purchase and Sale orders. The application features a custom Excel-like interface that allows users to efficiently track items throughout the entire lifecycle of orders and products. Specifically designed for the internal buyer team, EOC simplifies the creation of Purchase Orders, enhancing the overall efficiency of the purchasing process.
+**Introducing Credlix:** EOC is an internal application developed at Moglix to streamline the management of Purchase and Sale orders. The application features a custom Excel-like interface that allows users to efficiently track items throughout the entire lifecycle of orders and products. Specifically designed for the internal buyer team, EOC simplifies the creation of Purchase Orders, enhancing the overall efficiency of the purchasing process.
 
 ### Configurations - Before Angular Update
 
