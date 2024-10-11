@@ -9,12 +9,7 @@ I’m highly skilled in working with RESTful Web Services and integrating RESTfu
 
 By maintaining a focus on clean code and version control, I’ve consistently contributed to streamlined project delivery and enhanced user experiences. My passion for innovation and attention to detail have been instrumental in driving successful outcomes in every project I’ve been a part of.
 
-- [DIGIMRO](#DIGIMRO): DigiMRO is India's leading distributor of multi-category and multi-brand low-voltage electronic security products, offering a vast range of global brands and unparalleled industry expertise in B2B distribution of CCTV, access control, fire, power, audio/video, and network systems, while serving as an indispensable partner for suppliers and customers through its extensive reach, expertise, and logistics capabilities that enhance competitiveness and maintain critical supply chains.
-- [MaaS](#MaaS): The project streamlines the management of bulk orders, facilitating seamless tracking and updating of financial transactions and customer interactions throughout the order lifecycle.
-
-
-
-<h1>EOC - Excel on Cloud <a href="">View More Details & My Contribution <i class="ri-external-link-line"></i></a></h1>
+<h1>EOC - Excel on Cloud <a href="">View More Details & My Contribution &#xECAF;</i></a></h1>
 
 EOC is an internal application developed at Moglix to streamline the management of Purchase and Sale orders. The application features a custom Excel-like interface that allows users to efficiently track items throughout the entire lifecycle of orders and products. Specifically designed for the internal buyer team, EOC simplifies the creation of Purchase Orders, enhancing the overall efficiency of the purchasing process.
 
