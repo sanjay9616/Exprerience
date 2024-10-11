@@ -1,4 +1,41 @@
-## Task 1: (MAAS-1012) Implement Project Exposure Calculation and Display
+# Table of Contents
+
+| S No. | Approach                                          |
+| ----- | ------------------------------------------------- |
+| 1     | [About Project](#About-Project)                   |
+| 1     | [Project Configurations](#Project-Configurations) |
+| 2     | [Contributers](#Contributers)                     |
+| 2     | [Project Flow](#Project-Flow)                     |
+| 2     | [My Contributions](#My-Contributions)             |
+
+# About Project
+
+**Introducing MAAS:** The knowledge repository is designed to centralize project attachments, progress reports, and financial data in one accessible location. This project optimizes the management of bulk orders, enabling smooth tracking and updating of financial transactions and customer interactions throughout the entire order lifecycle. With efficient categorization and tagging mechanisms in place, users can easily search and filter through project documents, enhancing the user experience. This repository not only improves accessibility to vital information but also fosters collaboration and informed decision-making across teams. Ultimately, it serves as a crucial resource for knowledge sharing and project management, contributing significantly to operational efficiency.supply chains.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Project Configurations
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 12.2.13          |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.3.5            |
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Contributers
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Project Flow
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# My Contributions
+
+### Task 1: (MAAS-1012) Implement Project Exposure Calculation and Display
 
 **Description:**
 
@@ -21,7 +58,7 @@ The calculated values should be displayed in the Project Financials section with
 - Streamlined Financial Management: Clear visibility of Project Exposure aids project managers in evaluating financial gaps, ensuring that any shortfalls or surpluses are addressed promptly.
 - Enhanced Reporting: This feature simplifies financial reporting for stakeholders, enabling them to assess the overall financial status of a project at any given point.
 
-## Task 2: (MAAS-1018) Implementation of BOM for Drafted
+### Task 2: (MAAS-1018) Implementation of BOM for Drafted
 
 **Task Description:**
 
@@ -41,7 +78,7 @@ Implement the Bill of Materials (BOM) Changes for the drafted stage of the proje
 - Better Issue Tracking: Attaching the issue link in the Git Development Panel allows for easier navigation and tracking of development tasks, making - collaboration more effective for the development team.
 - Enhanced Usability: Adding icons for procurement types in the Stages List improves the visual clarity and usability of the interface, helping users to quickly identify procurement-related stages.
 
-## Task 2: (MAAS-1024) FE Implementation of Customer Payment Term
+### Task 3: (MAAS-1024) FE Implementation of Customer Payment Term
 
 **Task Description:**
 
@@ -134,7 +171,7 @@ Implement the Bill of Materials (BOM) Changes for the drafted stage of the proje
 - Real-Time Data Handling: With immediate recalculations of Total OS and Total OD, users are presented with accurate financial data instantly.
 - Streamlined Payment Management: Automating the population of stages and terms ensures consistency and accuracy across the project payment terms.
 
-## Task 3: (MAAS-1028) Update in UI for Addition of Non-Mandatory Fields
+### Task 4: (MAAS-1028) Update in UI for Addition of Non-Mandatory Fields
 
 **Task Description:**
 
@@ -160,7 +197,7 @@ Implement the Bill of Materials (BOM) Changes for the drafted stage of the proje
 - UI Enhancement: Introducing the new fields and calculations provides better tracking and visibility of project quantities, leading to more informed decision-making.
 - Project Tracking: The calculated completion percentage and remaining quantities will give users a clearer understanding of the project’s status.
 
-## Task 4: (MAAS-1030) Implementations BOM - For Other Statuses (Other than Drafted)
+### Task 5: (MAAS-1030) Implementations BOM - For Other Statuses (Other than Drafted)
 
 **Task Description:**
 
@@ -217,7 +254,7 @@ Implement the Bill of Materials (BOM) Changes for the drafted stage of the proje
 - Accurate Calculation: Real-time updates for required and ready quantities will ensure the project's manufacturing stage is based on accurate material availability.
 - User Experience: The two distinct views (Regular and Procurement) will provide tailored information, enhancing user interaction and understanding of material requirements.
 
-## Task 5: (MAAS-1044) FE - Feature Flow for BOM (DRAFTED)
+### Task 6: (MAAS-1044) FE - Feature Flow for BOM (DRAFTED)
 
 **Task Description:**
 
@@ -310,7 +347,7 @@ Implement the Bill of Materials (BOM) Changes for the drafted stage of the proje
 - Dynamic Material Section: Show or hide the materials section based on the stage type.
 - Save Flow: When saving the stage lot, the changes will reflect properly based on user inputs, ensuring correct procurement materials and data updates.
 
-## Task 6: (MAAS-1054) Implementing Project Report Popup with Finance XLS Data
+### Task 7: (MAAS-1054) Implementing Project Report Popup with Finance XLS Data
 
 **Description:**
 
@@ -328,7 +365,7 @@ This task involves implementing functionality that allows users to view a financ
     - Integrating this functionality with the Git development panel ensures that the report linking and attachment process is cohesive within the overall project management workflow.
     - The Show Git Development Panel feature ensures that all related development issues, commits, and branches are linked directly to the finance report, increasing transparency and traceability during development.
 
-## Task 7: (MAAS-1057) Frontend Implementation for Refreshing Portal after Release
+### Task 8: (MAAS-1057) Frontend Implementation for Refreshing Portal after Release
 
 **Description:**
 
@@ -349,7 +386,7 @@ This task involves implementing functionality that allows users to view a financ
 - Enhanced Error Handling:
     - Handling 426 Upgrade Required error codes will ensure that the app gracefully informs users about required updates instead of failing silently.
 
-## Task 8: (MAAS-1072) Frontend Feature Flow (Procurement) for BOM - Drafted Stage Lot
+### Task 9: (MAAS-1072) Frontend Feature Flow (Procurement) for BOM - Drafted Stage Lot
 
 **Description:**
 
@@ -377,7 +414,7 @@ This task involves implementing the Procurement feature flow for Bill of Materia
         - Lot No. 3609 will be replaced with Fittings and Flanges (use sequenceLotName, not idLot).
     - Remove the subscript portion (as seen in the provided image).
 
-## Task 9: (MAAS-1077) Revamp of Stage Creation (Drafted)
+### Task 10: (MAAS-1077) Revamp of Stage Creation (Drafted)
 
 **Description:**
 
@@ -409,7 +446,7 @@ This task involves revamping the stage creation process for drafted stages by mo
     - The updated interface will improve clarity, allowing users to focus on the task of creating a stage without distraction.
     - Ensuring consistent capitalization in UI elements (like Create New Stage) maintains a professional and polished look, contributing to overall design consistency.
 
-## Task 10: (MAAS-1089) Fixes on StageLot Popup View (Drafted)
+### Task 11: (MAAS-1089) Fixes on StageLot Popup View (Drafted)
 
 **Description:**
 
@@ -441,7 +478,7 @@ This task involves implementing several fixes and enhancements to the StageLot P
 - Efficient Material Management:
     - The delete functionality for material rows will allow users to manage their lists dynamically, ensuring they can remove entries as necessary without confusion.
 
-## Task 11: (MAAS-1096) Fixes on Stage Page (Drafted)
+### Task 12: (MAAS-1096) Fixes on Stage Page (Drafted)
 
 Description:
 
@@ -479,7 +516,7 @@ This task involves implementing several fixes and enhancements to the Stage Page
 - Data Integrity and Validation:
     - Implementing weightage validation ensures data consistency and prevents errors related to stage weight distribution, promoting accuracy in project management.
 
-## Task 12: (MAAS-1109) Project Navigation: Include Stages in Top Navigation Menu & Adding a Previous Button
+### Task 13: (MAAS-1109) Project Navigation: Include Stages in Top Navigation Menu & Adding a Previous Button
 
 **Description:**
 
@@ -508,7 +545,7 @@ This task aims to enhance project navigation by incorporating Stages in the top 
 - Consistent Accessibility:
     - The visibility of the Previous button across all project types ensures a uniform experience, reducing confusion and enhancing usability.
 
-## Task 13: (MAAS-1130) New Changes from Ruchi: Drafted BOM Stage Creation Page
+### Task 14: (MAAS-1130) New Changes from Ruchi: Drafted BOM Stage Creation Page
 
 **Description:**
 
@@ -533,7 +570,7 @@ This task involves implementing new changes to the Drafted BOM Stage Creation pa
     - The icon next to the Stage Name helps in quickly identifying the purpose of the field, reducing ambiguity for users during data entry.
     - Simplifying the form by removing the Stage Sequence field minimizes confusion and focuses users on the most relevant inputs.
 
-## Task 13: (MAAS-1134) UI Fixes in BOM Stage Tracking Page
+### Task 15: (MAAS-1134) UI Fixes in BOM Stage Tracking Page
 
 **Description:**
 
@@ -566,7 +603,7 @@ This task involves making essential UI fixes to the BOM Stage Tracking page on t
     - A fixed header in the BOM table makes it easier for users to keep track of the columns while scrolling through large datasets.
     - The scrollbar class improves the overall scrolling experience, especially when dealing with extensive BOM lists.
 
-## Task 14: (MAAS-1138) Weightage - For Drafted Check
+### Task 16: (MAAS-1138) Weightage - For Drafted Check
 
 **Description:**
 
@@ -604,7 +641,7 @@ This task involves implementing an API call to auto-populate the weightage in th
 - Efficiency Improvements:
     - Automatically updating weightage and recalculating stage and lot weights minimizes manual input errors and ensures consistency across project tracking.
 
-## Task 15: (MAAS-1168) Project List: Store Filter Values for Session Management
+### Task 17: (MAAS-1168) Project List: Store Filter Values for Session Management
 
 **Description:**
 
@@ -619,7 +656,7 @@ This task focuses on enhancing user experience on the project list page by maint
 - State Persistence:
     - By storing filter values in sessionStorage, the application can maintain the state of user selections, enhancing the overall reliability of the filtering mechanism.
 
-## Task 16: (MAAS-1171) UI Fix for Po Qty & Indian Currency Format in 'More Details' Section
+### Task 18: (MAAS-1171) UI Fix for Po Qty & Indian Currency Format in 'More Details' Section
 
 **Description:**
 
@@ -633,7 +670,7 @@ This task involves updating the display format for Purchase Order (Po) Quantity 
 - Professional Appearance:
     - Formatting numbers appropriately lends a polished, professional look to the UI, making the system appear more reliable and user-friendly.
 
-## Task 17: (MAAS-1202) Reordering and Implementing SPOC Fields with Dropdown Options
+### Task 19: (MAAS-1202) Reordering and Implementing SPOC Fields with Dropdown Options
 
 **Description:**
 
@@ -647,7 +684,7 @@ This task involves reordering the SPOC (Single Point of Contact) fields based on
 - Seamless Integration with API:
     - The API binding ensures that the latest SPOC options are dynamically fetched, providing up-to-date choices for users.
 
-## Task 18: (MAAS-1212) Update API Documentation and Implement Changes for Sales POC in Project Header
+### Task 20: (MAAS-1212) Update API Documentation and Implement Changes for Sales POC in Project Header
 
 **Summary:**
 
@@ -663,7 +700,7 @@ This update involves making adjustments to the API interactions related to Sales
 - Header Label Change: Renaming "Sales POC" to "Project Manager" for clarity, with possible design inconsistencies across pages.
 - Input Field Removal: Simplifies the UI by removing the "Moglix Sales POC" field, but may affect backend operations if not coordinated properly.
 
-## Task 19: (MAAS-1266) Update API Documentation and Implement Changes for Sales POC in Project Header
+### Task 21: (MAAS-1266) Update API Documentation and Implement Changes for Sales POC in Project Header
 
 **Summary:**
 
@@ -678,7 +715,7 @@ This update involves making adjustments to the API interactions related to Sales
 - Minimal Performance Impact: Slight increase in processing time with multiple filters.
 - Testing Needed: Ensure accurate filtering and UI responsiveness.
 
-## Task 20: (MAAS-1288) Supplier RFQ Forms and Draft Mail Updates
+### Task 22: (MAAS-1288) Supplier RFQ Forms and Draft Mail Updates
 
 **Summary:**
 
@@ -693,7 +730,7 @@ This update involves making adjustments to the API interactions related to Sales
 - Process Flexibility: Making the "Process" field non-mandatory allows more flexibility in form submission.
 - Communication Alignment: Interchanging SPOCs in the RFQ email draft ensures better communication management by placing the relevant SPOC in "Reply To" for direct responses.
 
-## Task 21: (MAAS-1310) Final Exposure Value Display and Formula Update
+### Task 23: (MAAS-1310) Final Exposure Value Display and Formula Update
 
 **Summary:**
 
@@ -710,7 +747,7 @@ This update involves making adjustments to the API interactions related to Sales
 - Visual Clarity: The color-coded exposure values will provide instant clarity on project status, allowing quick identification of financial health.
 - Accurate Calculations: The updated formula ensures precise calculation of project exposure, leading to more informed decision-making for managing customer and supplier finances.
 
-## Task 22: (MAAS-1318) UI Updates for CPO and SPO Accordion Details
+### Task 24: (MAAS-1318) UI Updates for CPO and SPO Accordion Details
 
 **Description:**
 
@@ -735,7 +772,7 @@ This update involves making adjustments to the API interactions related to Sales
 - Clarity in Financial Details: Subscripts under key financial fields (Net Invoice Value, Advance Receivable/Payable) offer additional financial insights at a glance.
 - Layout Optimization: Adjusting accordion widths creates a more structured and aligned presentation of content.
 
-## Task 23: (MAAS-1335) Formula Updates for Customer and Supplier Financial Calculations
+### Task 25: (MAAS-1335) Formula Updates for Customer and Supplier Financial Calculations
 
 **Description:**
 
@@ -763,7 +800,7 @@ Accuracy in Financial Reporting: Updating these formulas ensures accurate calcul
 Clarity in Terminology: Renaming the "Debit Notes" to "Credit Notes" aligns the terminology with standard accounting practices, reducing potential confusion.
 Improved User Understanding: Clear formulas for both customer and supplier sections enhance user comprehension of financial positions and obligations, facilitating better decision-making.
 
-## Task 24: (MAAS-1349) Rearrangement of Project Financial Fields
+### Task 26: (MAAS-1349) Rearrangement of Project Financial Fields
 
 **Description:** The project financial fields are to be rearranged in the following order based on the provided image:
 
@@ -795,7 +832,7 @@ Improved User Understanding: Clear formulas for both customer and supplier secti
 - Clearer Financial Overview: The information button provides users with quick access to important metrics related to the Net GM (Actual), facilitating better financial analysis and decision-making.
 - Increased Accessibility: By grouping relevant financial metrics together, users can more easily navigate and understand the project's financial status.
 
-## Task 24: (MAAS-1353) Main Menu Structure Update
+### Task 27: (MAAS-1353) Main Menu Structure Update
 
 **Description**
 
@@ -828,7 +865,7 @@ Master Data
 - Development: This change will require updates to the frontend code to reflect the new menu structure and may involve testing to ensure all links function correctly.
 - Documentation: Any related user guides or documentation may need to be updated to reflect the new menu layout.
 
-## Task 25: (MAAS-1375) Project List Update: Actual GM% Display
+### Task 28: (MAAS-1375) Project List Update: Actual GM% Display
 
 **Description**
 
@@ -845,7 +882,7 @@ Show Actual GM% alongside Planned GM% in the pop-up.
 - Development: Frontend modifications will be required to implement the font color changes based on the conditions specified, as well as to align the buttons properly.
 - Testing: Thorough testing will be necessary to ensure that the color changes work correctly and that button alignment is consistent across various screen sizes and resolutions.
 
-## Task 26: (MAAS-1380) Project Exposure Value Coloring Update
+### Task 29: (MAAS-1380) Project Exposure Value Coloring Update
 
 **Description**
 
@@ -869,7 +906,7 @@ This update focuses on the visual representation of exposure values across proje
 - Development: Adjustments will be required in the frontend code to implement the new color logic and to update the tooltip text for hover interactions.
 - Testing: It will be essential to test the color-coding functionality to ensure that all exposure values are displayed correctly according to the specified logic, and that the tooltip displays the updated text as intended.
 
-## Task 27: (MAAS-1388) Add "Revise GM Star" Button for Project Update
+### Task 30: (MAAS-1388) Add "Revise GM Star" Button for Project Update
 
 **Description**
 
@@ -892,7 +929,7 @@ This update involves adding a button to the project interface that allows users 
 - Development: Implementation will require updates to the frontend code to add the button and handle the API call with the specified behavior.
 - Testing: It will be essential to test the button functionality to ensure it correctly interacts with the API and handles the enabling/disabling behavior as intended.
 
-## Task 28: (MAAS-1406) Enhancements to Internal Customer Report (WSR)
+### Task 31: (MAAS-1406) Enhancements to Internal Customer Report (WSR)
 
 **Description**
 
@@ -941,7 +978,7 @@ This update introduces several enhancements to the Customer WSR (Work in Progres
 - Development: The implementation will require updates to the frontend and backend to accommodate the new features and ensure seamless integration.
 - Testing: Comprehensive testing will be necessary to validate all functionalities, including remark edits, email drafts, and attachment handling.
 
-## Task 29: (MAAS-1424) Improvements to PDC Functionality
+### Task 32: (MAAS-1424) Improvements to PDC Functionality
 
 **Description**
 
@@ -980,7 +1017,7 @@ This update includes several enhancements to the PDC functionality to improve us
 - Development: The implementation of these changes will require updates to the frontend validation logic, backend API handling, and user interface elements.
 - Testing: Comprehensive testing will be necessary to ensure that all changes function as intended and do not introduce new issues.
 
-## Task 30: (MAAS-1439) Display of Revised CPO Value in Project Header
+### Task 32: (MAAS-1439) Display of Revised CPO Value in Project Header
 
 **Description**
 
@@ -1007,7 +1044,7 @@ This update introduces a new feature to enhance the visibility of the Revised CP
 - Development: Implementation will require adjustments to the frontend to integrate the new field and its conditional logic.
 - Testing: Comprehensive testing will be necessary to ensure the new field behaves as expected under various scenarios, including when the value is null.
 
-## Task 31: (MAAS-1461) Implementation of PO Limit for Partial Payments in Project Financials
+### Task 33: (MAAS-1461) Implementation of PO Limit for Partial Payments in Project Financials
 
 **Description**
 
@@ -1028,7 +1065,7 @@ This update introduces a maximum limit for partial payments within the Project F
 - Development: The implementation will require modifications to the input field validation logic within the Project Financials interface.
 - Testing: Thorough testing will be necessary to verify that the input limits function correctly and that users receive appropriate feedback when attempting to exceed the limit.
 
-## Task 32: (MAAS-1469) Enhancements in Project Header and Stage Tracker
+### Task 34: (MAAS-1469) Enhancements in Project Header and Stage Tracker
 
 **Description**
 
@@ -1065,7 +1102,7 @@ This update aims to improve the user interface and functionality of the Project 
 - Visual Consistency: Fixing alignment issues will enhance the overall visual appeal and professionalism of the application.
 - Data Integrity: Reviewing completion percentage calculations will ensure accurate reporting and decision-making.
 
-## Task 33: (MAAS-1399) Project List: Statistical Summary of Projects by Status
+### Task 35: (MAAS-1399) Project List: Statistical Summary of Projects by Status
 
 **Description**
 
@@ -1095,7 +1132,7 @@ This update introduces a statistical summary feature for the Project List, provi
 - Dynamic Interaction: The statistics will reflect any active filters or searches, ensuring that users have accurate and relevant information at all times.
 - User Engagement: A clear and concise statistical summary can enhance user engagement with the project management system, as it simplifies the process of monitoring project statuses.
 
-## Task 34: (MAAS-1059) Revenue Forecast Report
+### Task 36: (MAAS-1059) Revenue Forecast Report
 
 **Description**
 
@@ -1153,7 +1190,7 @@ The Revenue Forecast Report provides users with an overview of incoming revenues
 - Improved Decision-Making: By forecasting invoices based on real data, users can make informed decisions regarding production and dispatch.
 - User-Friendly Interface: A well-structured pop-up with intuitive navigation enhances user experience and facilitates quick access to relevant financial data.
 
-## Task 35: (MAAS-1225) Exposure Dashboard
+### Task 37: (MAAS-1225) Exposure Dashboard
 
 **Description**
 
@@ -1237,7 +1274,7 @@ The Exposure Dashboard provides a comprehensive view of Moglix's exposure to all
 - Better Project Tracking: Allows for monitoring of project statuses and financial standings in real-time.
 - Data-Driven Insights: Users can leverage insights from the dashboard to optimize customer/supplier relationships and manage financial risks effectively.
 
-## Task 36: (MAAS-1572) Update Rupees Number Format to Indian Format in Overall Application
+### Task 38: (MAAS-1572) Update Rupees Number Format to Indian Format in Overall Application
 
 **Description**
 
@@ -1270,7 +1307,7 @@ This update involves formatting currency values throughout the application to ad
 - User Confidence: Proper formatting will build user trust in the application, ensuring that financial data is presented accurately and professionally.
 Ease of Maintenance: Centralizing the currency formatting logic in the currencyFormatter function will simplify future updates and maintenance.
 
-## Task 37: (MAAS-1402) Documents Tab: Categorization and Tagging
+### Task 39: (MAAS-1402) Documents Tab: Categorization and Tagging
 
 **Description**
 
@@ -1311,7 +1348,7 @@ The objective is to establish a comprehensive knowledge repository for project-r
 - Improved User Experience: By categorizing documents and providing tagging options, users can personalize their document organization, leading to a more intuitive navigation experience.
 - Streamlined Project Tracking: The separation of Project Milestones and Project Documents will facilitate clearer tracking of project progress and documentation, aiding project managers in oversight and reporting.
 
-## Task 38: (MAAS-1548) Project Stage Delay Accountability
+### Task 40: (MAAS-1548) Project Stage Delay Accountability
 
 **Description**
 
@@ -1342,7 +1379,7 @@ The Project Stage Delay Accountability feature aims to establish a systematic ap
 - Data-Driven Decisions: The availability of comprehensive reports will empower project managers to analyze delay patterns and make informed decisions to mitigate future risks.
 - Enhanced Project Oversight: The integration of delay summaries into the Project Dashboard provides an at-a-glance overview of project health, enabling timely interventions where necessary.
 
-## Task 38: (MAAS-1699) Add New Status: "Short Close" for Projects
+### Task 41: (MAAS-1699) Add New Status: "Short Close" for Projects
 
 **Description**
 
@@ -1395,7 +1432,7 @@ This feature introduces a new project status, "Short Close," which is applicable
 - Improved User Experience: The clear workflows and mandatory inputs streamline the process, ensuring that users are guided through the necessary steps for status changes.
 - Data Integrity: The validation checks during status transitions (e.g., ensuring 100% project completion) help maintain the integrity of project data, reducing potential errors and confusion.
 
-## Task 39: (MAAS-144) Project Creation Tracker Percentage for Project List Page
+### Task 42: (MAAS-144) Project Creation Tracker Percentage for Project List Page
 
 **Description**
 
@@ -1432,7 +1469,7 @@ The purpose of this feature is to provide a visual representation of the data co
 - Increased Accountability: By highlighting missing fields, team members are encouraged to provide necessary information, fostering a culture of accountability.
 - Data Quality Assurance: Ensuring that all required fields are completed helps maintain the integrity of project data, leading to more accurate reporting and decision-making.
 
-## Task 40: (MAAS-1762) Customer and Supplier Outstanding and Overdue in Project Financials Section
+### Task 43: (MAAS-1762) Customer and Supplier Outstanding and Overdue in Project Financials Section
 
 **Description**
 
@@ -1463,3 +1500,5 @@ This feature aims to enhance the visibility of outstanding (OS) and overdue (OD)
 - Improved Decision-Making: With clearer insights into customer and supplier financials, project managers can take proactive measures to address outstanding and overdue accounts.
 - Increased Accountability: By tracking outstanding and overdue amounts, teams are encouraged to follow up with customers and suppliers on pending payments.
 - Streamlined Financial Management: Consolidating this information within the Project Financials section reduces the need to switch between different sections, improving efficiency.
+
+**[⬆ Back to Top](#table-of-contents)**
