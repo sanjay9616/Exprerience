@@ -1,0 +1,162 @@
+## Customer-Specific Brand Display and Segmentation Post-Login
+
+**Description:**
+
+Post-login, customers are segmented into two groups: ADI and BRISK. Based on the customer type, different brands, products, and categories are displayed. For ADI customers, a specific list of brands is shown, while BRISK customers see a different set of brands. This brand mapping extends to the top brands banner, ensuring a tailored experience for both customer types.
+
+**ADI Customer Brands:**
+
+- Algatec
+- Audiotrak
+- Bosch
+- Electro-Voice
+- Honeywell
+- Morley
+- Protek
+- Ravel
+- Rosslare
+- Texecom
+- Timewatch
+- Veracity
+- Vesda
+- Wbox
+- Optex
+- Securico
+- Smart I
+- System Sensor
+- Assa Abloy
+- Eaton
+- Fargo
+- GST
+- Hanwha Techwin
+- NUUO
+- Western Digital
+- Agni
+- Apollo
+- Cybernetics
+- Alba Urmet
+- Hid
+- Idcube
+- Idemia
+- Matrix
+- Time Watch
+- Yale
+- ALGATEC
+- IDEMIA
+- CYBERNATICS
+- FARGO
+- HID
+- HONEYWELL
+- IDCUBE
+- ROSSLARE
+- SMART I
+- TIME WATCH
+- AUDIOTRAK
+- BOSCH
+- BOSCH EV
+- HIKVISION
+- PROTEK
+- WBOX
+- WESTERN DIGITAL
+- AGNI
+- APOLLO
+- ASES
+- EATON
+- MORLEY
+- RAVEL
+- SYSTEM SENSOR
+- VESDA
+- REALITY
+- IOTA
+- OPTEX
+- SECURICO
+- TEXECOM
+- EONSECURE
+- EONAV
+
+**Impact:**
+
+- Personalized User Experience: Displaying brands based on the customer type ensures that ADI and BRISK customers only see relevant products, increasing the likelihood of engagement and conversions.
+- Enhanced Customer Satisfaction: By showing tailored brands and products post-login, customers feel a more customized shopping experience, leading to higher satisfaction and retention.
+- Improved Efficiency: Streamlining the product catalog based on customer type reduces irrelevant content, helping users quickly find the products they are most interested in.
+- Consistent Branding: The same approach applied to the top brands banner ensures consistency in brand visibility, creating a cohesive experience across the platform.
+
+## Update to DigiMRO Contact Us Page for ADI and BRISK Customer Support
+
+**Workflow Overview:**
+
+- Brand Selection:
+    - Customers can search from a static list of brands (as defined in the brand BU.csv file).
+    - Based on the selected brand, either ADI or BRISK contact details will be displayed.
+- Support Details:
+    - If an ADI brand is selected, show the existing ADI contact details (Flow 1).
+    - If a BRISK brand is selected, show the following BRISK contact details.
+    - BRISK Customer Support Details
+- Centralized Contact Information:
+    - Phone No: +91 20 25464825
+    - Calling Time: (Same text as for ADI)
+    - Email: salespune@briskelectronics.com
+    - Subtext: (Same as ADI)
+
+**Brisk Office Locations & Contact Info:**
+
+- Pune
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Private Limited · 414, 4th Floor, Building No 1, Siddharth Tower, Kothrud, Pune, Maharashtra 411038, India
+    - Address: 319/320, Siddharth Tower, Bldg. No.1, G A Kulkarni Path, Kothrud, Pune – 411038. INDIA.
+    - Contact Number: +91 20 66203233
+    - Email: salespune@briskelectronics.com
+- Ahmedabad
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Pvt. Ltd. · Plot no 512 1 near Ramol police chowki, Phase IV, Vatva GIDC, Ahmedabad, Gujarat 382445, India
+    - Address: 304, Gala Argos, Kalgi Cross Road, Ellisbridge, Ahmedabad – 380006. INDIA.
+    - Contact Number: +91 79 35114713, 48902419
+    - Email: brisk.amdavad@gmail.com
+- Nagpur
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Pvt. Ltd. · Block No.S-4, Plot No. D-1, Midc, Hingna, Nagpur, Nildoh ct, Maharashtra 440016, India
+    - Address: Plot No.98, MIDC Hingna, Near Wadi Hingna T Point, Opp. Modigold, Nagpur – 440028. INDIA.
+    - Contact Number: +91 8380074026
+    - Email: salesnagpur@briskelectronics.com
+- Mumbai
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics · BRISK ELECTRONICS, Tiwari Compound, 29 8, SV Rd, Krishna Colony, Dahisar East, Mumbai, Maharashtra 400068, India
+    - Address: Plot No.391, 409 Diamond Plaza, Dr. Dadasaheb Bhadakamkar Marg, Girgaon, Mumbai – 400004. INDIA.
+    - Contact Number: +91 22 62375837
+    - Email: salesmumbai@briskelectronics.com
+- Kolhapur
+    - Company Name: Brisk Electronics Pvt. Ltd.
+    - Location: Brisk Electronics Pvt. Ltd. · Plot No.9, Isolation Hospital Rd, Nehru Nagar, Samrat Colony, Datta Colony, Kolhapur, Maharashtra 416012, India
+    - Address: D-23, Kolhapur Udyam Co-opretive Society Ltd, 1328/34, Y.P.Powar Nagar, Kolhapur – 416006. INDIA.
+    - Contact Number: +91 231 2692450
+    - Email: saleskolhapur@briskelectronics.com
+
+**Implementation Steps:**
+
+- Update Contact Us Page Layout:
+    - Add a search input for customers to select their brand from the static list provided.
+- Brand-based Conditional Rendering:
+    - Use brand selection to conditionally display either the ADI contact flow or the BRISK contact details listed above.
+- Consistency in Design:
+    - Ensure both ADI and BRISK support details maintain a consistent format and style for better user experience.
+
+**Impact**
+
+- Enhanced User Experience:
+    - By allowing customers to select brands and display relevant contact information, the update provides a tailored experience. This makes it easier for customers to find the support they need, reducing frustration and increasing satisfaction.
+- Increased Engagement:
+    - With a clear and accessible way to contact support, customers are more likely to reach out when they have questions or issues. This proactive communication can lead to higher engagement rates with the support team.
+- Improved Customer Satisfaction:
+    - Providing specific contact details based on customer type (ADI vs. BRISK) ensures that customers receive the most relevant information. This personalized approach can enhance overall customer satisfaction and loyalty.
+- Streamlined Support Processes:
+    - Centralizing contact information based on brand selection helps streamline support processes. Support teams can better prepare for inquiries by anticipating the types of issues or questions that may arise based on the brand selected.
+- Brand-Specific Knowledge:
+    - The update allows support staff to focus on brand-specific knowledge and expertise, improving the quality of assistance provided to customers. This can lead to faster resolution times and better overall support experiences.
+- Operational Efficiency:
+    - By categorizing support requests by brand, the support team can more effectively allocate resources and manage workloads, leading to improved efficiency and response times.
+- Reduced Response Time:
+    - With clear contact details and streamlined communication channels, customers can expect faster responses to their inquiries, which can lead to increased trust and confidence in the brand.
+- Better Data Collection:
+    - The implementation of a brand selection feature allows for better data collection on customer inquiries, enabling the company to identify trends and areas for improvement in products and services.
+- Increased Conversion Rates:
+    - A well-structured contact page can help drive conversions by instilling confidence in potential customers who may be seeking support before making a purchase decision. Knowing they can easily access assistance may encourage them to proceed with their purchases
