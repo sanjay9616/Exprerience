@@ -8,7 +8,8 @@
 | 2     | [Project Flow](#Project-Flow)                     |
 | 2     | [My Contributions](#My-Contributions)             |
 
-# About Project
+# About Project![amit](https://github.com/user-attachments/assets/52af004f-d600-4ac9-9c0a-1b9ea7061215)
+
 
 **Introducing MAAS:** The knowledge repository is designed to centralize project attachments, progress reports, and financial data in one accessible location. This project optimizes the management of bulk orders, enabling smooth tracking and updating of financial transactions and customer interactions throughout the entire order lifecycle. With efficient categorization and tagging mechanisms in place, users can easily search and filter through project documents, enhancing the user experience. This repository not only improves accessibility to vital information but also fosters collaboration and informed decision-making across teams. Ultimately, it serves as a crucial resource for knowledge sharing and project management, contributing significantly to operational efficiency.supply chains.
 
