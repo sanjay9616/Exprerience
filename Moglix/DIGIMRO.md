@@ -63,59 +63,43 @@
 
 # Project Flow
 
-![Screenshot from 2024-10-12 16-30-00](https://github.com/user-attachments/assets/f3b6732b-29a1-4296-bacf-0f99969dbcca)
+<img src="https://github.com/user-attachments/assets/f3b6732b-29a1-4296-bacf-0f99969dbcca" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-30-16](https://github.com/user-attachments/assets/e959517b-7264-45e9-a8a5-568ecb6fec2a)
+<img src="https://github.com/user-attachments/assets/e959517b-7264-45e9-a8a5-568ecb6fec2a" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-31-17](https://github.com/user-attachments/assets/09ae1524-cb09-4e11-b0b8-f16832150086)
+<img src="https://github.com/user-attachments/assets/09ae1524-cb09-4e11-b0b8-f16832150086" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-33-02](https://github.com/user-attachments/assets/e7944a53-34af-413b-9ca4-44b9db3a252c)
+<img src="https://github.com/user-attachments/assets/e7944a53-34af-413b-9ca4-44b9db3a252c" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-33-20](https://github.com/user-attachments/assets/8e657f04-31b8-47f1-9b09-d3a5b64515b0)
+<img src="https://github.com/user-attachments/assets/8e657f04-31b8-47f1-9b09-d3a5b64515b0" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-33-43](https://github.com/user-attachments/assets/4785d773-59f9-442e-962e-6ac66533b43f)
+<img src="https://github.com/user-attachments/assets/4785d773-59f9-442e-962e-6ac66533b43f" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-34-14](https://github.com/user-attachments/assets/c5d33dda-82c6-47fa-a9c5-7ec0d301fb82)
+<img src="https://github.com/user-attachments/assets/c5d33dda-82c6-47fa-a9c5-7ec0d301fb82" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-34-28](https://github.com/user-attachments/assets/6842637f-9989-4e3e-a836-92fe5e4b7e33)
+<img src="https://github.com/user-attachments/assets/6842637f-9989-4e3e-a836-92fe5e4b7e33" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-34-44](https://github.com/user-attachments/assets/d1804512-febc-46bf-b640-1ad1050b9e88)
+<img src="https://github.com/user-attachments/assets/d1804512-febc-46bf-b640-1ad1050b9e88" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-36-01](https://github.com/user-attachments/assets/1d601449-08bd-4944-af6f-f199cbb382a2)
+<img src="https://github.com/user-attachments/assets/1d601449-08bd-4944-af6f-f199cbb382a2" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-36-19](https://github.com/user-attachments/assets/b70ecd1e-4fcc-4ee7-b3ca-fbd8ef35e0f6)
+<img src="https://github.com/user-attachments/assets/b70ecd1e-4fcc-4ee7-b3ca-fbd8ef35e0f6" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-36-38](https://github.com/user-attachments/assets/5a01a75b-f2c8-44e4-987e-a64d115d40cb)
+<img src="https://github.com/user-attachments/assets/5a01a75b-f2c8-44e4-987e-a64d115d40cb" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-36-49](https://github.com/user-attachments/assets/1c4e42fd-20a1-48a2-bbee-edf3c04e154e)
+<img src="https://github.com/user-attachments/assets/1c4e42fd-20a1-48a2-bbee-edf3c04e154e" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-37-01](https://github.com/user-attachments/assets/8d6f5ba9-57f1-4ba3-bf21-5d56d1e8133e)
+<img src="https://github.com/user-attachments/assets/8d6f5ba9-57f1-4ba3-bf21-5d56d1e8133e" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-37-16](https://github.com/user-attachments/assets/75c1aee0-f363-4afa-a84e-1a5c9aac90c9)
+<img src="https://github.com/user-attachments/assets/75c1aee0-f363-4afa-a84e-1a5c9aac90c9" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-37-29](https://github.com/user-attachments/assets/0d0079fb-f8e0-4735-9f28-1ef5809063f5)
+<img src="https://github.com/user-attachments/assets/0d0079fb-f8e0-4735-9f28-1ef5809063f5" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-37-43](https://github.com/user-attachments/assets/352af8b4-c5cd-4c09-8ce2-46a2cede7dc2)
+<img src="https://github.com/user-attachments/assets/352af8b4-c5cd-4c09-8ce2-46a2cede7dc2" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-37-54](https://github.com/user-attachments/assets/baeea7ba-7b3c-4c57-b785-bc633bef41b6)
+<img src="https://github.com/user-attachments/assets/baeea7ba-7b3c-4c57-b785-bc633bef41b6" alt="Not Found" />
 
-![Screenshot from 2024-10-12 16-38-06](https://github.com/user-attachments/assets/1be3f710-5d7b-470b-bf8c-edd3192baf67)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/user-attachments/assets/1be3f710-5d7b-470b-bf8c-edd3192baf67" alt="Not Found" />
 
 **[⬆ Back to Top](#table-of-contents)**
 
