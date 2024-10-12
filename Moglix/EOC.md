@@ -1,4 +1,99 @@
-## Task 1: (EOC-2802) Pick Supplier Credit Term from Exception List in RFQ & CPO Item Sheet
+# Table of Contents
+
+| S No. | Approach                                          |
+| ----- | ------------------------------------------------- |
+| 1     | [About Project](#About-Project)                   |
+| 2     | [Project Configurations](#Project-Configurations) |
+| 3     | [Contributers](#Contributers)                     |
+| 4     | [Project Flow](#Project-Flow)                     |
+| 5     | [My Contributions](#My-Contributions)             |
+
+# About Project
+
+**Introducing Credlix:** EOC is an internal application developed at Moglix to streamline the management of Purchase and Sale orders. The application features a custom Excel-like interface that allows users to efficiently track items throughout the entire lifecycle of orders and products. Specifically designed for the internal buyer team, EOC simplifies the creation of Purchase Orders, enhancing the overall efficiency of the purchasing process.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Project Configurations
+
+### Before Angular Update
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 13.0.3           |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.4.2            |
+
+### After Angular Update
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| Angular CLI | 14.2.13          |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.8.4            |
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Contributers
+
+<p align="center">
+    <table>
+        <tr>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
+                    <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" width="150" height="150" />
+                    <br>
+                    <b>Sanjay Kumar</b><br>
+                    <div>Web Developer</div>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/amit-singh-a3a91810a/" target="_blank" title="Amit Singh">
+                    <img src="https://github.com/user-attachments/assets/52af004f-d600-4ac9-9c0a-1b9ea7061215" alt="Amit Singh" width="150" height="150" />
+                    <br>
+                    <b>Amit Singh</b><br>
+                    <div>Lead Engineer</div>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/vikacxio/" target="_blank" title="Vikas Kumar">
+                    <img src="https://github.com/user-attachments/assets/c8968105-544a-428c-a6ed-1989d0d28696" alt="Vikas Kumar" width="150" height="150" />
+                    <br>
+                    <b>Vikas Kumar</b><br>
+                    <div>Software Engineer</div>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/prince-tiwari-622b36217/" target="_blank" title="Prince Tiwari">
+                    <img src="https://github.com/user-attachments/assets/903c9136-5f82-4310-9dfe-c06b6e8893d7" alt="Prince Tiwari" width="150" height="150" />
+                    <br>
+                    <b>Prince Tiwari</b><br>
+                    <div>Software Engineer</div>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/manoj-meghwal-295455199/" target="_blank" title="Manoj Meghwal">
+                    <img src="https://github.com/user-attachments/assets/0cdfa2d1-7f9f-4322-8d9e-fd199e2822a5" alt="Manoj Meghwal" width="150" height="150" />
+                    <br>
+                    <b>Manoj Meghwal</b><br>
+                    <div>Frontend Developer</div>
+                </a>
+            </td>
+        </tr>
+    </table>
+</p>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Project Flow
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# My Contributions
+
+### Task 1: (EOC-2802) Pick Supplier Credit Term from Exception List in RFQ & CPO Item Sheet
 
 **Current Behavior:**
 
@@ -12,7 +107,7 @@ SCM will maintain an exception list for supplier ID-plant ID combinations. Upon 
 
 Automates the credit term selection process, improving accuracy and reducing manual data entry during the RFQ and CPO processes, leading to time savings and fewer errors.
 
-## Task 2: (EOC-2837) Introduce Defaulter Supplier Tagging in EOC
+### Task 2: (EOC-2837) Introduce Defaulter Supplier Tagging in EOC
 
 **Task:**
 
@@ -22,7 +117,7 @@ Implement defaulter supplier tagging across the EOC UI and Excel downloads for t
 
 Increases visibility of defaulter suppliers, improving decision-making in RFQ and CPO processes and ensuring proper historical tracking in approval workflows, reducing financial risks.
 
-## Task 3: (EOC-2839) Weekly Report & Mailer Enhancements for SP > ARC Price
+### Task 3: (EOC-2839) Weekly Report & Mailer Enhancements for SP > ARC Price
 
 - New Weekly Report for SP > ARC Price:
     - Subject: 10 POs punched at SP > ARC Price, ARC price in system to be updated?
@@ -40,7 +135,7 @@ Increases visibility of defaulter suppliers, improving decision-making in RFQ an
 
 Enhances accuracy and visibility of ARC data, streamlines price discrepancy reporting, and automates communication, improving operational efficiency and decision-making.
 
-## Task 4: (EOC-2780) ARC Phase 3 in EOC
+### Task 4: (EOC-2780) ARC Phase 3 in EOC
 
 In ARC Phase 3, the following scope of work is outlined:
 
@@ -54,13 +149,13 @@ In ARC Phase 3, the following scope of work is outlined:
 
 **Impact:** Improves ARC management through enhanced data accuracy, automated List Price syncing, and expanded audit capabilities, while supporting new features in the Buyers Portal.
 
-## Task 5: (EOC-2907) Remove Plant ID Configuration from ARC for Soft Alerts & Weekly Mailers
+### Task 5: (EOC-2907) Remove Plant ID Configuration from ARC for Soft Alerts & Weekly Mailers
 
 In ARC Phase 2, soft alerts were shown to selective customers where ARC data cleaning was completed. Now that PAN India data is available and uploaded, the plant ID check needs to be removed. Soft alerts for SP < ARC Price and SP > ARC Price, as well as weekly mailers to KAMs, sourcers, and city heads, should be sent to all customers.
 
 **Impact:** Expands visibility by ensuring soft alerts and weekly mailers reach all customers, improving communication and awareness across the board.
 
-## Task 6: (EOC-2902) Minor Enhancements in Catalog Sheet
+### Task 6: (EOC-2902) Minor Enhancements in Catalog Sheet
 
 Enhance the Catalog Sheet by implementing the following improvements for better efficiency and usage:
 
@@ -71,7 +166,7 @@ Enhance the Catalog Sheet by implementing the following improvements for better 
 
 **Impact:** Streamlines the Catalog Sheet, making it more user-friendly and efficient for the catalog team by improving data visibility and eliminating unnecessary fields.
 
-## Task 7: (EOC-2965) Show Summary of ARC Accounts in ARC Summary Screen
+### Task 7: (EOC-2965) Show Summary of ARC Accounts in ARC Summary Screen
 
 Display a summary count of the following metrics next to the "Total Results" widget on the ARC Summary screen:
 
@@ -86,7 +181,7 @@ Display a summary count of the following metrics next to the "Total Results" wid
 
 **Impact:** Enhances the ARC Summary screen by providing a quick overview of key metrics, improving data accessibility and decision-making.
 
-## Task 8: (EOC-2780) ARC Phase 3 in EOC
+### Task 8: (EOC-2780) ARC Phase 3 in EOC
 
 In ARC Phase 3, the following tasks are included:
 
@@ -100,7 +195,7 @@ In ARC Phase 3, the following tasks are included:
 
 **Impact:** Improves data accuracy, enhances ARC management by automating price and UOM syncing, supports buyers with additional fields, and enables detailed audit tracking, resulting in better control and efficiency in ARC operations.
 
-## Task 9: (EOC-2915) Revamp RFQ & CPO Item Sheet
+### Task 9: (EOC-2915) Revamp RFQ & CPO Item Sheet
 
 The task involves revamping the RFQ and CPO Item Sheets with the following scope of work:
 
@@ -115,7 +210,7 @@ The task involves revamping the RFQ and CPO Item Sheets with the following scope
 
 **Impact:** Enhances user experience, improves navigation, and boosts productivity by adding personalized views and filters, leading to better resource management and efficiency in the RFQ and CPO processes.
 
-## Task 10: (EOC-2923) Introduce Productivity Dashboard in Global Header in EOC
+### Task 10: (EOC-2923) Introduce Productivity Dashboard in Global Header in EOC
 
 The task is to introduce a Productivity Dashboard in the global header of EOC, with two views: Executive and Manager.
 
@@ -132,7 +227,7 @@ The task is to introduce a Productivity Dashboard in the global header of EOC, w
 
 **Impact:** Improves productivity tracking and provides real-time insights for both individual users and managers, leading to enhanced performance monitoring and team management.
 
-## Task 11: (EOC-2960) Pre-fill MSN Related Details in RFQ & CPO Sheet
+### Task 11: (EOC-2960) Pre-fill MSN Related Details in RFQ & CPO Sheet
 
 The task involves enhancements to the RFQ Item Sheet and CPO Item Sheet (Item View) as follows:
 
@@ -145,7 +240,7 @@ The task involves enhancements to the RFQ Item Sheet and CPO Item Sheet (Item Vi
 
 **Impact:** Enhances data accuracy in the RFQ and CPO sheets by ensuring timely and correct pre-filling of MSN-related details, improving usability and reducing manual errors.
 
-## Task 12: (EOC-2987) Add Most Recent 10 Updates in ARC Listing > Log
+### Task 12: (EOC-2987) Add Most Recent 10 Updates in ARC Listing > Log
 
 The task is to implement a feature that displays the most recent 10 updates in the ARC Listing log, regardless of parameters such as price, discount, brand, or category.
 
@@ -158,7 +253,7 @@ The task is to implement a feature that displays the most recent 10 updates in t
 
 **Impact:** Improves accessibility to recent updates in the ARC Listing, enhancing user experience and facilitating better tracking of changes over time.
 
-## Task 13: (EOC-3010) Enhancement in Defaulter Supplier Tagging Task
+### Task 13: (EOC-3010) Enhancement in Defaulter Supplier Tagging Task
 
 Currently, defaulter suppliers and their three metrics are displayed in the RFQ Sheet, CPO Item Sheet, CM approval mail, and CM approval screens (web and mobile).
 
@@ -169,7 +264,7 @@ Currently, defaulter suppliers and their three metrics are displayed in the RFQ 
 
 **Impact:** Improves the accuracy of defaulter supplier metrics, ensuring clarity in outstanding balances and reducing potential confusion for users.
 
-## Task 14: (EOC-2923) Introduce Productivity Dashboard in Global Header in EOC
+### Task 14: (EOC-2923) Introduce Productivity Dashboard in Global Header in EOC
 
 The task involves introducing a Productivity Dashboard in the global header of EOC, featuring two views: Executive and Manager.
 
@@ -186,7 +281,7 @@ The task involves introducing a Productivity Dashboard in the global header of E
 
 **Impact:** Enhances productivity tracking and reporting capabilities, providing real-time insights for executives and managers to drive performance improvements and optimize resource management.
 
-## Task 15: (EOC-3052) Credit Term ID to be Sent to SCM
+### Task 15: (EOC-3052) Credit Term ID to be Sent to SCM
 
 The task aims to resolve the issue of the Credit Term ID not being sent to SCM when users update the Credit Term on the EOC UI.
 
@@ -201,7 +296,7 @@ The task aims to resolve the issue of the Credit Term ID not being sent to SCM w
 
 **Impact:** Improves data accuracy by ensuring the correct Credit Term ID is sent to SCM, streamlining the supplier credit term process and enhancing user experience.
 
-## Task 16: (EOC-3022) Enhance Existing Quotation Format to Include More Data Points
+### Task 16: (EOC-3022) Enhance Existing Quotation Format to Include More Data Points
 
 The task involves enhancing the existing quotation format to incorporate additional data points as outlined below.
 
@@ -221,7 +316,7 @@ The task involves enhancing the existing quotation format to incorporate additio
 
 **Impact:** Enhances the quotation format by providing comprehensive data points, improving clarity, and facilitating better decision-making for users.
 
-## Task 17: (EOC-3089) Implement Manager's View at Resource Level for Enquiry Pendency
+### Task 17: (EOC-3089) Implement Manager's View at Resource Level for Enquiry Pendency
 
 The task is to introduce a Manager’s View at the resource level for the Enquiry Pendency Dashboard.
 
@@ -258,7 +353,7 @@ The task is to introduce a Manager’s View at the resource level for the Enquir
 
 **Impact:** This enhancement provides managers with a comprehensive view of enquiry pendency, improving oversight and decision-making, while ensuring timely responses to enquiries.
 
-## Task 18: (EOC-3105) HZL Related Requirements
+### Task 18: (EOC-3105) HZL Related Requirements
 
 The task aims to automate several processes for HZL orders, particularly those for Team Kohinoor, to improve efficiency and reduce manual work.
 
@@ -300,7 +395,7 @@ The task aims to automate several processes for HZL orders, particularly those f
 - Saves 20 manhours per month by automating the filling of fields and validating information.
 - Reduces the risk of wrong supplier assignment and saves an additional 45 manhours monthly, with a total time-saving of approximately 65 manhours per month.
 
-## Task 19: (EOC-3146) Add One More Metric in Productivity Dashboard
+### Task 19: (EOC-3146) Add One More Metric in Productivity Dashboard
 
 The task involves adding a new metric to the Productivity Dashboard and making some modifications to existing metrics.
 
@@ -319,7 +414,7 @@ The task involves adding a new metric to the Productivity Dashboard and making s
 
 **Impact:** Improves productivity tracking by adding a new relevant metric, while renaming and temporarily pausing certain features to streamline operations.
 
-## Task 20: (EOC-3080) CPO Item Sheet Revamp
+### Task 20: (EOC-3080) CPO Item Sheet Revamp
 
 The task involves revamping the CPO Item Sheet by introducing new global filters, tab structure, and adding/removing/rearranging columns based on the new design.
 
@@ -352,7 +447,7 @@ The task involves revamping the CPO Item Sheet by introducing new global filters
 
 **Impact:** Improves the user experience by providing an intuitive tab structure, global filters, and better action visibility, while enhancing data management and efficiency within the CPO Item Sheet.
 
-## Task 21: (EOC-3154) Stop CPO Manual Punching for Net Price ARC Orders with Price Difference >10%
+### Task 21: (EOC-3154) Stop CPO Manual Punching for Net Price ARC Orders with Price Difference >10%
 
 The task is to prevent the manual punching of ARC orders for Net Price CPNs/brands where the price difference between ARC price and SP is greater than 10% (for orders where SP is less than the ARC price). This restriction applies to all verticals, excluding UAE. Only applicable for PO source = EOC.
 
@@ -363,7 +458,7 @@ The task is to prevent the manual punching of ARC orders for Net Price CPNs/bran
 
 **Impact:** Prevents punching of CPOs with significant price differences, ensuring accurate pricing for ARC items and reducing the risk of financial discrepancies.
 
-## Task 22: (EOC-3145) Introduce New CPO Source & New CPO Item Type
+### Task 22: (EOC-3145) Introduce New CPO Source & New CPO Item Type
 
 The task involves adding new CPO item types and inventory options to the CPO details and punch screens, along with updates to the CPO listing screen.
 
@@ -387,7 +482,7 @@ The task involves adding new CPO item types and inventory options to the CPO det
 
 **Impact:** Enhances flexibility and automation by introducing new CPO item types and inventory management options, streamlining processes for internal, sample, and stock transfer orders, and ensuring accurate categorization of CPO sources.
 
-## Task 23: (EOC-3099) CRMM Automation Project Phase 1
+### Task 23: (EOC-3099) CRMM Automation Project Phase 1
 
 **Description:**
 
@@ -427,7 +522,7 @@ The task is to automate the CRMM project with the following scope of work:
     - MRO Sales: 98 Lacs/month
     - MRO GMV: 3Cr per month for core categories, with no expected increase in this number.
 
-## Task 24: (EOC-3225) CRMM Automation - CRMM Customer Level Renewal Workflow
+### Task 24: (EOC-3225) CRMM Automation - CRMM Customer Level Renewal Workflow
 
 **Description:**
 
@@ -472,7 +567,7 @@ The task focuses on automating the CRMM customer renewal workflow by tagging Cor
 
 **Impact:** Streamlines the CRMM renewal process, automates reminders, and ensures timely approval for expiring plants, reducing manual intervention and improving efficiency.
 
-## Task 25: (EOC-3152) Allow Category Update in Enquiry Details Sheet
+### Task 25: (EOC-3152) Allow Category Update in Enquiry Details Sheet
 
 **Description:** The task involves enabling updates to the L1 and L2 categories in the Enquiry Details Sheet when no category suggestions are provided by the Analytics API, even if the enquiry type and customer POC are blank.
 
@@ -483,7 +578,7 @@ The task focuses on automating the CRMM customer renewal workflow by tagging Cor
 
 **Impact:** Enables flexibility for users to manually assign categories, improving data accuracy and ensuring categories are updated even in the absence of automated suggestions.
 
-## Task 26: (EOC-3192) Introduce VMI/JIT Tagging & Edit CPO Number
+### Task 26: (EOC-3192) Introduce VMI/JIT Tagging & Edit CPO Number
 
 **Description:**
 
@@ -513,7 +608,7 @@ The task involves adding VMI/JIT tagging in various CPO-related workflows and in
 
 Improves inventory management by allowing VMI/JIT tagging and ownership selection, while enabling greater flexibility in handling email confirmation cases by allowing edits to CPO numbers and adding attachments. This reduces manual errors and enhances the PO workflow.
 
-## Task 27: (EOC-3147) Introduce Bulk Upload as a Feature in CPO Details Screen
+### Task 27: (EOC-3147) Introduce Bulk Upload as a Feature in CPO Details Screen
 
 **Description:**
 
@@ -550,7 +645,7 @@ The task involves enhancing the existing bulk OMT remarks template by adding new
 
 Streamlining the bulk upload process improves efficiency in managing CPO details, reduces manual entry errors, and enhances data accuracy by standardizing the upload format.
 
-## Task 28: (EOC-3173) Remove Plants Group Field from CPN Creation (Product Upload) Workflow
+### Task 28: (EOC-3173) Remove Plants Group Field from CPN Creation (Product Upload) Workflow
 
 **Description:**
 
@@ -569,7 +664,7 @@ The task involves removing the Plants Group column from the CPN creation templat
 
 This change simplifies the CPN creation process, reduces user confusion, and ensures a more streamlined workflow by eliminating unnecessary fields.
 
-## Task 29: (EOC-3187) Add Cancel and Clone Reasons at Order and Item Level
+### Task 29: (EOC-3187) Add Cancel and Clone Reasons at Order and Item Level
 
 **Description:**
 
@@ -596,7 +691,7 @@ The task is to introduce cancel and cancel-and-clone reasons at both the order a
 
 This enhancement allows for better tracking of reasons behind cancellations and clones, improving accountability and data accuracy while providing valuable insights into order management processes.
 
-## Task 30: (EOC-3175) Improve Search by Quotation No. in Enquiry Details Screen
+### Task 30: (EOC-3175) Improve Search by Quotation No. in Enquiry Details Screen
 
 **Description:**
 
@@ -617,7 +712,7 @@ The task involves improving the handling and search functionality for the Quotat
 
 This enhancement improves the usability and efficiency of the Enquiry Details screen by providing a clearer and more effective search functionality, facilitating easier access to relevant quotations.
 
-## Task 31: (EOC-3173) Remove Plants Group Field from CPN Creation (Product Upload) Workflow
+### Task 31: (EOC-3173) Remove Plants Group Field from CPN Creation (Product Upload) Workflow
 
 **Description:**
 
@@ -636,7 +731,7 @@ The task is to eliminate the Plants Group column from the CPN creation template 
 
 This change simplifies the CPN creation process, reduces user confusion, and ensures a more streamlined workflow by eliminating unnecessary fields.
 
-## Task 32: (EOC-3074) Need Report of Productivity Dashboard on Date Basis/Weekly/MTD
+### Task 32: (EOC-3074) Need Report of Productivity Dashboard on Date Basis/Weekly/MTD
 
 **Description:**
 
@@ -658,7 +753,7 @@ The task is to create a report for the productivity dashboard using the specifie
 
 This task enhances the reporting capabilities of the productivity dashboard, ensuring timely and structured communication of productivity metrics to relevant stakeholders.
 
-## Task 33: (EOC-3293) Allow New Line Item Addition in Open PO for HMCL
+### Task 33: (EOC-3293) Allow New Line Item Addition in Open PO for HMCL
 
 **Description:**
 
@@ -679,7 +774,7 @@ The task involves enabling the addition of new line items to Open POs specifical
 
 This enhancement allows for flexibility in managing Open POs for HMCL plants, ensuring that users can add necessary line items while maintaining data integrity through CPN uniqueness.
 
-## Task 34: (EOC-3269) Introduce Reports Section in Navigation in EOC
+### Task 34: (EOC-3269) Introduce Reports Section in Navigation in EOC
 
 **Description:**
 
@@ -714,7 +809,7 @@ The task is to add a Reports section to the navigation menu in EOC to enhance ac
 
 Introducing the Reports section improves navigation and accessibility to critical reports, enabling managers to make informed decisions based on real-time data and enhancing overall operational efficiency.
 
-## Task 35: (EOC-3295) PO Punched on Email Confirmation: PO Number Update and PO Copy Upload
+### Task 35: (EOC-3295) PO Punched on Email Confirmation: PO Number Update and PO Copy Upload
 
 Description:
 
@@ -741,7 +836,7 @@ The task is to tag POs received through email and allow users to update the PO n
 
 This enhancement allows for greater flexibility in managing POs received via email, streamlining the process of updating PO details and ensuring accurate invoicing while maintaining necessary checks and validations.
 
-## Task 36: (EOC-3312) PAAS CPO-SPO Creation Automation
+### Task 36: (EOC-3312) PAAS CPO-SPO Creation Automation
 
 **Description:**
 
@@ -789,7 +884,7 @@ To address this issue, we aim to implement end-to-end automation from CPO to SPO
 
 The PAAS CPO-SPO creation automation increases efficiency and reduces processing time by eliminating manual tasks, minimizes errors, enhances customer satisfaction, improves tracking and reporting, allows for scalability, ensures compliance, and optimizes resource allocation.
 
-## Task 37: (EOC-3337) LD Applicability at Line Needs to be Added for PAAS Customers While Punching
+### Task 37: (EOC-3337) LD Applicability at Line Needs to be Added for PAAS Customers While Punching
 
 **Description:**
 
@@ -808,7 +903,7 @@ The task is to introduce the "LD Applicable (Y/N)" field for PAAS customers duri
 
 This enhancement allows users to easily determine the applicability of LD for PAAS customers, improving accuracy in order processing and ensuring compliance with business rules.
 
-## Task 38: (EOC-3351) CM* Approval Visibility Impacted Due to Access of Teams to Approvers
+### Task 38: (EOC-3351) CM* Approval Visibility Impacted Due to Access of Teams to Approvers
 
 **Description:**
 
@@ -829,7 +924,7 @@ The task addresses the visibility issues related to CM* approval requests due to
 
 This solution improves the visibility of CM* approval requests, facilitates timely approvals, and reduces manual coordination efforts, thereby enhancing overall efficiency in the approval process.
 
-## Task 39: (EOC-3354) PaaS PR Details
+### Task 39: (EOC-3354) PaaS PR Details
 
 **Description:**
 
@@ -882,7 +977,7 @@ Currently, in the PaaS customer environment, the entire enquiry/PR process is ma
 
 Incorporating the PR tracking system into EOC provides a centralized and systematic approach to manage PaaS customer PRs, improving visibility, reducing manual errors, and enhancing overall workflow efficiency.
 
-## Task 40: (EOC-3261) Make EOC Web-Responsive for Login
+### Task 40: (EOC-3261) Make EOC Web-Responsive for Login
 
 **Description:**
 
@@ -904,7 +999,7 @@ The task is to ensure that the EOC platform is web-responsive, enabling users to
 
 Making the EOC platform web-responsive enhances accessibility for users on mobile devices, improving their ability to manage CM approvals and access account services on the go, ultimately leading to increased efficiency and user satisfaction.
 
-## Task 41: (EOC-3421) Bulk Packaging Invoicing PO Copy Upload Functionality Enhancement
+### Task 41: (EOC-3421) Bulk Packaging Invoicing PO Copy Upload Functionality Enhancement
 
 **Description:**
 
@@ -934,7 +1029,7 @@ The task involves enhancing the PO copy upload functionality in the bulk packagi
 
 This enhancement improves the efficiency and accuracy of the bulk packaging invoicing process by ensuring that only valid PO copies are uploaded, thereby streamlining automation and reducing errors in the workflow.
 
-## Task 42: (EOC-3456) Catalog Screen Enhancement
+### Task 42: (EOC-3456) Catalog Screen Enhancement
 
 **Description:**
 
@@ -960,7 +1055,7 @@ The task involves several enhancements to the Catalog Screen to improve usabilit
 
 These enhancements will streamline the catalog management process, reduce time spent on mapping and searching for information, and improve the overall efficiency of the team handling catalog entries. By implementing these features, the organization can expect a significant boost in productivity and a reduction in manual errors.
 
-## Task 43: (EOC-3461) PaaS PR Dashboard
+### Task 43: (EOC-3461) PaaS PR Dashboard
 
 **Description:**
 
@@ -1012,7 +1107,7 @@ The PR Pendency Dashboard will provide a comprehensive view of PR pendencies acr
 
 The PaaS PR Dashboard will enhance visibility into the PR pendency process, allowing users to track, manage, and act on PR requests efficiently. It reduces manual effort, improves accountability, and helps identify bottlenecks in the PR workflow, ultimately leading to better decision-making and operational efficiency.
 
-## Task 44: (EOC-3409) ARC Report Enhancement
+### Task 44: (EOC-3409) ARC Report Enhancement
 
 **Description:**
 
@@ -1037,7 +1132,7 @@ The task involves updating the ARC report based on inputs received from Ruchi to
 
 These enhancements will improve the clarity and functionality of the ARC report, providing users with essential data while eliminating unnecessary information, thereby facilitating better decision-making and reporting efficiency.
 
-## Task 45: (EOC-3483) CPO Item Type "PAAS" Visibility Control
+### Task 45: (EOC-3483) CPO Item Type "PAAS" Visibility Control
 
 **Description:**
 
@@ -1058,7 +1153,7 @@ The task is to ensure that the CPO item type "PAAS" is not visible to users who 
 
 This enhancement will enhance security and user experience by ensuring that only authorized users can view and interact with the PAAS CPO item type, thereby preventing unauthorized access and potential errors in order processing.
 
-## Task 46: (EOC-3487) Released SA Enhancement
+### Task 46: (EOC-3487) Released SA Enhancement
 
 **Description:**
 
@@ -1082,7 +1177,7 @@ Brake India frequently updates its Open POs/SA, necessitating the following func
 
 These enhancements will improve flexibility and responsiveness to customer needs, ensuring that Brake India can effectively manage and update their service agreements in real time, ultimately leading to improved customer satisfaction and operational efficiency.
 
-## Task 47: (EOC-3502) Enquiry Pendency - Productivity Dashboard for Managers
+### Task 47: (EOC-3502) Enquiry Pendency - Productivity Dashboard for Managers
 
 **Description:**
 
@@ -1131,7 +1226,7 @@ This task involves updating the Enquiry Pendency section in the Productivity Das
 
 These changes will improve the accuracy of pendency tracking, provide clear representation of whether the pendency is related to a Sourcer or Customer POC, and give managers a better understanding of workflow status through the use of color-coded flows. Additionally, the sorting feature will enhance usability, enabling managers to quickly access the most critical data points.
 
-## Task 48: (EOC-3510) Introduction of "Direct CPO" CPO Item Type
+### Task 48: (EOC-3510) Introduction of "Direct CPO" CPO Item Type
 
 **Problem Statement:**
 
@@ -1186,7 +1281,7 @@ Introduce a new CPO Item Type called “Direct CPO”, which allows processing C
 
 This enhancement reduces manual effort, improves data accuracy by eliminating unnecessary RFQ entries, and introduces flexibility for processing direct customer orders
 
-## Task 49: (EOC-3528) UAT Feedbacks - PR Dashboard
+### Task 49: (EOC-3528) UAT Feedbacks - PR Dashboard
 
 **Description:**
 
@@ -1203,7 +1298,7 @@ The task is to implement feedback from UAT (User Acceptance Testing) for the PR 
 
 These enhancements will improve user experience by providing more accurate and easily interpretable data, as well as enabling better filtering options to refine PR visibility in the dashboard.
 
-## Task 50: (EOC-3537) PR Enhancement - Add PR Type Filter
+### Task 50: (EOC-3537) PR Enhancement - Add PR Type Filter
 
 **Description:**
 
@@ -1222,7 +1317,7 @@ This task involves enhancing the PR Dashboard by adding a PR Type Filter and inc
 
 These enhancements will improve usability by providing users with more refined filtering and faster access to specific PRs, streamlining the workflow and improving overall efficiency.
 
-## Task 51: (EOC-3549) Remove Hard-Coded Roles and Move to Module Access Level
+### Task 51: (EOC-3549) Remove Hard-Coded Roles and Move to Module Access Level
 
 **Description:**
 
@@ -1250,7 +1345,7 @@ This task involves refactoring both the frontend and backend to remove hard-code
 - Enhanced Security: Dynamic role management at the module level ensures that access is restricted based on specific responsibilities, reducing the risk of unauthorized access.
 - Maintainability: Moving away from hard-coded roles will simplify code maintenance and allow for more adaptable role-based access control in the future.
 
-## Task 52: (EOC-3514) Allow CDD2 Update Exceptionally
+### Task 52: (EOC-3514) Allow CDD2 Update Exceptionally
 
 **Description:**
 
@@ -1268,7 +1363,7 @@ Enable users to update CDD2 beyond 1 year, up to 2 years, with role-based access
 
 Provides flexibility for exceptional cases while maintaining controlled access through role-based permissions.
 
-## Task 53: (EOC-3516) Addition of Long Text for Bulk CPO/SPO Creation
+### Task 53: (EOC-3516) Addition of Long Text for Bulk CPO/SPO Creation
 
 **Description:**
 
@@ -1286,7 +1381,7 @@ In some SAP orders, long text is received and shared with SalesOps to include in
 - Clarity & Instructions: The detailed description ensures that suppliers understand requirements precisely, providing legal clarity and specific instructions.
 - Efficiency: Clear descriptions help avoid misunderstandings, minimizing delays and errors in fulfilling orders.
 
-## Task 54: (EOC-3550) API Taking Time to Load - SA Updating Process is Slow
+### Task 54: (EOC-3550) API Taking Time to Load - SA Updating Process is Slow
 
 **Issue:**
 
@@ -1306,7 +1401,7 @@ In some SAP orders, long text is received and shared with SalesOps to include in
 
 Optimizing the getProductGroup API and processing multiple MSNs asynchronously will significantly reduce the time taken for the SA updating process, improving the overall performance and user experience.
 
-## Task 55: (EOC-3486) Storage Location and Line Item Number for Brakes India
+### Task 55: (EOC-3486) Storage Location and Line Item Number for Brakes India
 
 
 **Problem Statement:**
@@ -1337,7 +1432,7 @@ Optimizing the getProductGroup API and processing multiple MSNs asynchronously w
 - Faster Gate Entry: By including line-item numbers and store locations on the invoice, the gate entry process will be expedited.
 - Faster Invoice Mapping: Improved invoice mapping at Brakes India's end, leading to quicker processing and fewer delays.
 
-## Task 56: (EOC-3544) Customer ETA Enhancement on EOC
+### Task 56: (EOC-3544) Customer ETA Enhancement on EOC
 
 **Description:**
 
@@ -1389,7 +1484,7 @@ This task aims to enhance the Customer ETA functionality by allowing manual upda
 
 The enhancements will improve the accuracy and reliability of ETA information, provide users with the flexibility to manually update ETAs, and ensure clear communication with customers regarding delivery timelines. This will lead to better planning and coordination for deliveries, ultimately enhancing customer satisfaction.
 
-## Task 57: (EOC-3578) PO Punching OCR
+### Task 57: (EOC-3578) PO Punching OCR
 
 **Description:**
 
@@ -1430,7 +1525,7 @@ To reduce manual effort and minimize errors in punching CPOs, we will introduce 
 
 Implementing OCR for PO punching will streamline the process, enhance efficiency, and reduce the likelihood of errors, ultimately leading to improved operational performance.
 
-## Task 58: (EOC-3579) Vendor Discovery Migration
+### Task 58: (EOC-3579) Vendor Discovery Migration
 
 **Description:**
 The current Vendor Discovery platform is built for generating reports. To improve user experience, we need to ensure that users are not required to switch between platforms. As part of this initiative, we will migrate the Vendor Discovery functionality to the EOC platform.
@@ -1446,7 +1541,7 @@ The current Vendor Discovery platform is built for generating reports. To improv
 - Increased Efficiency: Migrating this functionality will streamline reporting and notifications, saving users time and reducing the complexity of managing multiple platforms.
 - All features and workflows, such as user interactions and notifications, should work seamlessly after migration without altering the user experience.
 
-## Task 59: (EOC-3594) Manager View - Color Coding Gap
+### Task 59: (EOC-3594) Manager View - Color Coding Gap
 
 **Description:**
 
@@ -1456,7 +1551,7 @@ A tooltip needs to be added to represent the following color coding when a user 
 - Red Color: Represents a Grand Total <= 8 per day, indicating Low RFQ Flow.
 - This tooltip will provide quick context for users when reviewing RFQ flow metrics.
 
-## Task 60: (EOC-3602) PAAS PR Sheet Enhancement
+### Task 60: (EOC-3602) PAAS PR Sheet Enhancement
 
 **Description:**
 
@@ -1491,7 +1586,7 @@ A tooltip needs to be added to represent the following color coding when a user 
 - Better Insights: Displaying valuation in Cr. on charts allows for quick analysis of total value, aiding decision-making.
 - Cleaner Interface: Removal of unnecessary columns reduces clutter, making the interface more user-friendly.
 
-## Task 61: (EOC-3657) CPO Punch Header Page Optimization
+### Task 61: (EOC-3657) CPO Punch Header Page Optimization
 
 **Description:**
 
@@ -1513,7 +1608,7 @@ The current header page of the CPO punch process is experiencing slow performanc
 - Optimized Network Usage: A 40.9% reduction in the number of network requests lowers server load, resulting in smoother and more efficient operations.
 - Improved User Experience: Faster load times and reduced delays enhance the overall user experience on the CPO punch header page.
 
-## Task 62: (EOC-3623) E-RFQ Enhancement - Vendor Suggestion for Item at RFQ and CPO Item
+### Task 62: (EOC-3623) E-RFQ Enhancement - Vendor Suggestion for Item at RFQ and CPO Item
 
 **Description:**
 
@@ -1561,7 +1656,7 @@ The task is to introduce vendor suggestions for items on the CPO Details Sheet a
 - Time Savings: Reduces the time spent manually entering vendor details for each item, improving the overall workflow for RFQ and CPO processes.
 - User Experience: Offers a seamless and intuitive interface, making vendor selection simpler and more accessible for users.
 
-## Task 63: (EOC-3622) Direct CPO - Partial Release Functionality
+### Task 63: (EOC-3622) Direct CPO - Partial Release Functionality
 
 **Description:**
 
@@ -1608,7 +1703,7 @@ The following use cases for CM*% approval status need to be considered when hand
 - Flexible Release Workflow: By allowing partial releases, this update provides flexibility in the CPO process, aligning better with supplier discovery timelines.
 - Clear CM% Visibility:* Enhanced status visibility ensures that users can easily track approval progress, reducing confusion and delays.
 
-## Task 64: (EOC-3649) Need to Add Date Range on ARC Report
+### Task 64: (EOC-3649) Need to Add Date Range on ARC Report
 
 **Description:**
 
@@ -1621,7 +1716,7 @@ Add a fixed date range feature to the ARC Report, based on the current logic. Th
 - Increased Efficiency: Reduces the time spent on manual adjustments and searching for data across multiple reports, streamlining the overall reporting workflow.
 
 
-## Task 65: (EOC-3614) Authorized Brand Distributor Visibility on EOC While Selecting Supplier
+### Task 65: (EOC-3614) Authorized Brand Distributor Visibility on EOC While Selecting Supplier
 
 **Description:**
 
@@ -1644,7 +1739,7 @@ Currently, orders can be placed with suppliers who are not authorized distributo
 - Streamlined Approval Process: The warning message and visibility in the approval screen will help prevent unauthorized supplier orders from being approved, improving overall compliance.
 - Improved User Experience: Clear visibility and warnings enhance user confidence in selecting the right suppliers, leading to a smoother procurement process.
 
-## Task 66: (EOC-3676) Role Creation for Vendor Discovery
+### Task 66: (EOC-3676) Role Creation for Vendor Discovery
 
 **Description:**
 
@@ -1658,7 +1753,7 @@ Module Separation: Implement a separate module for Single Search and Bulk Search
 - Controlled User Access: Only authorized users can access Vendor Discovery functionalities, improving accountability and compliance.
 - Streamlined Processes: Clear role definitions will help users navigate the application more efficiently, focusing only on relevant functionalities according to their access rights.
 
-## Task 67: (EOC-3679) Need to Remove CDD2 Validation Check on Updating Manual ETA
+### Task 67: (EOC-3679) Need to Remove CDD2 Validation Check on Updating Manual ETA
 
 **Why?**
 
@@ -1676,7 +1771,7 @@ Remove the CDD2 validation check when updating the Manual ETA field.
 - Create: Initiate the change request.
 - Show Git Development Panel: Ensure visibility of the Git development panel for code tracking and collaboration.
 
-## Task 68: (EOC-3681) EOC UI Unused Code Refactoring and Restructuring
+### Task 68: (EOC-3681) EOC UI Unused Code Refactoring and Restructuring
 
 **Description:**
 
@@ -1695,7 +1790,7 @@ The EOC application has been built using the ICAT codebase since its inception, 
 - Scalability: A well-organized architecture facilitates future development efforts, making it easier to add new features or modules without confusion.
 - Faster Development Cycle: Developers will be able to work more efficiently in a well-structured environment, reducing onboarding time for new team members and speeding up the overall development process.
 
-## Task 69: (EOC-3684) Access Management - Vendor Discovery
+### Task 69: (EOC-3684) Access Management - Vendor Discovery
 
 **Description:**
 
@@ -1707,7 +1802,7 @@ Users with a business designation of City Head (CH) and above should have unrest
 - Controlled Permissions: Other users will have access based on role approval, enhancing security and ensuring that only authorized personnel use the feature.
 - Improved Workflow: This access management structure promotes efficient use of the Vendor Discovery tool while maintaining oversight and control.
 
-## Task 70: (EOC-3684) Stop User from Entering String on Update "List Price"
+### Task 70: (EOC-3684) Stop User from Entering String on Update "List Price"
 
 **Description:**
 
@@ -1720,7 +1815,7 @@ In the arcListPrice field, which is currently accepted as a String from the fron
 - Consistency Across Tasks: Standardizing the input format will enhance the overall reliability of related tasks and functionalities that depend on accurate pricing information.
 - Reduced Processing Errors: Minimizes the potential for backend processing issues that could arise from incorrect data types being used in calculations or database entries.
 
-## Task 71: (EOC-3634) PO Punching OCR Actual Impact Report
+### Task 71: (EOC-3634) PO Punching OCR Actual Impact Report
 
 **Description:**
 
@@ -1739,7 +1834,7 @@ This report provides insights into the effectiveness of the OCR functionality im
 - Enhanced Accuracy: Improved data accuracy by minimizing human errors during data entry.
 - Better Decision-Making: Provides actionable insights into the OCR's performance for further optimization.
 
-## Task 72: (EOC-3691) Enhancement: Stop Multiple Click on Save Button
+### Task 72: (EOC-3691) Enhancement: Stop Multiple Click on Save Button
 
 **Description:**
 
@@ -1751,7 +1846,7 @@ Currently, users can click the Save button multiple times, leading to multiple u
 - Improved User Experience: Enhances the overall user experience by providing clear feedback on the save action and preventing frustration from unexpected behavior.
 - Optimized Performance: Decreases the load on the backend by limiting the number of concurrent update requests, leading to more efficient processing.
 
-## Task 73: (EOC-3720) Date Issue: Updating "Need to Work" for Catalog Team
+### Task 73: (EOC-3720) Date Issue: Updating "Need to Work" for Catalog Team
 
 **Description:**
 
@@ -1763,7 +1858,7 @@ When users are updating the "Need to Work" field for the Catalog team, a timesta
 - Improved Tracking: Allows for better tracking of changes in the "Need to Work" field, facilitating more effective project management and accountability.
 - Enhanced User Experience: Provides users with clear feedback and validation, reducing the likelihood of errors during data entry.
 
-## Task 74: (EOC-3656) Enterprise Liquidation Process: Introduction of CPO Item Type “Liquidation”
+### Task 74: (EOC-3656) Enterprise Liquidation Process: Introduction of CPO Item Type “Liquidation”
 
 **As-Is Liquidation Process:**
 
@@ -1795,7 +1890,7 @@ When users are updating the "Need to Work" field for the Catalog team, a timesta
 - Reduced Errors: Decreases the chance of non-compliance by ensuring proper handling of liquidation orders.
 - Increased Transparency: Facilitates better communication and documentation in the approval process.
 
-## Task 75: (EOC-3705) Brand Authorization Tagging on Pending CPO CM* Approval Screen
+### Task 75: (EOC-3705) Brand Authorization Tagging on Pending CPO CM* Approval Screen
 
 **Description:**
 
@@ -1807,7 +1902,7 @@ Brand Authorization Tagging needs to be added to the Pending CPO CM* Approval Sc
 - Better Visibility: Provides clear brand authorization information to approvers, leading to informed decision-making.
 - Streamlined Process: Incorporates tagging into email communications, enhancing the approval workflow and reducing errors.
 
-## Task 76: (EOC-3753) Adoption of Vendor Discovery at Line Item (CPO and RFQ Page)
+### Task 76: (EOC-3753) Adoption of Vendor Discovery at Line Item (CPO and RFQ Page)
 
 **Description:**
 
@@ -1822,7 +1917,7 @@ Brand Authorization Tagging needs to be added to the Pending CPO CM* Approval Sc
 - Enhanced Efficiency: Item and bulk-level tagging allows for better data segmentation and analysis, optimizing the vendor discovery process.
 - Actionable Insights: Provides granular data to improve user experience and vendor interaction workflows.
 
-## Task 77: (EOC-3752) Adoption Vendor Discovery
+### Task 77: (EOC-3752) Adoption Vendor Discovery
 
 **Description:**
 
@@ -1835,3 +1930,5 @@ Brand Authorization Tagging needs to be added to the Pending CPO CM* Approval Sc
 - Enhanced Monitoring: Provides visibility into how many users are utilizing single and bulk search functionalities.
 - Detailed Insights: GA tracking for both single and bulk searches helps identify usage patterns, improving decision-making for feature optimization.
 - User Behavior Analysis: Allows better understanding of search behavior, facilitating potential enhancements for the vendor discovery process.
+
+**[⬆ Back to Top](#table-of-contents)**

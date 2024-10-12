@@ -42,38 +42,6 @@
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/amit-singh-a3a91810a/" target="_blank" title="Amit Singh">
-                    <img src="https://github.com/user-attachments/assets/52af004f-d600-4ac9-9c0a-1b9ea7061215" alt="Amit Singh" width="150" height="150" />
-                    <br>
-                    <b>Amit Singh</b><br>
-                    <div>Lead Engineer</div>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://www.linkedin.com/in/vikacxio/" target="_blank" title="Vikas Kumar">
-                    <img src="https://github.com/user-attachments/assets/c8968105-544a-428c-a6ed-1989d0d28696" alt="Vikas Kumar" width="150" height="150" />
-                    <br>
-                    <b>Vikas Kumar</b><br>
-                    <div>Software Engineer</div>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://www.linkedin.com/in/prince-tiwari-622b36217/" target="_blank" title="Prince Tiwari">
-                    <img src="https://github.com/user-attachments/assets/903c9136-5f82-4310-9dfe-c06b6e8893d7" alt="Prince Tiwari" width="150" height="150" />
-                    <br>
-                    <b>Prince Tiwari</b><br>
-                    <div>Software Engineer</div>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://www.linkedin.com/in/manoj-meghwal-295455199/" target="_blank" title="Manoj Meghwal">
-                    <img src="https://github.com/user-attachments/assets/0cdfa2d1-7f9f-4322-8d9e-fd199e2822a5" alt="Manoj Meghwal" width="150" height="150" />
-                    <br>
-                    <b>Manoj Meghwal</b><br>
-                    <div>Frontend Developer</div>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://www.linkedin.com/in/iamjunaidr/" target="_blank" title="Mohammad Junaid Raza">
                     <img src="https://github.com/user-attachments/assets/0d70afb0-dffd-4e49-9b7b-e92752c3f08e" alt="Mohammad Junaid Raza" width="150" height="150" />
                     <br>
