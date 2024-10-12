@@ -1,4 +1,74 @@
-## Customer-Specific Brand Display and Segmentation Post-Login
+# Table of Contents
+
+| S No. | Approach                                          |
+| ----- | ------------------------------------------------- |
+| 1     | [About Project](#About-Project)                   |
+| 2     | [Project Configurations](#Project-Configurations) |
+| 3     | [Contributers](#Contributers)                     |
+| 4     | [Project Flow](#Project-Flow)                     |
+| 5     | [My Contributions](#My-Contributions)             |
+
+# About Project
+
+**Introducing DigiMRO:** DigiMRO stands out as India’s premier distributor of multi-category and multi-brand low-voltage electronic security products. With a vast array of globally recognized brands, DigiMRO excels in B2B distribution, specializing in CCTV, access control, fire safety, power systems, audio/video solutions, and network systems. The company is committed to being an essential partner for both suppliers and customers, leveraging its extensive industry expertise, comprehensive reach, and robust logistics capabilities. This unique combination enhances competitiveness and ensures the reliability of critical supply chains.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Project Configurations
+
+| Requirement | Version          |
+| ----------- | ---------------- |
+| Node.js     | 16.14.2 or later |
+| React       | 18.2.74          |
+| Next        | 14.1.4           |
+| npm         | 8.5.0 or later   |
+| TypeScript  | 4.9.3            |
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Contributers
+
+<p align="center">
+    <table>
+        <tr>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
+                    <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" width="150" height="150" />
+                    <br>
+                    <b>Sanjay Kumar</b><br>
+                    <div>Web Developer</div>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/iamjunaidr/" target="_blank" title="Mohammad Junaid Raza">
+                    <img src="https://github.com/user-attachments/assets/0d70afb0-dffd-4e49-9b7b-e92752c3f08e" alt="Mohammad Junaid Raza" width="150" height="150" />
+                    <br>
+                    <b>Mohammad Junaid Raza</b><br>
+                    <div>Senior Software Engineer</div>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/aditya-maurya-703876192/" target="_blank" title="Aditya Maurya">
+                    <img src="https://github.com/user-attachments/assets/777a7343-bbf6-4960-a839-bcf21fa7cf26" alt="Aditya Maurya" width="150" height="150" />
+                    <br>
+                    <b>Aditya Maurya</b><br>
+                    <div>Software Development Engineer II</div>
+                </a>
+            </td>
+        </tr>
+    </table>
+</p>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# Project Flow
+
+
+**[⬆ Back to Top](#table-of-contents)**
+
+# My Contributions
+
+### Customer-Specific Brand Display and Segmentation Post-Login
 
 **Description:**
 
@@ -81,7 +151,7 @@ Post-login, customers are segmented into two groups: ADI and BRISK. Based on the
 - Improved Efficiency: Streamlining the product catalog based on customer type reduces irrelevant content, helping users quickly find the products they are most interested in.
 - Consistent Branding: The same approach applied to the top brands banner ensures consistency in brand visibility, creating a cohesive experience across the platform.
 
-## Update to DigiMRO Contact Us Page for ADI and BRISK Customer Support
+### Update to DigiMRO Contact Us Page for ADI and BRISK Customer Support
 
 **Workflow Overview:**
 
@@ -160,3 +230,5 @@ Post-login, customers are segmented into two groups: ADI and BRISK. Based on the
     - The implementation of a brand selection feature allows for better data collection on customer inquiries, enabling the company to identify trends and areas for improvement in products and services.
 - Increased Conversion Rates:
     - A well-structured contact page can help drive conversions by instilling confidence in potential customers who may be seeking support before making a purchase decision. Knowing they can easily access assistance may encourage them to proceed with their purchases
+
+**[⬆ Back to Top](#table-of-contents)**
