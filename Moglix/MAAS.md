@@ -8,7 +8,7 @@
 | 2     | [Project Flow](#Project-Flow)                     |
 | 2     | [My Contributions](#My-Contributions)             |
 
-# About Project![amit](https://github.com/user-attachments/assets/52af004f-d600-4ac9-9c0a-1b9ea7061215)
+# About Project
 
 
 **Introducing MAAS:** The knowledge repository is designed to centralize project attachments, progress reports, and financial data in one accessible location. This project optimizes the management of bulk orders, enabling smooth tracking and updating of financial transactions and customer interactions throughout the entire order lifecycle. With efficient categorization and tagging mechanisms in place, users can easily search and filter through project documents, enhancing the user experience. This repository not only improves accessibility to vital information but also fosters collaboration and informed decision-making across teams. Ultimately, it serves as a crucial resource for knowledge sharing and project management, contributing significantly to operational efficiency.supply chains.
@@ -43,11 +43,11 @@
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
-                    <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" width="150" height="150" />
+                <a href="https://www.linkedin.com/in/amit-singh-a3a91810a/" target="_blank" title="Amit Singh">
+                    <img src="https://github.com/user-attachments/assets/52af004f-d600-4ac9-9c0a-1b9ea7061215" alt="Amit Singh" width="150" height="150" />
                     <br>
-                    <b>Sanjay Kumar</b><br>
-                    <div>Web Developer</div>
+                    <b>Amit Singh</b><br>
+                    <div>Lead Engineer</div>
                 </a>
             </td>
             <td align="center">
