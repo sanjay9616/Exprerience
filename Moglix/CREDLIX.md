@@ -50,7 +50,6 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
 **[⬆ Back to Top](#table-of-contents)**
 
 # Contributers
-![Rizwan](https://github.com/user-attachments/assets/8fe16b39-4e9a-4cea-aaae-8a7624c9d33b)
 
 <p align="center">
     <table>
@@ -81,7 +80,7 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
             </td>
             <td align="center">
                 <a href="https://www.linkedin.com/in/rizwan-khan-3737101a1/" target="_blank" title="Rizwan khan">
-                    <img src="https://github.com/user-attachments/assets/9ab3b1f6-ddb0-417c-a7a0-8154a58d9982" alt="Rizwan khan" width="150" height="150" />
+                    <img src="https://github.com/user-attachments/assets/8fe16b39-4e9a-4cea-aaae-8a7624c9d33b" alt="Rizwan khan" width="150" height="150" />
                     <br>
                     <b>Rizwan khan</b><br>
                     <div>Senior Software Engineer</div>
