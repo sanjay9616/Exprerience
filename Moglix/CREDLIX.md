@@ -50,6 +50,7 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
 **[⬆ Back to Top](#table-of-contents)**
 
 # Contributers
+![Rishi](https://github.com/user-attachments/assets/680e554f-a1da-4f3c-86e4-721f11395bfc)
 
 <p align="center">
     <table>
