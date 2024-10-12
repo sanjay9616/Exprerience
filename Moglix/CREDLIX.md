@@ -102,17 +102,17 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
 
 # Project Flow
 
-![Screenshot from 2024-10-12 17-10-55](https://github.com/user-attachments/assets/09ccb727-cf61-4f98-a36f-439e7984c474)
+<img src="https://github.com/user-attachments/assets/09ccb727-cf61-4f98-a36f-439e7984c474" alt="Not Found" />
 
-![Screenshot from 2024-10-12 17-11-57](https://github.com/user-attachments/assets/a3e68ed5-8cfa-4e85-ae9b-ede6d13b6647)
+<img src="https://github.com/user-attachments/assets/a3e68ed5-8cfa-4e85-ae9b-ede6d13b6647" alt="Not Found" />
 
-![Screenshot from 2024-10-12 17-13-45](https://github.com/user-attachments/assets/5f890da6-5872-4934-ba4c-268441c1927b)
+<img src="https://github.com/user-attachments/assets/5f890da6-5872-4934-ba4c-268441c1927b" alt="Not Found" />
 
-![Screenshot from 2024-10-12 17-14-28](https://github.com/user-attachments/assets/da6450e3-f015-4924-8ac1-99e5e3fd6d33)
+<img src="https://github.com/user-attachments/assets/da6450e3-f015-4924-8ac1-99e5e3fd6d33" alt="Not Found" />
 
-![Screenshot from 2024-10-12 17-15-04](https://github.com/user-attachments/assets/7f0314bf-b127-4b61-8826-cc21c9807189)
+<img src="https://github.com/user-attachments/assets/7f0314bf-b127-4b61-8826-cc21c9807189" alt="Not Found" />
 
-![Screenshot from 2024-10-12 17-23-38](https://github.com/user-attachments/assets/5f6b7b4a-1960-4304-bc9e-8a7652652a4d)
+<img src="https://github.com/user-attachments/assets/5f6b7b4a-1960-4304-bc9e-8a7652652a4d" alt="Not Found" />
 
 **[⬆ Back to Top](#table-of-contents)**
 
