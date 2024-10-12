@@ -65,18 +65,18 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
             </td>
             <td align="center">
                 <a href="https://www.linkedin.com/in/sudh-pathak/" target="_blank" title="Sudhanshu Kumar Pathak">
-                    <img src="https://github.com/user-attachments/assets/0d70afb0-dffd-4e49-9b7b-e92752c3f08e" alt="Sudhanshu Kumar Pathak" width="150" height="150" />
+                    <img src="https://github.com/user-attachments/assets/c82146cf-2c47-47e7-b4c3-3ed2e8dd8ccd" alt="Sudhanshu Kumar Pathak" width="150" height="150" />
                     <br>
                     <b>Sudhanshu Kumar Pathak</b><br>
                     <div>Software Engineer</div>
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/aditya-maurya-703876192/" target="_blank" title="Aditya Maurya">
-                    <img src="https://github.com/user-attachments/assets/aa877e20-cf4e-4709-9159-4bfedd0b84b8" alt="Aditya Maurya" width="150" height="150" />
+                <a href="https://www.linkedin.com/in/shashank-k-singh-72b1b3135/" target="_blank" title="Shashank K Singh">
+                    <img src="https://github.com/user-attachments/assets/aa877e20-cf4e-4709-9159-4bfedd0b84b8" alt="Shashank K Singh" width="150" height="150" />
                     <br>
-                    <b>Aditya Maurya</b><br>
-                    <div>Software Development Engineer II</div>
+                    <b>Shashank K Singh</b><br>
+                    <div>Senior Software Engineer</div>
                 </a>
             </td>
         </tr>
