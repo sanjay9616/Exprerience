@@ -73,6 +73,22 @@
                     <div>Frontend Developer</div>
                 </a>
             </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/manoj-meghwal-295455199/" target="_blank" title="Manoj Meghwal">
+                    <img src="https://github.com/user-attachments/assets/0cdfa2d1-7f9f-4322-8d9e-fd199e2822a5" alt="Manoj Meghwal" width="150" height="150" />
+                    <br>
+                    <b>Manoj Meghwal</b><br>
+                    <div>Frontend Developer</div>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/manoj-meghwal-295455199/" target="_blank" title="Manoj Meghwal">
+                    <img src="https://github.com/user-attachments/assets/0cdfa2d1-7f9f-4322-8d9e-fd199e2822a5" alt="Manoj Meghwal" width="150" height="150" />
+                    <br>
+                    <b>Manoj Meghwal</b><br>
+                    <div>Frontend Developer</div>
+                </a>
+            </td>
         </tr>
     </table>
 </p>
