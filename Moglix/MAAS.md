@@ -7,7 +7,6 @@
 | 2     | [Contributers](#Contributers)                     |
 | 2     | [Project Flow](#Project-Flow)                     |
 | 2     | [My Contributions](#My-Contributions)             |
-![vikas](https://github.com/user-attachments/assets/c8968105-544a-428c-a6ed-1989d0d28696)
 
 # About Project
 
@@ -52,11 +51,11 @@
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
-                    <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" width="150" height="150" />
+                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Vikas Kumar">
+                    <img src="https://github.com/user-attachments/assets/c8968105-544a-428c-a6ed-1989d0d28696" alt="Vikas Kumar" width="150" height="150" />
                     <br>
-                    <b>Sanjay Kumar</b><br>
-                    <div>Web Developer</div>
+                    <b>Vikas Kumar</b><br>
+                    <div>Software Engineer</div>
                 </a>
             </td>
             <td align="center">
