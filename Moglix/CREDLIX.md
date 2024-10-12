@@ -50,7 +50,6 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
 **[⬆ Back to Top](#table-of-contents)**
 
 # Contributers
-![Rishi](https://github.com/user-attachments/assets/680e554f-a1da-4f3c-86e4-721f11395bfc)
 
 <p align="center">
     <table>
@@ -89,7 +88,7 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
             </td>
             <td align="center">
                 <a href="https://www.linkedin.com/in/rishi-shrivastava-a26930115/" target="_blank" title="Rishi Shrivastava">
-                    <img src="https://github.com/user-attachments/assets/9ab3b1f6-ddb0-417c-a7a0-8154a58d9982" alt="Rishi Shrivastava" width="150" height="150" />
+                    <img src="https://github.com/user-attachments/assets/680e554f-a1da-4f3c-86e4-721f11395bfc" alt="Rishi Shrivastava" width="150" height="150" />
                     <br>
                     <b>Rishi Shrivastava</b><br>
                     <div>Lead Engineer</div>
