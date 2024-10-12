@@ -65,6 +65,14 @@
                     <div>Web Developer</div>
                 </a>
             </td>
+            <td align="center">
+                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
+                    <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" width="150" height="150" />
+                    <br>
+                    <b>Sanjay Kumar</b><br>
+                    <div>Web Developer</div>
+                </a>
+            </td>
         </tr>
     </table>
 </p>
