@@ -16,17 +16,7 @@
 - <a href="https://maas.moglix.com/">View Live Project</a>
 
 **[⬆ Back to Top](#table-of-contents)**
-![Screenshot from 2024-10-12 11-14-51](https://github.com/user-attachments/assets/6c90eceb-f424-4c6e-a699-7cf83f696111)
-![Screenshot from 2024-10-12 11-16-17](https://github.com/user-attachments/assets/aa028505-9f0e-43f3-be1c-d618006f4aac)![Screenshot from 2024-10-12 11-16-45](https://github.com/user-atta![Screenshot from 2024-10-12 11-18-47](https://github.com/user-attachments/assets/22b2662f-305f-4e55-9be9-6653b6a7213d)
-chments/assets/5bc8296f-5f63-4819-9953-cfa70c7e5bfd)![Screenshot from 2024-![Screenshot from 2024-10-12 11-17-30](https://github.com/user-attachments/assets/d3c0208c-9252-4612-8542-fdb9d387f165)
-10-12 11-17-00](https://github.com/user-attachmen![Screenshot from 2024-10-12 11-17-11](https://github.com/user-attachments/assets/d95eb18c-00cc-4668-83cb-4fd1784eae87)
-ts/assets/0b01aa2e-5179-4c31-964f-329853e182b9)![Screenshot from 2024-10-12 11-19-39](https://github.com/user-attachments/assets/dd327aac-5ec4-4262-8840-55647c027d14)
-![Screenshot from 2024![Screenshot from 2024-10-12 11-40-40](https://github.com/user-attachments/assets/8d505592-e96b-4c51-b6a9-1f747cc77d3d)
--10-12![Screenshot from 2024-10-12 11-40-25](https://github.com/user-attachments/assets/1624111a-8a40-4037-b911-a658c50deea4)
- 11-23-04](https://github.com/user-attachments/assets/de18751c-a4c0-4a47-ac65-3227ffb46de7)
-![Screenshot from 2024-10-12 11-40-59](https://github.com/user-attachments/assets/66090b30-0b7b-413c-868f-31b87d753d64)
-![Screenshot from 2024-10-12 11-41-14](https://github.com/user-attachments/assets/9dae0ef1-2f85-4058-8a53-93ccbbf04cfc)
-![Screenshot from 2024-10-12 11-42-26](https://github.com/user-attachments/assets/d287a620-7fad-44fc-81f8-9d85fad76709)
+
 
 
 
