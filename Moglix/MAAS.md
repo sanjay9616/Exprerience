@@ -8,8 +8,7 @@
 | 4     | [Project Flow](#Project-Flow)                     |
 | 5     | [My Contributions](#My-Contributions)             |
 
-# About Project![junaid](https://github.com/user-attachments/assets/0d70afb0-dffd-4e49-9b7b-e92752c3f08e)
-
+# About Project
 
 **Introducing MAAS:** The knowledge repository is designed to centralize project attachments, progress reports, and financial data in one accessible location. This project optimizes the management of bulk orders, enabling smooth tracking and updating of financial transactions and customer interactions throughout the entire order lifecycle. With efficient categorization and tagging mechanisms in place, users can easily search and filter through project documents, enhancing the user experience. This repository not only improves accessibility to vital information but also fosters collaboration and informed decision-making across teams. Ultimately, it serves as a crucial resource for knowledge sharing and project management, contributing significantly to operational efficiency.supply chains.
 
@@ -75,11 +74,11 @@
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/manoj-meghwal-295455199/" target="_blank" title="Manoj Meghwal">
-                    <img src="https://github.com/user-attachments/assets/0cdfa2d1-7f9f-4322-8d9e-fd199e2822a5" alt="Manoj Meghwal" width="150" height="150" />
+                <a href="https://www.linkedin.com/in/iamjunaidr/" target="_blank" title="Mohammad Junaid Raza">
+                    <img src="https://github.com/user-attachments/assets/0d70afb0-dffd-4e49-9b7b-e92752c3f08e" alt="Mohammad Junaid Raza" width="150" height="150" />
                     <br>
-                    <b>Manoj Meghwal</b><br>
-                    <div>Frontend Developer</div>
+                    <b>Mohammad Junaid Raza</b><br>
+                    <div>Senior Software Engineer</div>
                 </a>
             </td>
             <td align="center">
