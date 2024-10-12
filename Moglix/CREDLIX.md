@@ -50,10 +50,6 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
 **[⬆ Back to Top](#table-of-contents)**
 
 # Contributers
-![Sudhanshu](https://github.com/user-attachments/assets/c82146cf-2c47-47e7-b4c3-3ed2e8dd8ccd)
-
-![Shashank](https://github.com/user-attachments/assets/9ab3b1f6-ddb0-417c-a7a0-8154a58d9982)
-
 
 <p align="center">
     <table>
@@ -76,7 +72,7 @@ Notably, Credlix features two key projects: **Nuphi** and **Exim**, which enhanc
             </td>
             <td align="center">
                 <a href="https://www.linkedin.com/in/shashank-k-singh-72b1b3135/" target="_blank" title="Shashank K Singh">
-                    <img src="https://github.com/user-attachments/assets/aa877e20-cf4e-4709-9159-4bfedd0b84b8" alt="Shashank K Singh" width="150" height="150" />
+                    <img src="https://github.com/user-attachments/assets/9ab3b1f6-ddb0-417c-a7a0-8154a58d9982" alt="Shashank K Singh" width="150" height="150" />
                     <br>
                     <b>Shashank K Singh</b><br>
                     <div>Senior Software Engineer</div>
