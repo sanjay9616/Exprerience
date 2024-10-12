@@ -51,7 +51,7 @@
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Vikas Kumar">
+                <a href="https://www.linkedin.com/in/vikacxio/" target="_blank" title="Vikas Kumar">
                     <img src="https://github.com/user-attachments/assets/c8968105-544a-428c-a6ed-1989d0d28696" alt="Vikas Kumar" width="150" height="150" />
                     <br>
                     <b>Vikas Kumar</b><br>
