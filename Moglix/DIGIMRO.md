@@ -27,7 +27,6 @@
 **[⬆ Back to Top](#table-of-contents)**
 
 # Contributers
-![aditya](https://github.com/user-attachments/assets/aa877e20-cf4e-4709-9159-4bfedd0b84b8)
 
 <p align="center">
     <table>
@@ -50,7 +49,7 @@
             </td>
             <td align="center">
                 <a href="https://www.linkedin.com/in/aditya-maurya-703876192/" target="_blank" title="Aditya Maurya">
-                    <img src="https://github.com/user-attachments/assets/777a7343-bbf6-4960-a839-bcf21fa7cf26" alt="Aditya Maurya" width="150" height="150" />
+                    <img src="https://github.com/user-attachments/assets/aa877e20-cf4e-4709-9159-4bfedd0b84b8" alt="Aditya Maurya" width="150" height="150" />
                     <br>
                     <b>Aditya Maurya</b><br>
                     <div>Software Development Engineer II</div>
