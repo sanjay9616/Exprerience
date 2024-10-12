@@ -59,11 +59,11 @@
                 </a>
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/sanjay9616/" target="_blank" title="Sanjay Kumar">
-                    <img src="https://github.com/user-attachments/assets/959ee001-8a02-407e-af5d-3a61fae65679" alt="Sanjay Kumar" width="150" height="150" />
+                <a href="https://www.linkedin.com/in/prince-tiwari-622b36217/" target="_blank" title="Prince Tiwari">
+                    <img src="https://github.com/user-attachments/assets/903c9136-5f82-4310-9dfe-c06b6e8893d7" alt="Prince Tiwari" width="150" height="150" />
                     <br>
-                    <b>Sanjay Kumar</b><br>
-                    <div>Web Developer</div>
+                    <b>Prince Tiwari</b><br>
+                    <div>Software Engineer</div>
                 </a>
             </td>
             <td align="center">
