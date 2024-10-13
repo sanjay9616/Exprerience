@@ -1568,14 +1568,17 @@ Implementing OCR for PO punching will streamline the process, enhance efficiency
 ### Task 58: (EOC-3579) Vendor Discovery Migration
 
 **Description:**
+
 The current Vendor Discovery platform is built for generating reports. To improve user experience, we need to ensure that users are not required to switch between platforms. As part of this initiative, we will migrate the Vendor Discovery functionality to the EOC platform.
 
 **Requirements:**
+
 - Design: The design should follow the EOC interface and structure.
 - HTML: Shared and ready for integration.
 - Functionality: The functionality should remain identical to the current system, including responses sent to users via email.
 
 **Impact:**
+
 - Improved User Experience: Users will no longer need to switch between platforms, resulting in a more seamless workflow.
 - Consolidated Platform: Integrating Vendor Discovery into EOC will create a single, unified platform for vendor-related operations.
 - Increased Efficiency: Migrating this functionality will streamline reporting and notifications, saving users time and reducing the complexity of managing multiple platforms.
